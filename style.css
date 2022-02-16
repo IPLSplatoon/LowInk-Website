@@ -27,9 +27,9 @@ body{
 }
 
 .header-wrapper{
-    padding: 40px;
+    padding: 20px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     align-items: center;
     background-color: var(--lowink-grey);
@@ -73,13 +73,14 @@ body{
 }
 
 .header-nav div{
-    background-color: var(--lowink-orange);
+    outline: 2px solid var(--lowink-orange);
     border-radius: 10px;
     padding: 10px;
-    margin: 0.5vw;
+    margin: 8px;
     cursor: pointer;
-    text-shadow: 0 0 5px #000000;
     user-select: none;
+    text-align: center;
+    line-height: 32px;
 }
 .header-nav div:hover{
     box-shadow: 0 0 15px 3px var(--lowink-orange-glow);
@@ -119,9 +120,8 @@ body{
     max-width: 1000px;
 }
 
-.section-box-content{
+.section-box-content p{
     font-weight: 600;
-    line-height: 28px;
 }
 
 .section-box-title{
