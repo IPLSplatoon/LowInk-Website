@@ -1,0 +1,135 @@
+:root{
+    --lowink-grey: #2C2C2C;
+    --lowink-darkgrey: #1C1C1C;
+    --lowink-orange: #F37002;
+    --lowink-orange-glow: #f36e028e;
+    --lowink-orange-gradient: #f36e0221;
+    --lowink-text: #FFFFFF;
+
+    --bg-offset: 0px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    color: var(--lowink-text);
+    background-color: var(--lowink-grey);
+}
+
+body{
+    margin: 0;
+}
+
+.header-wrapper{
+    padding: 40px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: var(--lowink-grey);
+}
+
+.header-logo{
+    font-family: 'LEMON MILK', sans-serif;
+    font-size: 2.5em;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    text-shadow: 0 0 15px var(--lowink-orange-glow);
+    margin-top: 25px;
+    margin-bottom: 25px;
+    cursor: pointer;
+    user-select: none;
+}
+.header-logo:hover{
+    text-shadow: 0 0 25px var(--lowink-orange-glow);
+}
+.header-logo:active{
+    text-shadow: 0 0 35px var(--lowink-orange);
+}
+
+.header-logo img{
+    width: 80px;
+    margin-right: 15px;
+    border-radius: 50%;
+    box-shadow: 0 0 15px 3px var(--lowink-orange-glow);
+}
+
+.header-nav{
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    flex-wrap: wrap;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.header-nav div{
+    background-color: var(--lowink-orange);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 0.5vw;
+    cursor: pointer;
+    text-shadow: 0 0 5px #000000;
+    user-select: none;
+}
+.header-nav div:hover{
+    box-shadow: 0 0 15px 3px var(--lowink-orange-glow);
+}
+.header-nav div:active{
+    box-shadow: 0 0 20px 10px var(--lowink-orange-glow);
+}
+
+.divider{
+    background-color: var(--lowink-orange);
+    height: 4px;   
+}
+
+.page-body{
+    background-image: url(bgtileable.png);
+    background-size: 300px auto;
+    background-position: var(--bg-offset) 0px;
+}
+
+.page-gradient{
+    background: radial-gradient(circle, #00000000 0%, #00000000 40%, var(--lowink-orange-gradient) 100%);
+    padding: 40px;
+}
+
+.section-box{
+    background-color: var(--lowink-darkgrey);
+    outline: 2px solid var(--lowink-orange);
+    box-shadow: 0 0 16px 1px var(--lowink-orange-glow);
+    border-radius: 20px;
+    margin: 40px;
+    margin-left: 16vw;
+    margin-right: 16vw;
+    padding: 30px;
+}
+
+.section-box-content{
+    font-weight: 600;
+}
+
+.section-box-title{
+    font-size: 2em;
+    text-shadow: 0 0 15px var(--lowink-orange-glow);
+}
+
+.section-box-divider{
+    background-color: var(--lowink-orange);
+    margin-top: 12px;
+    margin-bottom: 12px;
+    width: 100%;
+    height: 3px;
+}
+
+.footer-wrapper{
+    padding: 50px;
+    align-items: center;
+    font-size: .60em;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
