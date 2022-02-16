@@ -93,7 +93,10 @@ body{
 
 .page-gradient{
     background: radial-gradient(circle, #00000000 0%, #00000000 40%, var(--lowink-orange-gradient) 100%);
-    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    align-items: center;
 }
 
 .section-box{
@@ -101,10 +104,11 @@ body{
     outline: 2px solid var(--lowink-orange);
     box-shadow: 0 0 16px 1px var(--lowink-orange-glow);
     border-radius: 20px;
-    margin: 40px;
-    margin-left: 16vw;
-    margin-right: 16vw;
+    margin: 30px;
+    margin-left: 2vw;
+    margin-right: 2vw;
     padding: 30px;
+    max-width: 1000px;
 }
 
 .section-box-content{
