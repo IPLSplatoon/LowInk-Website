@@ -15,6 +15,12 @@
     background-color: var(--lowink-grey);
 }
 
+@media only screen and (max-width: 600px) {
+    :root{
+        font-size: 4vw;
+    }
+}
+
 @font-face {
     font-family: 'LEMON MILK';
     font-style: normal;
@@ -43,8 +49,8 @@ body{
     align-items: center;
     white-space: nowrap;
     text-shadow: 0 0 15px var(--lowink-orange-glow);
-    margin-top: 25px;
-    margin-bottom: 25px;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
     cursor: pointer;
     user-select: none;
 }
@@ -68,8 +74,8 @@ body{
     align-items: center;
     font-weight: bold;
     flex-wrap: wrap;
-    margin-top: 25px;
-    margin-bottom: 25px;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
 }
 
 .header-nav div{
@@ -106,6 +112,11 @@ body{
     flex-direction: column;
     padding: 12px;
     align-items: center;
+}
+@media only screen and (max-width: 600px) {
+    .page-gradient{
+        padding: 1vw;
+    }
 }
 
 .section-box{
@@ -166,6 +177,13 @@ body{
 }
 .reg-box:hover{
     box-shadow: 0 0 32px 1px var(--lowink-orange-glow);
+}
+
+@media only screen and (max-width: 600px) {
+    .reg-box{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
 }
 
 .reg-box-title{
