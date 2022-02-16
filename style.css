@@ -19,7 +19,7 @@
     font-family: 'LEMON MILK';
     font-style: normal;
     font-weight: bold;
-    src: local('LEMON MILK-Bold'), url('LEMONMILK-Bold.otf') format('opentypeface');
+    src: url('LEMONMILK-Bold.otf') format('opentype');
   }
 
 body{
