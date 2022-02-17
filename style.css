@@ -17,7 +17,7 @@
 
 @media only screen and (max-width: 600px) {
     :root{
-        font-size: 4vw;
+        font-size: 3.5vw;
     }
 }
 
@@ -51,8 +51,10 @@ body{
     text-shadow: 0 0 15px var(--lowink-orange-glow);
     margin-top: 2vh;
     margin-bottom: 2vh;
+    margin-right: 12px;
     cursor: pointer;
     user-select: none;
+    position: relative;
 }
 .header-logo:hover{
     text-shadow: 0 0 25px var(--lowink-orange-glow);
@@ -76,6 +78,7 @@ body{
     flex-wrap: wrap;
     margin-top: 2vh;
     margin-bottom: 2vh;
+    margin-left: 12px;
 }
 
 .header-nav div{
@@ -87,6 +90,7 @@ body{
     user-select: none;
     text-align: center;
     line-height: 32px;
+    position: relative;
 }
 .header-nav div:hover{
     box-shadow: 0 0 15px 3px var(--lowink-orange-glow);
@@ -178,6 +182,9 @@ body{
 .reg-box:hover{
     box-shadow: 0 0 32px 1px var(--lowink-orange-glow);
 }
+.reg-box:active{
+    box-shadow: 0 0 42px 3px var(--lowink-orange-glow);
+}
 
 @media only screen and (max-width: 600px) {
     .reg-box{
@@ -198,4 +205,14 @@ body{
     top: 0;
     left: 0;
     z-index: 1;
+}
+
+iframe{
+    position: relative;
+    width: 100%;
+    height: 55vh;
+    flex-grow: 1;
+    border: none;
+    margin: 0;
+    padding: 0;
 }
