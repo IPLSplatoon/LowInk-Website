@@ -1,0 +1,64 @@
+:root{
+    --alpha-pink: #ff009e;
+    --beta-red: #ff0000;
+    --gamma-green: #08b672;
+    --first-gold: #d4af37;
+    --second-silver: #c0c0c0;
+    --third-bronze: #b87333;
+}
+
+.page-gradient{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.section-box-content {
+    text-align: left;
+}
+
+h1 {
+    font-weight: bolder;
+    font-size: 1.7em;
+    padding: 0 16px;
+}
+.hof-beta h1 {
+    font-size: 1.2em;
+}
+.hof-gamma h1 {
+    font-size: 1.2em;
+}
+
+p{
+    padding: 0 16px;
+}
+
+.hof-alpha1st{
+    background-color: var(--first-gold);
+    display: flex;
+    align-items: center;
+}
+
+.hof-alpha2nd{
+    background-color: var(--second-silver);
+    display: flex;
+    align-items: center;
+}
+
+.hof-alpha3rd{
+    background-color: var(--third-bronze);
+    display: flex;
+    align-items: center;
+}
+
+.hof-beta{
+    background-color: var(--beta-red);
+    display: flex;
+    align-items: center;
+}
+
+.hof-gamma{
+    background-color: var(--gamma-green);
+    display: flex;
+    align-items: center;
+}

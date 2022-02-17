@@ -34,12 +34,13 @@ fetch(tournamentEndpoint)
         const tourneyDate = new Date(tourneyDatePrep);
         tourneyDate.setMinutes(tourneyDatePrep.getMinutes() + 30);
         const dateOptions = {month: 'long', day: 'numeric', year: 'numeric', hour: 'numeric', minute: 'numeric', hour12: true};
-        date.innerHTML = new Intl.DateTimeFormat('en', dateOptions).format(tourneyDate);
+        const timezone = tourneyDate.toString().match(/\(([A-Za-z\s].*)\)/)[1];
+        date.innerHTML = "📅 " + new Intl.DateTimeFormat('en', dateOptions).format(tourneyDate) + " " + timezone;
 
         const teamCount = tournament.teamsCount;
-        regCount.innerHTML = String(teamCount) + " team" + (teamCount == 1 ? "" : "s");
+        regCount.innerHTML = "🎮 " + String(teamCount) + " team" + (teamCount == 1 ? "" : "s");
 
-        regStatus.innerHTML = tournament.status == "registration-open" ? "Registration open" : "Registration closed";
+        regStatus.innerHTML = "📝 " + (tournament.status == "registration-open" ? "Registration open" : "Registration closed");
 
         regLink.setAttribute("href", 'https://battlefy.com/inkling-performance-labs/' + tournament.slug + '/' + tournament._id + '/info?infoTab=details');
 

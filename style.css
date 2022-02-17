@@ -17,7 +17,7 @@
 
 @media only screen and (max-width: 600px) {
     :root{
-        font-size: 3.5vw;
+        font-size: 20px;
     }
 }
 
@@ -108,6 +108,7 @@ body{
     background-image: url(bgtileable.png);
     background-size: 300px auto;
     background-position: var(--bg-offset) 0px;
+    background-attachment: fixed;
 }
 
 .page-gradient{
@@ -216,3 +217,4 @@ iframe{
     margin: 0;
     padding: 0;
 }
+
