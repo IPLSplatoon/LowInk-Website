@@ -11,54 +11,77 @@
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .section-box-content {
     text-align: left;
 }
 
-h1 {
+place {
     font-weight: bolder;
-    font-size: 1.7em;
+    font-size: 1.4em;
     padding: 0 16px;
 }
-.hof-beta h1 {
-    font-size: 1.2em;
+.hof-beta place {
+    font-size: 1.1em;
 }
-.hof-gamma h1 {
-    font-size: 1.2em;
+.hof-gamma place {
+    font-size: 1.1em;
 }
 
-p{
+.section-box-content p{
+    width: 100%;
     padding: 0 16px;
+    text-align: right;
 }
 
 .hof-alpha1st{
-    background-color: var(--first-gold);
+    outline: 2px solid var(--first-gold);
+    border-radius: 20px;
+    margin: 8px 0;
+    background: linear-gradient(90deg, var(--first-gold) -100%, #00000000 100%);
+    box-shadow: 0 0 5px 1px var(--first-gold);
     display: flex;
     align-items: center;
 }
 
 .hof-alpha2nd{
-    background-color: var(--second-silver);
+    outline: 2px solid var(--second-silver);
+    border-radius: 20px;
+    margin: 8px 0;
+    background: linear-gradient(90deg, var(--second-silver) -100%, #00000000 100%);
+    box-shadow: 0 0 5px 1px var(--second-silver);
     display: flex;
     align-items: center;
 }
 
 .hof-alpha3rd{
-    background-color: var(--third-bronze);
+    outline: 2px solid var(--third-bronze);
+    border-radius: 20px;
+    margin: 8px 0;
+    background: linear-gradient(90deg, var(--third-bronze) -100%, #00000000 100%);
+    box-shadow: 0 0 5px 1px var(--third-bronze);
     display: flex;
     align-items: center;
 }
 
 .hof-beta{
-    background-color: var(--beta-red);
+    outline: 2px solid var(--beta-red);
+    border-radius: 20px;
+    margin: 8px 0;
+    background: linear-gradient(90deg, var(--beta-red) -100%, #00000000 100%);
+    box-shadow: 0 0 5px 1px var(--beta-red);
     display: flex;
     align-items: center;
 }
 
 .hof-gamma{
-    background-color: var(--gamma-green);
+    outline: 2px solid var(--gamma-green);
+    border-radius: 20px;
+    margin: 8px 0;
+    background: linear-gradient(90deg, var(--gamma-green) -100%, #00000000 100%);
+    box-shadow: 0 0 5px 1px var(--gamma-green);
     display: flex;
     align-items: center;
 }

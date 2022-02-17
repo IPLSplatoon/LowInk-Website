@@ -1,0 +1,13 @@
+{
+    "hallOfFame":[
+        {
+            "name": "Month 20XX",
+            "teams": "10",
+            "first": "First place team",
+            "second": "Second place team",
+            "third": "Third place team",
+            "beta": "Beta team",
+            "gamma": "Gamma team"
+        }
+    ]
+}
