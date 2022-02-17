@@ -1,4 +1,11 @@
 :root{
+    --lowink-grey: #2C2C2C;
+    --lowink-darkgrey: #1C1C1C;
+    --lowink-orange: #F37002;
+    --lowink-orange-glow: #f36e028e;
+    --lowink-orange-gradient: #f36e0221;
+    --lowink-text: #FFFFFF;
+    
     --alpha-pink: #ff009e;
     --beta-red: #ff0000;
     --gamma-green: #08b672;
@@ -84,4 +91,16 @@ place {
     box-shadow: 0 0 5px 1px var(--gamma-green);
     display: flex;
     align-items: center;
+}
+
+.hof-search {
+    width: 100vw;
+    margin: 0 70vw;
+    background-color: var(--lowink-darkgrey);
+    outline: 2px solid var(--lowink-orange);
+    box-shadow: 0 0 5px 1px var(--lowink-orange-glow);
+    border-radius: 4px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    color: var(--lowink-text);
 }
