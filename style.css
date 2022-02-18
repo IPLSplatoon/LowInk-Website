@@ -129,9 +129,7 @@ body{
     outline: 2px solid var(--lowink-orange);
     box-shadow: 0 0 16px 1px var(--lowink-orange-glow);
     border-radius: 20px;
-    margin: 30px;
-    margin-left: 2vw;
-    margin-right: 2vw;
+    margin: 30px 2vw;
     padding: 30px;
     max-width: 1000px;
 }

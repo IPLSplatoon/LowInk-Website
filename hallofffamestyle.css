@@ -14,12 +14,21 @@
     --third-bronze: #b87333;
 }
 
-.page-gradient{
+.hof-wrapper{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    align-items: stretch;
+    width: 100%;
+    height: 100%;
+    max-width: 1700px;
 }
+
+.section-box {
+    flex: 1 1 300px;
+}
+
 
 .section-box-content {
     text-align: left;
