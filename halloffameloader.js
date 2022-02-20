@@ -18,7 +18,7 @@ fetch("https://drb-dotjpg.github.io/LowInk-Website/halloffame.json")
         
             const teamsElement = document.createElement("div");
             const teamCount = json.hallOfFame[i].teams;
-            teamsElement.innerHTML = "Out of " + String(teamCount) + " teams.";
+            teamsElement.innerHTML = teamCount + " total teams.";
             rootElement.appendChild(teamsElement);
         
             const contentElement = document.createElement("div");

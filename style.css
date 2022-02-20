@@ -138,6 +138,13 @@ body{
     font-weight: 600;
 }
 
+.section-box-content img {
+    display: block;
+    margin: auto;
+    max-width: 100%;
+    max-height: 65vh;
+}
+
 .section-box-title{
     font-size: 2em;
     text-shadow: 0 0 15px var(--lowink-orange-glow);
