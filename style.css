@@ -138,6 +138,11 @@ body{
     font-weight: 600;
 }
 
+.section-box-content a{
+    color: var(--lowink-text);
+    text-shadow: 0 0 6px var(--lowink-orange-glow);
+}
+
 .section-box-content img {
     display: block;
     margin: auto;
