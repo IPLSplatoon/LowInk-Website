@@ -1,6 +1,15 @@
 {
     "hallOfFame":[
         {
+            "name": "February 2022",
+            "teams": "73",
+            "first": "Shiverme Feeders",
+            "second": "Kraken United",
+            "third": "Pickup",
+            "beta": "Yume Star",
+            "gamma": "The Blue Glaucuses"
+        },
+        {
             "name": "January 2022",
             "teams": "83",
             "first": "Lois",
