@@ -26,10 +26,14 @@
     font-style: normal;
     font-weight: bold;
     src: url('LEMONMILK-Bold.otf') format('opentype');
-  }
+}
 
 body{
     margin: 0;
+}
+
+a{
+    color: var(--lowink-text);
 }
 
 .header-wrapper{
@@ -89,14 +93,19 @@ body{
     cursor: pointer;
     user-select: none;
     text-align: center;
-    line-height: 32px;
     position: relative;
+    font-size: .8em;
 }
 .header-nav div:hover{
     box-shadow: 0 0 15px 3px var(--lowink-orange-glow);
 }
 .header-nav div:active{
     box-shadow: 0 0 20px 10px var(--lowink-orange-glow);
+}
+
+.header-nav img {
+    width: 25px;
+    height: auto;
 }
 
 .divider{
@@ -166,13 +175,18 @@ body{
 }
 
 .footer-wrapper{
-    padding: 50px;
+    padding: 20px;
     align-items: center;
     font-size: .60em;
     font-weight: 600;
     display: flex;
     flex-direction: column;
     text-align: center;
+}
+
+.footer-wrapper a {
+    text-decoration: none;
+    padding: 7px;
 }
 
 .reg-box{
