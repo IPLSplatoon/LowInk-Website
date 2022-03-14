@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
     <title>Low Ink</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/eventstyle.css">
     <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
 </head>
 <body>
@@ -48,33 +49,53 @@
     <div class="page-body">
         <div class="page-gradient">
             <script src="js/bgscroll.js"></script>
-            <script src="js/gettourney.js"></script>
-            <div class="reg-box">
-                Upcoming event:
-                <br>
-                Low Ink March 2022
-                <a id="reg-box">
+            <script src="js/eventloader.js"></script>
+            
+            <div class="tourney-title" id="tourney-title"></div>
+            <div class="tourney-date" id="tourney-date"></div>
+            <div class="register-button">
+                <img src="svg/battlefy.svg">
+                <p>Register on Battlefy</p>
+                <a id="register-button">
                     <span class="clickable"></span>
                 </a>
             </div>
+
             <div class="section-box">
                 <div class="section-box-title">
-                    About
+                    Schedule
                 </div>
                 <div class="section-box-divider"></div>
                 <div class="section-box-content">
-                    <p style="font-size: 1.3em; font-weight: bold;">Low Ink is a two day Splatoon 2 tournament for newer and lower level players.</p>
-                    <p>Our goal is to give teams a chance to get into the Splatoon 2 tournament scene and gain valuable competitive experience. This is achieved by barring higher-level teams from playing in this event. Each team is checked over manually to ensure they are at a suitable skill to play.</p>
-                    <p>What else makes Low Ink good for newer players?</p>
-                    <p style="font-size: .85em; padding-left: 24px;">
-                        • The tournament bans players with tourney results exceeding the skill cap (LUTI div 4).<br>
-                        • An easy to follow format on day 1, which guarantees 18 games played with multiple teams.<br>
-                        • Multiple brackets on Day 2 for the top cut of teams, with placements determined by day 1 performance.<br>
-                        • Quality live stream and commentary with a focus on introducing competitive Splatoon to newcomers.
-                        </p>
-                    <p>If you’re new to Low Ink and want to play, please check out our guide on how to play!</p>
+                    <div class="tourney-schedule" id="tourney-schedule"></div>
                 </div>
             </div>
+
+            <div class="section-box">
+                <div class="section-box-title">
+                    Registered Teams
+                </div>
+                <div class="section-box-divider"></div>
+                <div class="section-box-content">
+                    <h2 id="teams-count"></h2>
+                    <div class="teams-body" id="teams-body">
+
+                        <!-- Template
+                            <div class="team-modal-button" id="temp-team">
+                                <img src="assets/logo.png">
+                                <p>Team name</p>
+                            </div>
+                            <div id="temp-modal" class="team-modal">
+                                <div class="team-modal-content">
+                                    <p>Temp</p>
+                                </div>
+                            </div>
+                        -->
+
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
     <div class="divider"></div>
