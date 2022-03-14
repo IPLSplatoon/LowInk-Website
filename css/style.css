@@ -6,8 +6,6 @@
     --lowink-orange-gradient: #f36e0221;
     --lowink-text: #FFFFFF;
 
-    --bg-offset: 0px;
-
     font-family: 'Montserrat', sans-serif;
     font-size: 22px;
     font-weight: bold;
@@ -89,7 +87,7 @@ a{
     outline: 2px solid var(--lowink-orange);
     border-radius: 10px;
     padding: 10px;
-    margin: 8px;
+    margin: 12px;
     cursor: pointer;
     user-select: none;
     text-align: center;
@@ -98,6 +96,9 @@ a{
 }
 .header-nav div:hover{
     box-shadow: 0 0 15px 3px var(--lowink-orange-glow);
+    animation-name: headerButtonHover;
+    animation-duration: .3s;
+    animation-fill-mode: forwards;
 }
 .header-nav div:active{
     box-shadow: 0 0 20px 10px var(--lowink-orange-glow);
@@ -116,7 +117,10 @@ a{
 .page-body{
     background-image: url(../assets/bgtileable.png);
     background-size: 300px auto;
-    background-position: var(--bg-offset) 0px;
+    animation-name: bgScroll;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
     background-attachment: fixed;
 }
 
@@ -190,7 +194,8 @@ a{
 }
 
 .reg-box{
-    background-color: var(--lowink-orange);
+    background: linear-gradient(72deg, rgba(243,112,2,0.81) 0%, rgba(198,90,0,0.44) 100%);
+    outline: 4px solid var(--lowink-orange);
     padding: 20px;
     padding-left: 80px;
     padding-right: 80px;
@@ -237,3 +242,22 @@ iframe{
 }
 
 
+@keyframes bgScroll {
+    from {
+        background-position: 0px 0;
+    }
+    to {
+        background-position: -300px 0;
+    }
+}
+
+@keyframes headerButtonHover {
+    from {
+        padding: 10px;
+        margin: 12px;
+    }
+    to{
+        padding: 10px 18px;
+        margin: 12px 4px;
+    }
+}
