@@ -1,4 +1,4 @@
-fetch("https://drb-dotjpg.github.io/LowInk-Website/halloffame.json")
+fetch("https://iplabs.ink/LowInk-Website/halloffame.json")
     .then(response => {
         return response.json()
     })

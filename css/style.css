@@ -25,7 +25,7 @@
     font-family: 'LEMON MILK';
     font-style: normal;
     font-weight: bold;
-    src: url('LEMONMILK-Bold.otf') format('opentype');
+    src: url('assets/LEMONMILK-Bold.otf') format('opentype');
 }
 
 body{
@@ -114,7 +114,7 @@ a{
 }
 
 .page-body{
-    background-image: url(bgtileable.png);
+    background-image: url(../assets/bgtileable.png);
     background-size: 300px auto;
     background-position: var(--bg-offset) 0px;
     background-attachment: fixed;
@@ -243,4 +243,5 @@ iframe{
     margin: 0;
     padding: 0;
 }
+
 
