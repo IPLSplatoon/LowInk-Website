@@ -1,31 +1,26 @@
-function goToBattlefy(){
 
-    return function(){
-        const tournamentEndpoint = 'https://search.battlefy.com/tournament/organization/5c6dbd2da605be0329ecf36a/upcoming?page=1&size=9';
+const tournamentEndpoint = 'https://search.battlefy.com/tournament/organization/5c6dbd2da605be0329ecf36a/upcoming?page=1&size=9';
 
-        fetch(tournamentEndpoint)
-            .then((response) => {
-                return response.json()
-            })
-            .then((data) => {
-                if (data.total == 0){
-                    window.location.href = "index.html";
-                }
-        
-                var tournament;
-                for(var i = 0; i < data.tournaments.length; i++){
-                    if (data.tournaments[i].name.includes("Low Ink")){
-                        tournament = data.tournaments[i];
-                    }
-                }
+fetch(tournamentEndpoint)
+    .then((response) => {
+        return response.json()
+    })
+    .then((data) => {
+        if (data.total == 0){
+            window.location.href = "index.html";
+        }
 
-                if (tournament == null) {
-                    window.location.href = "index.html";
-                }
+        var tournament;
+        for(var i = 0; i < data.tournaments.length; i++){
+            if (data.tournaments[i].name.includes("Low Ink")){
+                tournament = data.tournaments[i];
+            }
+        }
 
-                window.location.href = "https://battlefy.com/inkling-performance-labs/" + tournament.slug + "/" + tournament._id + "/"
-            });
-    }
-}
+        if (tournament == null) {
+            window.location.href = "index.html";
+        }
 
-setTimeout(goToBattlefy(), 2000)
+        window.location.href = "https://battlefy.com/inkling-performance-labs/" + tournament.slug + "/" + tournament._id + "/"
+    });
+
