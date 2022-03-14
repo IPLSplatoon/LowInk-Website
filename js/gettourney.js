@@ -24,5 +24,10 @@ fetch(tournamentEndpoint)
         const tourneyId = tournament._id;
 
         document.getElementById("reg-box").setAttribute("href",
-            "event.html?id=" + tourneyId)
+            "event.html?id=" + tourneyId);
+
+        const regBoxText = document.getElementById("reg-box-text");
+        regBoxText.innerText = "Upcoming Event:\n" + tournament.name;
+        regBoxText.style = "display: block"
+
     });
