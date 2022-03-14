@@ -23,15 +23,6 @@ fetch(tournamentEndpoint)
 
         const tourneyId = tournament._id;
 
-        const lowInkEndpoint = "https://dtmwra1jsgyb0.cloudfront.net/tournaments/" + tourneyId;
-
-        fetch(lowInkEndpoint)
-            .then((response) => {
-                return response.json
-            })
-            .then((tourneyData) => {
-
-                
-
-            });
+        document.getElementById("reg-box").setAttribute("href",
+            "event.html?id=" + tourneyId)
     });

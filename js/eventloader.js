@@ -4,6 +4,10 @@
 const urlParams = new URLSearchParams(window.location.search);
 const param = urlParams.get('id');
 
+if (param == null){
+    window.location.href = "index.html";
+}
+
 const tourneyEndPoint = "https://api.battlefy.com/tournaments/" + param;
 
 fetch(tourneyEndPoint)
@@ -22,6 +26,9 @@ fetch(tourneyEndPoint)
         document.getElementById("tourney-date").innerText = 
             new Intl.DateTimeFormat('en', dateOptionsOne).format(dayOneDate) + " - " +
             new Intl.DateTimeFormat('en', dateOptionsTwo).format(dayTwoDate);
+
+        document.getElementById("register-button").setAttribute("href", 
+            "https://battlefy.com/inkling-performance-labs/" + tourneyData.slug + "/" + tourneyData._id + "/");
     });
 
 
@@ -34,6 +41,8 @@ fetch(teamsEndpoint)
     .then((teamsData) => {
 
         const body = document.getElementById("teams-body");
+
+        document.getElementById("teams-count").innerText = teamsData.length + " teams";
 
         for (var i = 0; i < teamsData.length; i++){
 
@@ -89,7 +98,7 @@ fetch(teamsEndpoint)
                 if (event.target == modalRoot){
                     modalRoot.style.display = "none";
                 }
-            })
+            });
 
         }
 

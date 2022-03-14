@@ -21,6 +21,7 @@
     padding: 24px;
     margin: 12px;
     cursor: pointer;
+    position: relative;
 }
 .register-button:hover{
     box-shadow: 0 0 20px 6px var(--lowink-orange-glow);
@@ -63,6 +64,8 @@
     top: 0;
     align-items: center;
     justify-content: center;
+    animation-duration: .3s;
+    animation-name: fadeIn;
 }
 
 .team-modal-content {
@@ -76,6 +79,8 @@
     outline: 2px solid var(--lowink-orange);
     line-height: 1.6em;
     text-align: center;
+    animation-duration: .4s;
+    animation-name: openModal;
 }
 
 .team-modal-content h2 {
@@ -133,4 +138,22 @@
     margin: 0 0 0 0;
     max-width: 160px;
     overflow-wrap: break-word;
+}
+
+@keyframes openModal {
+    from {
+        margin-top: 15%;
+    }
+    to{
+        margin-top: 0;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0%;
+    }
+    to {
+        opacity: 100%;
+    }
 }
