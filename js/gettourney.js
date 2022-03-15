@@ -21,13 +21,29 @@ fetch(tournamentEndpoint)
             return;
         }
 
-        const tourneyId = tournament._id;
+        const regBox = document.getElementById("reg-box");
 
-        const regBoxText = document.getElementById("reg-box-text");
-        regBoxText.innerHTML += "Upcoming Event:<br>" + tournament.name;
-        regBoxText.style = "display: block"
+        const regBoxTitle = document.getElementById("reg-box-title");
+        regBoxTitle.innerText = tournament.name;
 
-        document.getElementById("reg-box").setAttribute("href",
-            "event.html?id=" + tourneyId);
+        const regBoxInfo = document.getElementById("reg-box-info");
+
+        const dayOneDate = new Date(tournament.startTime);
+        const dayTwoDate = new Date(dayOneDate);
+        const dateOptionsOne = {month: 'long', day: 'numeric'};
+        const dateOptionsTwo = {month: 'long', day: 'numeric', year: 'numeric'};
+        dayTwoDate.setHours(dayOneDate.getHours() + 24);
+        const datesString = 
+            new Intl.DateTimeFormat('en', dateOptionsOne).format(dayOneDate) + " - " +
+            new Intl.DateTimeFormat('en', dateOptionsTwo).format(dayTwoDate);
+
+        regBoxInfo.innerText =
+            tournament.teamsCount + (tournament.teamsCount == 1 ? " team" : " teams") + " registered.\n" +
+            datesString + ".";
+
+        const regBoxLink = document.getElementById("reg-box-link");
+        regBoxLink.setAttribute("href", "event.html?id=" + tournament._id);
+        
+        regBox.style.display = "block";
 
     });
