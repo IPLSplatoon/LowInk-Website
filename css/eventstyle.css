@@ -157,3 +157,37 @@
         opacity: 100%;
     }
 }
+
+.section-box-title{
+    display: flex;
+    flex-direction: row;
+}
+
+.section-box-collapse-button{
+    outline: 4px solid var(--lowink-orange);
+    color: var(--lowink-orange);
+    border-radius: 100%;
+    width: 1.2em;
+    height: 1.2em;
+    text-align: center;
+    margin-right: 24px;
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+}
+.section-box-collapse-button:hover{
+    box-shadow: 0 0 20px 4px var(--lowink-orange-glow);
+}
+
+.section-box-content{
+    animation-duration: .4s;
+    animation-name: sectionBoxExpand;
+}
+@keyframes sectionBoxExpand {
+    from {
+        margin-bottom: 100vh;
+    }
+    to {
+        margin-bottom: 0;
+    }
+}

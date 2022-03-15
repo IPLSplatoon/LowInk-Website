@@ -53,7 +53,6 @@
     <div class="divider"></div>
     <div class="page-body">
         <div class="page-gradient">
-            <script src="js/eventloader.js"></script>
             
             <div class="tourney-title" id="tourney-title"></div>
             <div class="tourney-date" id="tourney-date"></div>
@@ -67,20 +66,22 @@
 
             <div class="section-box">
                 <div class="section-box-title">
-                    Schedule
+                    <div class="section-box-collapse-button" id="schedule-collapse-button">▾</div>
+                    <div>Schedule</div>
                 </div>
                 <div class="section-box-divider"></div>
-                <div class="section-box-content">
+                <div class="section-box-content" id="schedule-content">
                     <div class="tourney-schedule" id="tourney-schedule"></div>
                 </div>
             </div>
 
             <div class="section-box">
                 <div class="section-box-title">
-                    Registered Teams
+                    <div class="section-box-collapse-button" id="teams-collapse-button">▴</div>
+                    <div>Registered Teams</div>
                 </div>
                 <div class="section-box-divider"></div>
-                <div class="section-box-content">
+                <div class="section-box-content" id="teams-content">
                     <h2 id="teams-count"></h2>
                     <div class="teams-body" id="teams-body">
 
@@ -99,7 +100,7 @@
                     </div>
                 </div>
             </div>
-
+            <script src="js/eventloader.js"></script>
         </div>
     </div>
     <div class="divider"></div>

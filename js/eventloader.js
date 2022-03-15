@@ -103,3 +103,19 @@ fetch(teamsEndpoint)
         }
 
     });
+
+//add collapsibles
+const upArrow = "▴";
+const downArrow = "▾";
+
+const collapseScheduleButton = document.getElementById("schedule-collapse-button");
+const collapseScheduleContent = document.getElementById("schedule-content");
+collapseScheduleButton.addEventListener("click", function() {
+    if (collapseScheduleContent.style.display == "none"){
+        collapseScheduleContent.style.display = "block";
+        collapseScheduleButton.innerText = upArrow;
+    } else {
+        collapseScheduleContent.style.display = "none";
+        collapseScheduleButton.innerText = downArrow;
+    }
+});
