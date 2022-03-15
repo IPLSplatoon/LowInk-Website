@@ -53,7 +53,7 @@ place {
 }
 
 .hof-alpha1st{
-    outline: 2px solid var(--first-gold);
+    border: 2px solid var(--first-gold);
     border-radius: 20px;
     margin: 8px 0;
     background: linear-gradient(90deg, var(--first-gold) -100%, #00000000 100%);
@@ -63,7 +63,7 @@ place {
 }
 
 .hof-alpha2nd{
-    outline: 2px solid var(--second-silver);
+    border: 2px solid var(--second-silver);
     border-radius: 20px;
     margin: 8px 0;
     background: linear-gradient(90deg, var(--second-silver) -100%, #00000000 100%);
@@ -73,7 +73,7 @@ place {
 }
 
 .hof-alpha3rd{
-    outline: 2px solid var(--third-bronze);
+    border: 2px solid var(--third-bronze);
     border-radius: 20px;
     margin: 8px 0;
     background: linear-gradient(90deg, var(--third-bronze) -100%, #00000000 100%);
@@ -83,7 +83,7 @@ place {
 }
 
 .hof-beta{
-    outline: 2px solid var(--beta-red);
+    border: 2px solid var(--beta-red);
     border-radius: 20px;
     margin: 8px 0;
     background: linear-gradient(90deg, var(--beta-red) -100%, #00000000 100%);
@@ -93,7 +93,7 @@ place {
 }
 
 .hof-gamma{
-    outline: 2px solid var(--gamma-green);
+    border: 2px solid var(--gamma-green);
     border-radius: 20px;
     margin: 8px 0;
     background: linear-gradient(90deg, var(--gamma-green) -100%, #00000000 100%);
