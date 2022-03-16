@@ -6,6 +6,11 @@
     --lowink-orange-gradient: #f36e0221;
     --lowink-text: #FFFFFF;
 
+    --reg-button-offsetOne: 0%;
+    --reg-button-offsetTwo: 50%;
+    --reg-button-offsetThree: 100%;
+
+
     font-family: 'Montserrat', sans-serif;
     font-size: 22px;
     font-weight: bold;
@@ -194,7 +199,10 @@ a{
 }
 
 .reg-box{
-    background: linear-gradient(72deg, rgba(243,112,2,0.81) 0%, rgba(198,90,0,0.44) 100%);
+    background: linear-gradient(52deg, 
+        rgba(198,90,0,0.44) 0%, 
+        rgba(243,112,2,0.70) 50%, 
+        rgba(198,90,0,0.44) 100%);
     border: 4px solid var(--lowink-orange);
     padding: 20px;
     padding-left: 80px;
@@ -206,7 +214,7 @@ a{
     text-align: center;
     cursor: pointer;
     position: relative;
-    font-size: 2.2em;
+    font-size: 2.0em;
     animation-name: upcomingEventGlow;
     animation-duration: 2s;
     animation-iteration-count: infinite;
@@ -302,9 +310,15 @@ iframe{
 
 @keyframes upcomingEventHover {
     from {
-        font-size: 2.2em;
+        border: 4px solid var(--lowink-orange);
+        margin-top: 40px;
+        margin-bottom: 30px;
+        box-shadow: 0 0 32px 2px var(--lowink-orange-glow);
     }
     to {
-        font-size: 2.35em;
+        border: 10px outset var(--lowink-orange);
+        margin-top: 34px;
+        margin-bottom: 24px;
+        box-shadow: 0 0 64px 8px var(--lowink-orange-glow);
     }
 }

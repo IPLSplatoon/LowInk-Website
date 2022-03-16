@@ -15,6 +15,11 @@ fetch(tourneyEndPoint)
         return tourneyResponse.json();
     })
     .then((tourneyData) => {
+        if (!tourneyData.name.includes("Low Ink")){
+            window.location.href = "index.html";
+        }
+
+
         document.getElementById("tourney-title").innerText = tourneyData.name;
         document.getElementById("tourney-schedule").innerHTML = tourneyData.schedule;
 
@@ -29,6 +34,9 @@ fetch(tourneyEndPoint)
 
         document.getElementById("register-button").setAttribute("href", 
             "https://battlefy.com/inkling-performance-labs/" + tourneyData.slug + "/" + tourneyData._id + "/");
+    })
+    .catch(function(){
+        window.location.href = "index.html";
     });
 
 
@@ -102,4 +110,7 @@ fetch(teamsEndpoint)
 
         }
 
+    })
+    .catch(function(){
+        window.location.href = "index.html";
     });
