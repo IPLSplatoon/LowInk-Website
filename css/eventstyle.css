@@ -81,6 +81,9 @@
     text-align: center;
     animation-duration: .4s;
     animation-name: openModal;
+    max-height: 60vh;
+    min-width: 25vw;
+    overflow: auto;
 }
 
 .team-modal-content h2 {
@@ -120,17 +123,32 @@
     cursor: pointer;
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
     align-items: center;
     user-select: none;
     flex: 1 1 300px;
+}
+@media only screen and (max-width: 500px) {
+    .team-modal-button{
+        flex-direction: row;
+        max-width: 100%;
+        margin: 3px 0 0 0;
+    }
 }
 .team-modal-button:hover{
     box-shadow: 0 0 20px 4px var(--lowink-orange-glow);
 }
 .team-modal-button img{
     border-radius: 100%;
+    margin: 0;
     width: 64px;
     height: 64px;
+}
+@media only screen and (max-width: 500px) {
+    .team-modal-button img{
+        width: 48px;
+        height: 48px;
+    }
 }
 .team-modal-button p{
     text-align: center;
@@ -138,6 +156,11 @@
     margin: 0 0 0 0;
     max-width: 160px;
     overflow-wrap: break-word;
+}
+@media only screen and (max-width: 500px) {
+    .team-modal-button p{
+        margin: auto;
+    }
 }
 
 @keyframes openModal {

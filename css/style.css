@@ -6,11 +6,6 @@
     --lowink-orange-gradient: #f36e0221;
     --lowink-text: #FFFFFF;
 
-    --reg-button-offsetOne: 0%;
-    --reg-button-offsetTwo: 50%;
-    --reg-button-offsetThree: 100%;
-
-
     font-family: 'Montserrat', sans-serif;
     font-size: 22px;
     font-weight: bold;
@@ -20,7 +15,7 @@
 
 @media only screen and (max-width: 600px) {
     :root{
-        font-size: 20px;
+        font-size: 18px;
     }
 }
 
@@ -99,14 +94,28 @@ a{
     position: relative;
     font-size: .8em;
 }
-.header-nav div:hover{
-    box-shadow: 0 0 15px 3px var(--lowink-orange-glow);
-    animation-name: headerButtonHover;
-    animation-duration: .3s;
-    animation-fill-mode: forwards;
+@media only screen and (min-width: 600px) {
+    .header-nav div:hover{
+        box-shadow: 0 0 15px 3px var(--lowink-orange-glow);
+        animation-name: headerButtonHover;
+        animation-duration: .3s;
+        animation-fill-mode: forwards;
+    }
 }
 .header-nav div:active{
     box-shadow: 0 0 20px 10px var(--lowink-orange-glow);
+}
+
+@media only screen and (max-width: 600px) {
+    .header-wrapper{
+        padding: 8px;
+    }
+    .header-nav {
+        margin: 12px 0 12px 0;
+    }
+    .header-nav div {
+        margin: 2px;
+    }
 }
 
 .header-nav img {
