@@ -9,6 +9,16 @@ fetch("https://iplabs.ink/LowInk-Website/halloffame.json")
         for (var i = 0; i < json.hallOfFame.length; i++){
             const rootElement = document.createElement("div");
             rootElement.setAttribute("class","section-box");
+
+            if (json.hallOfFame[i].id != undefined){
+                rootElement.setAttribute("onclick", `getStandings("${json.hallOfFame[i].id}")`);
+            } else {
+                rootElement.style.cursor = "not-allowed";
+                rootElement.onclick = function() {
+                    alert("Detailed results are not available for this event.")
+                };
+            }
+
             body.appendChild(rootElement);
         
             const nameElement = document.createElement("div");
@@ -87,4 +97,120 @@ fetch("https://iplabs.ink/LowInk-Website/halloffame.json")
     .catch(function(error){
         console.log(error);
         document.getElementById("status").innerHTML = "There was an error loading the hall of fame.";
-    })
+    });
+
+
+//https://api.battlefy.com/stages/   /(standings)
+function getStandings(id){    
+    const body = document.getElementById("real-body");
+
+    const modalRoot = document.createElement("div");
+    modalRoot.setAttribute("class", "hof-modal-bg");
+    
+    const modalContent = document.createElement("div");
+    modalContent.setAttribute("class", "hof-modal-content");
+    modalContent.style.display = "none";
+
+    const loadingText = document.createElement("h1");
+    loadingText.style = "margin: auto";
+    loadingText.innerText = "Loading...";
+    modalRoot.appendChild(loadingText);
+
+    modalRoot.appendChild(modalContent);
+    body.appendChild(modalRoot);
+
+    window.addEventListener("click", function(event){
+        if (event.target == modalRoot){
+            modalRoot.remove();
+        }
+    });
+
+    fetch("https://api.battlefy.com/tournaments/" + id)
+        .then(tournamentResponse =>{
+            return tournamentResponse.json();
+        })
+        .then((tournamentJson) => {
+            for (var i = 0; i < tournamentJson.stageIDs.length; i++){
+
+                const stageContainer = document.createElement("div");
+
+                const stagesUrl = `https://api.battlefy.com/stages/${tournamentJson.stageIDs[i]}/`;
+                const standingsUrl = `https://api.battlefy.com/stages/${tournamentJson.stageIDs[i]}/latest-round-standings`;
+
+                fetch(stagesUrl)
+                    .then(stagesResponse =>{
+                        return stagesResponse.json();
+                    })
+                    .then((stagesJson) => {
+                        const stageTitle = document.createElement("h3");
+                        stageTitle.innerText = stagesJson.name;
+                        stageContainer.appendChild(stageTitle);
+                    })
+                    .then( function() {
+
+                        fetch(standingsUrl)
+                            .then(standingsResponse =>{
+                                return standingsResponse.json();
+                            })
+                            .then((standingsJson) => {
+                                const standingsSorted = standingsJson.sort(function(a,b){
+                                    return a.place - b.place;
+                                });
+
+                                var lighten = false;
+
+                                for (var j = 0; j < standingsSorted.length; j++){
+                                    const teamContainer = document.createElement("div");
+                                    teamContainer.setAttribute("class", "hof-modal-team-container");
+
+                                    if(lighten){
+                                        teamContainer.style = "background-color: #FFFFFF10";
+                                    }
+                                    lighten = !lighten;
+
+                                    const place = document.createElement("div");
+                                    place.setAttribute("class", "hof-modal-team-place");
+                                    if (standingsSorted[j].place != undefined){
+                                        place.innerText = standingsSorted[j].place;
+                                    }
+                                    else {
+                                        place.innerText = j+1;
+                                    }
+                                    teamContainer.appendChild(place);
+
+                                    const teamName =  document.createElement("div");
+                                    teamName.setAttribute("class", "hof-modal-team-name");
+                                    if (standingsSorted[j].team.name.length > 43){
+                                        teamName.innerText = standingsSorted[j].team.name.substring(0,40) + "…";
+                                    } else {
+                                        teamName.innerText = standingsSorted[j].team.name;
+                                    }
+                                    teamContainer.appendChild(teamName);
+
+                                    if (standingsSorted[j].wins != undefined){
+                                        const wins = document.createElement("div");
+                                        wins.setAttribute("class", "hof-modal-team-result");
+                                        wins.innerText = standingsSorted[j].wins;
+                                        teamContainer.appendChild(wins);
+                                    }
+
+                                    if (standingsSorted[j].losses != undefined){
+                                        const losses = document.createElement("div");
+                                        losses.setAttribute("class", "hof-modal-team-result");
+                                        losses.innerText = standingsSorted[j].losses;
+                                        teamContainer.appendChild(losses);
+                                    }
+
+                                    stageContainer.appendChild(teamContainer);
+                                }
+
+                                loadingText.remove();
+                                modalContent.style.display = "block";
+
+                            });
+                    }
+                );
+                modalContent.appendChild(stageContainer);
+            }
+        });
+}

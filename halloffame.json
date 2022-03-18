@@ -7,7 +7,8 @@
             "second": "Kraken United",
             "third": "Pickup",
             "beta": "Yume Star",
-            "gamma": "The Blue Glaucuses"
+            "gamma": "The Blue Glaucuses",
+            "id": "61eeec5c0636541feccf6b92"
         },
         {
             "name": "January 2022",
@@ -16,7 +17,8 @@
             "second": "NO LOVE FOR ACCESS DENIED",
             "third": "Shiverme Feeders",
             "beta": "My Lag Paradise",
-            "gamma": "Yume Star"
+            "gamma": "Yume Star",
+            "id": "61c8d1b20334365df3e89703"
         },
         {
             "name": "December 2021",
@@ -24,7 +26,8 @@
             "first": "Sleeping Seals",
             "second": "Lois",
             "third": "Snowfall",
-            "beta": "Squid Killers"
+            "beta": "Squid Killers",
+            "id": "61a7b86e912b8c483bfef289"
         },
         {
             "name": "November 2021",
@@ -33,7 +36,8 @@
             "second": "Snowfall",
             "third": "Leg (but with SNorkEl",
             "beta": "Cold Coral",
-            "gamma": "KingMaker"
+            "gamma": "KingMaker",
+            "id": "618176f1f0dbcd0d30bd5906"
         },
         {
             "name": "October 2021",
@@ -42,7 +46,8 @@
             "second": "Rising Stars",
             "third": "Myopsidus",
             "beta": "Ink Bashers",
-            "gamma": "Rising Tide"
+            "gamma": "Rising Tide",
+            "id": "6154a11821cea533c019c03e"
         },
         {
             "name": "August 2021",
@@ -51,7 +56,8 @@
             "second": "Wipeout Punks",
             "third": "Trollphoon",
             "beta": "The Wiggly Phantoms",
-            "gamma": "Neon Palmtree"
+            "gamma": "Neon Palmtree",
+            "id": "6106d438b51443459574fd5e"
         },
         {
             "name": "July 2021",
@@ -60,7 +66,8 @@
             "second": "Sirius",
             "third": "Inkluminatis",
             "beta": "Shiverme Inklings",
-            "gamma": "Snowfall"
+            "gamma": "Snowfall",
+            "id": "60d9eabf680ff6397774b01d"
         },
         {
             "name": "June 2021",
@@ -69,7 +76,8 @@
             "second": "Sirius",
             "third": "Fukkatsu Angels",
             "beta": "PowerInk!",
-            "gamma": "Unlimited Woomy United"
+            "gamma": "Unlimited Woomy United",
+            "id": "60adb77e4c35a8710cae6757"
         },
         {
             "name": "May 2021",
@@ -78,7 +86,8 @@
             "second": "Fruit Punch",
             "third": "Fukkatsu Angels",
             "beta": "Dark Rain",
-            "gamma": "Yosemite!"
+            "gamma": "Yosemite!",
+            "id": "609197f9cf99e72a16a97d65"
         },
         {
             "name": "April 2021",
@@ -87,7 +96,8 @@
             "second": "Citrus",
             "third": "UCSD Esports",
             "beta": "Mahi-Mahi Monsoon",
-            "gamma": "Broken Controller Gaming"
+            "gamma": "Broken Controller Gaming",
+            "id": "606606f10b8cf632dc84971a"
         },
         {
             "name": "March 2021",
@@ -96,7 +106,8 @@
             "second": "Dynasty Dragons Wave",
             "third": "Resilience",
             "beta": "NIGHT Surfing",
-            "gamma": "Innocence"
+            "gamma": "Innocence",
+            "id": "604118ca930f3b4c66eb10fe"
         },
         {
             "name": "February 2021",
@@ -105,7 +116,8 @@
             "second": "deco-X",
             "third": "Blazing Storm",
             "beta": "Tonken",
-            "gamma": "Spirit Inkorporated"
+            "gamma": "Spirit Inkorporated",
+            "id": "6019b6d0ce01411daff6bca6"
         },
         {
             "name": "January 2021",
@@ -114,7 +126,8 @@
             "second": "Sea Boiz",
             "third": "DECOx27",
             "beta": "inkigo-Go's",
-            "gamma": "Naives: idk"
+            "gamma": "Naives: idk",
+            "id": "5fe16a0200630111c42b2040"
         },
         {
             "name": "December 2020",
@@ -123,7 +136,8 @@
             "second": "$quid Roe",
             "third": "Raizen",
             "beta": "Rolling Raccoons?",
-            "gamma": "Labyrinth X"
+            "gamma": "Labyrinth X",
+            "id": "5fbb02b0a2fd346547539ad9"
         },
         {
             "name": "November 2020",
@@ -132,7 +146,8 @@
             "second": "Valhalla",
             "third": "Fluency!",
             "beta": "NUTS",
-            "gamma": "Toxic Haze"
+            "gamma": "Toxic Haze",
+            "id": "5f98cdae7d10b0459b2812dd"
         },
         {
             "name": "October 2020",
@@ -141,7 +156,8 @@
             "second": "Persistence",
             "third": "Port Rakoome",
             "beta": "Evening Chickens",
-            "gamma": "Vento"
+            "gamma": "Vento",
+            "id": "5f7beec9531ca82e23b67c3d"
         },
         {
             "name": "September 2020",
@@ -150,7 +166,8 @@
             "second": "Last Chance",
             "third": "Raizen",
             "beta": "Inkling Technology at Purdue",
-            "gamma": "ERROR.404"
+            "gamma": "ERROR.404",
+            "id": "5f3dbfe88c26f0297b135300"
         },
         {
             "name": "August 2020",
@@ -159,7 +176,8 @@
             "second": "Last Chance",
             "third": "Team Raizen",
             "beta": "Sea Boiz",
-            "gamma": "Inkling Technology at Purdue"
+            "gamma": "Inkling Technology at Purdue",
+            "id": "5f21e5e1f5fc96423c53d094"
         },
         {
             "name": "July 2020",
@@ -168,7 +186,8 @@
             "second": "Avalanche",
             "third": "Radiance",
             "beta": "SquidVibes",
-            "gamma": "Evening Chickens"
+            "gamma": "Evening Chickens",
+            "id": "5ef7f72a30e2163628b0d351"
         },
         {
             "name": "June 2020",
@@ -177,112 +196,128 @@
             "second": "Persistence",
             "third": "The Bunny-s",
             "beta": "Splat or Swim",
-            "gamma": "Krill Streak"
+            "gamma": "Krill Streak",
+            "id": "5ed6c6f60c8581672c929a67"
         },
         {
             "name": "May 2020",
             "teams": "66",
             "first": "Primera",
             "second": "Stealth Matrix Assassin's",
-            "third": "West Broadway Grillers"
+            "third": "West Broadway Grillers",
+            "id": "5eab0002a36e2b2dda45b0ed"
         },
         {
             "name": "April 2020",
             "teams": "77",
             "first": "White Wolves",
             "second": "Stargaze",
-            "third": "Persistence"
+            "third": "Persistence",
+            "id": "5e7c15cba8c5bc109aa09086"
         },
         {
             "name": "March 2020",
             "teams": "46",
             "first": "Destiny Troops",
             "second": "Trick or Treat + a Kek called Poke",
-            "third": "Boreal Pheonix"
+            "third": "Boreal Pheonix",
+            "id": "5e5bb9a730d47a1097b0a408"
         },
         {
             "name": "February 2020",
             "teams": "48",
             "first": "Kalopsia",
             "second": "Ice ice baby",
-            "third": "Boreal Pheonix"
+            "third": "Boreal Pheonix",
+            "id": "5e3d7c9c4174ff109642856f"
         },
         {
             "name": "January 2020",
             "teams": "52",
             "first": "Karakuri_Spl",
             "second": "XD",
-            "third": "Inception"
+            "third": "Inception",
+            "id": "5e08a35cfafe5a70cf3a2535"
         },
         {
             "name": "December 2019",
             "teams": "30",
             "first": "Shinobi Squad Galaxyum",
             "second": "Crossed Knights",
-            "third": "Shinobi Squad Lunarium"
+            "third": "Shinobi Squad Lunarium",
+            "id": "5de8517ac18a6018141969e3"
         },
         {
             "name": "November 2019",
             "teams": "30",
             "first": "ReUnited",
             "second": "Ice ice baby",
-            "third": "Crossed Knights"
+            "third": "Crossed Knights",
+            "id": "5dbbbc02e685d86acd7398e8"
         },
         {
             "name": "October 2019",
             "teams": "25",
             "first": "Deception",
             "second": "Obvious Death",
-            "third": "Crustacean Crusaders"
+            "third": "Crustacean Crusaders",
+            "id": "5d953b55f2a453690d701efd"
         },
         {
             "name": "September 2019",
             "teams": "20",
             "first": "Inkscape",
             "second": "Deception",
-            "third": "Test Dummies"
+            "third": "Test Dummies",
+            "id": "5d6ae13f751f653c50ca683b"
         },
         {
             "name": "August 2019",
             "teams": "25",
             "first": "Calamity",
             "second": "Deception",
-            "third": "Quentiam"
+            "third": "Quentiam",
+            "id": "5d488e757a3294684c77631c"
         },
         {
             "name": "July 2019",
             "teams": "32",
             "first": "Assault and Pepper",
             "second": "Dark Shadows",
-            "third": "Nightshade"
+            "third": "Nightshade",
+            "id": "5d05848cf15da63deda0bb22"
         },
         {
             "name": "June 2019",
             "teams": "26",
             "first": "SquidNet",
             "second": "Hana",
-            "third": "Vendetta"
+            "third": "Vendetta",
+            "id": "5cf006e2e551c1035a6435e0"
         },
         {
             "name": "May 2019",
             "teams": "33",
             "first": "Agaru",
             "second": "All Star Squad :tm:",
-            "third": "Dark Shadows"
+            "third": "Dark Shadows",
+            "id": "5cce1c4dc90a8d032b962275"
         },
         {
             "name": "April 2019",
             "teams": "26",
             "first": "Requiem",
             "second": "OctoInkers",
-            "third": "Crustacean Crusaders"
+            "third": "Crustacean Crusaders",
+            "id": "5ca0082e488399034a678759"
         },
         {
             "name": "March 2019",
             "teams": "18",
             "first": "Twilight Anglers",
             "second": "Backlink Esports",
-            "third": "Project X"
+            "third": "Project X",
+            "id": "5c71dc2bc61fc30322c85cb1"
         },
         {
             "name": "February 2019",
