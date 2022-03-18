@@ -21,15 +21,7 @@ fetch(tournamentEndpoint)
             window.location.href = "index.html";
         }
 
-        const metaTitle = document.getElementById("meta-title");
-        const metaDescription = document.getElementById("meta-description");
-        const metaUrl = document.getElementById("meta-url");
-        const url = "https://battlefy.com/inkling-performance-labs/" + tournament.slug + "/" + tournament._id + "/"
-
-        metaTitle.setAttribute("content", tournament.name);
-        metaDescription.setAttribute("content", "Sign up for " + tournament.name + " on Battlefy.");
-        metaUrl.setAttribute("content", url);
-
-        window.location.href = url;
+        const url = "https://battlefy.com/inkling-performance-labs/" + tournament.slug + "/" + tournament._id + "/info?infoTab=details"
+        //window.location.href = url;
     });
 

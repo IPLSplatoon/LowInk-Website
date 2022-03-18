@@ -27,6 +27,11 @@
 
 .section-box {
     flex: 1 1 300px;
+    user-select: none;
+    cursor: pointer;
+}
+.section-box:hover{
+    box-shadow: 0 0 25px 4px var(--lowink-orange-glow);
 }
 
 
@@ -100,4 +105,81 @@ place {
     /* box-shadow: 0 0 5px 1px var(--gamma-green); */
     display: flex;
     align-items: center;
+}
+
+.hof-modal-bg{
+    display: flex;
+    position: fixed;
+    z-index: 1;
+    overflow: auto;
+    background: radial-gradient(circle, rgba(45,20,0,0.82) 0%, rgba(0,0,0,0.82) 100%);
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    align-items: center;
+    justify-content: center;
+    animation-duration: .3s;
+    animation-name: fadeIn;
+}
+
+.hof-modal-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--lowink-darkgrey);
+    border-radius: 20px;
+    box-shadow: 0 0 30px 10px var(--lowink-orange-glow);
+    padding: 24px;
+    border: 2px solid var(--lowink-orange);
+    line-height: 1.6em;
+    text-align: center;
+    animation-duration: .4s;
+    animation-name: openModal;
+    max-height: 60vh;
+    min-width: 40vw;
+    overflow: auto;
+}
+
+.hof-modal-team-container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 8px;
+    border-radius: 6px;
+    font-weight: 500;
+}
+
+.hof-modal-team-name{
+    margin: 0 auto 0 0;
+    padding: 2px;
+}
+
+.hof-modal-team-result{
+    margin: 2px 0 2px 10px;
+}
+
+.hof-modal-team-place{
+    font-weight: 600;
+    margin: 2px 15px 2px 0;
+}
+
+@keyframes openModal {
+    from {
+        opacity: 0%;
+        margin-top: 15%;
+    }
+    to{
+        opacity: 100%;
+        margin-top: 0;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0%;
+    }
+    to {
+        opacity: 100%;
+    }
 }
