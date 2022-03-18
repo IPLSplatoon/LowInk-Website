@@ -1,5 +1,4 @@
-fetch(/* "https://iplabs.ink/LowInk-Website/halloffame.json" */
-    "https://raw.githubusercontent.com/IPLSplatoon/LowInk-Website/hofRevamp/halloffame.json")
+fetch("https://iplabs.ink/LowInk-Website/halloffame.json")
     .then(response => {
         return response.json()
     })
@@ -181,18 +180,26 @@ function getStandings(id){
 
                                     const teamName =  document.createElement("div");
                                     teamName.setAttribute("class", "hof-modal-team-name");
-                                    teamName.innerText = standingsSorted[j].team.name;
+                                    if (standingsSorted[j].team.name.length > 43){
+                                        teamName.innerText = standingsSorted[j].team.name.substring(0,40) + "…";
+                                    } else {
+                                        teamName.innerText = standingsSorted[j].team.name;
+                                    }
                                     teamContainer.appendChild(teamName);
 
-                                    const wins = document.createElement("div");
-                                    wins.setAttribute("class", "hof-modal-team-result");
-                                    wins.innerText = standingsSorted[j].wins;
-                                    teamContainer.appendChild(wins);
+                                    if (standingsSorted[j].wins != undefined){
+                                        const wins = document.createElement("div");
+                                        wins.setAttribute("class", "hof-modal-team-result");
+                                        wins.innerText = standingsSorted[j].wins;
+                                        teamContainer.appendChild(wins);
+                                    }
 
-                                    const losses = document.createElement("div");
-                                    losses.setAttribute("class", "hof-modal-team-result");
-                                    losses.innerText = standingsSorted[j].losses;
-                                    teamContainer.appendChild(losses);
+                                    if (standingsSorted[j].losses != undefined){
+                                        const losses = document.createElement("div");
+                                        losses.setAttribute("class", "hof-modal-team-result");
+                                        losses.innerText = standingsSorted[j].losses;
+                                        teamContainer.appendChild(losses);
+                                    }
 
                                     stageContainer.appendChild(teamContainer);
                                 }
