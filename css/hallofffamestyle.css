@@ -123,6 +123,14 @@ place {
     animation-name: fadeIn;
 }
 
+.hof-modal-close {
+    font-size: 64px;
+    cursor: pointer;
+    position: fixed;
+    top: 32px;
+    left: 32px;
+}
+
 .hof-modal-content {
     display: flex;
     flex-direction: column;

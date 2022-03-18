@@ -106,6 +106,11 @@ function getStandings(id){
 
     const modalRoot = document.createElement("div");
     modalRoot.setAttribute("class", "hof-modal-bg");
+
+    const modalClose = document.createElement("div");
+    modalClose.setAttribute("class", "hof-modal-close");
+    modalClose.innerText = "×";
+    modalRoot.appendChild(modalClose);
     
     const modalContent = document.createElement("div");
     modalContent.setAttribute("class", "hof-modal-content");
@@ -124,6 +129,9 @@ function getStandings(id){
             modalRoot.remove();
         }
     });
+    modalClose.addEventListener("click", function(){
+        modalRoot.remove();
+    })
 
     fetch("https://api.battlefy.com/tournaments/" + id)
         .then(tournamentResponse =>{
