@@ -140,24 +140,40 @@ place {
     min-width: 40vw;
     overflow: auto;
 }
-.hof-modal-content::-webkit-scrollbar{
-    background: #00000000;
-    width: 20px;
+@media only screen and (max-width: 600px) {
+    .hof-modal-close {
+        font-size: 48px;
+        cursor: pointer;
+        position: fixed;
+        top: 16px;
+        left: 16px;
+    }
+
+    .hof-modal-content {
+        padding: 0;
+        overflow-x: hidden;
+        max-height: 75vh;
+    }
 }
-.hof-modal-content::-webkit-scrollbar-thumb{
-    background: var(--lowink-orange);
-    width: 20px;
-    border-radius: 10px;
-}
-.hof-modal-content::-webkit-scrollbar-thumb:hover{
-    background: var(--lowink-text);
+@media only screen and (min-width: 600px) {
+    .hof-modal-content::-webkit-scrollbar{
+        background: #00000000;
+        width: 20px;
+    }
+    .hof-modal-content::-webkit-scrollbar-thumb{
+        background: var(--lowink-orange);
+        width: 20px;
+        border-radius: 10px;
+    }
+    .hof-modal-content::-webkit-scrollbar-thumb:hover{
+        background: var(--lowink-text);
+    }
 }
 
 .hof-modal-team-container{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    width: 100%;
+    align-items: center;
     padding: 8px;
     border-radius: 6px;
     font-weight: 500;
@@ -169,6 +185,11 @@ place {
     font-size: 1.2em;
     text-align: left;
     overflow-wrap: break-word;
+}
+@media only screen and (max-width: 600px) {
+    .hof-modal-team-name {
+        max-width: 40%;
+    }
 }
 
 .hof-modal-team-result{
