@@ -1,6 +1,16 @@
 {
     "hallOfFame":[
         {
+            "name": "March 2022",
+            "teams": "68",
+            "first": "Blazing Storm",
+            "second": "Eichhörnchen",
+            "third": "Heaven's Moonlight",
+            "beta": "DElicious Nuggets",
+            "gamma": "aquatic vanguard",
+            "id": "621e76233f6dac1945388fff"
+        },
+        {
             "name": "February 2022",
             "teams": "73",
             "first": "Shiverme Feeders",

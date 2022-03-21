@@ -1,10 +1,5 @@
 :root{
-    --lowink-grey: #2C2C2C;
-    --lowink-darkgrey: #1C1C1C;
-    --lowink-orange: #F37002;
-    --lowink-orange-glow: #f36e028e;
-    --lowink-orange-gradient: #f36e0221;
-    --lowink-text: #FFFFFF;
+    --lowink-darktext: #cfcfcf;
     
     --alpha-pink: #ff009e;
     --beta-red: #ff0000;
@@ -33,7 +28,6 @@
 .section-box:hover{
     box-shadow: 0 0 25px 4px var(--lowink-orange-glow);
 }
-
 
 .section-box-content {
     text-align: left;
@@ -132,13 +126,11 @@ place {
 }
 
 .hof-modal-content {
-    display: flex;
-    flex-direction: column;
     align-items: center;
     background-color: var(--lowink-darkgrey);
     border-radius: 20px;
     box-shadow: 0 0 30px 10px var(--lowink-orange-glow);
-    padding: 24px;
+    padding: 40px;
     border: 2px solid var(--lowink-orange);
     line-height: 1.6em;
     text-align: center;
@@ -148,10 +140,23 @@ place {
     min-width: 40vw;
     overflow: auto;
 }
+.hof-modal-content::-webkit-scrollbar{
+    background: #00000000;
+    width: 20px;
+}
+.hof-modal-content::-webkit-scrollbar-thumb{
+    background: var(--lowink-orange);
+    width: 20px;
+    border-radius: 10px;
+}
+.hof-modal-content::-webkit-scrollbar-thumb:hover{
+    background: var(--lowink-text);
+}
 
 .hof-modal-team-container{
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
     width: 100%;
     padding: 8px;
     border-radius: 6px;
@@ -161,15 +166,24 @@ place {
 .hof-modal-team-name{
     margin: 0 auto 0 0;
     padding: 2px;
+    font-size: 1.2em;
+    text-align: left;
+    overflow-wrap: break-word;
 }
 
 .hof-modal-team-result{
     margin: 2px 0 2px 10px;
+    font-size: .8em;
+    color: var(--lowink-darktext);
 }
 
 .hof-modal-team-place{
     font-weight: 600;
     margin: 2px 15px 2px 0;
+    font-size: .9em;
+    width: 40px;
+    text-align: left;
+    color: var(--lowink-darktext);    
 }
 
 @keyframes openModal {

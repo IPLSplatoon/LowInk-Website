@@ -141,6 +141,7 @@ function getStandings(id){
             for (var i = 0; i < tournamentJson.stageIDs.length; i++){
 
                 const stageContainer = document.createElement("div");
+                stageContainer.setAttribute("class", "hof-stage-container");
 
                 const stagesUrl = `https://api.battlefy.com/stages/${tournamentJson.stageIDs[i]}/`;
                 const standingsUrl = `https://api.battlefy.com/stages/${tournamentJson.stageIDs[i]}/latest-round-standings`;
@@ -150,7 +151,7 @@ function getStandings(id){
                         return stagesResponse.json();
                     })
                     .then((stagesJson) => {
-                        const stageTitle = document.createElement("h3");
+                        const stageTitle = document.createElement("h2");
                         stageTitle.innerText = stagesJson.name;
                         stageContainer.appendChild(stageTitle);
                     })
@@ -179,10 +180,10 @@ function getStandings(id){
                                     const place = document.createElement("div");
                                     place.setAttribute("class", "hof-modal-team-place");
                                     if (standingsSorted[j].place != undefined){
-                                        place.innerText = standingsSorted[j].place;
+                                        place.innerText = standingsSorted[j].place + getPlaceEnding(standingsSorted[j].place);
                                     }
                                     else {
-                                        place.innerText = j+1;
+                                        place.innerText = j+1 + getPlaceEnding(j+1);
                                     }
                                     teamContainer.appendChild(place);
 
@@ -195,19 +196,19 @@ function getStandings(id){
                                     }
                                     teamContainer.appendChild(teamName);
 
-                                    if (standingsSorted[j].wins != undefined){
+                                    const numWins = standingsSorted[j].wins;
+                                    const numLosses = standingsSorted[j].losses;
+                                    if (numWins != undefined && numLosses != undefined){
                                         const wins = document.createElement("div");
                                         wins.setAttribute("class", "hof-modal-team-result");
-                                        wins.innerText = standingsSorted[j].wins;
+                                        wins.innerText = numWins + (numWins == 1 ? " win" : " wins");
                                         teamContainer.appendChild(wins);
-                                    }
 
-                                    if (standingsSorted[j].losses != undefined){
                                         const losses = document.createElement("div");
                                         losses.setAttribute("class", "hof-modal-team-result");
-                                        losses.innerText = standingsSorted[j].losses;
+                                        losses.innerText = numLosses + (numLosses == 1 ? " loss" : " losses");
                                         teamContainer.appendChild(losses);
-                                    }
+                                    }   
 
                                     stageContainer.appendChild(teamContainer);
                                 }
@@ -221,4 +222,13 @@ function getStandings(id){
                 modalContent.appendChild(stageContainer);
             }
         });
+}
+
+function getPlaceEnding(num){
+    switch(num){
+        case 1: return "st";
+        case 2: return "nd";
+        case 3: return "rd";
+        default: return "th";
+    }
 }
