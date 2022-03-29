@@ -132,95 +132,120 @@ function getStandings(id){
     modalClose.addEventListener("click", function(){
         modalRoot.remove();
     })
+    
+    const teamsUrl = `https://api.battlefy.com/tournaments/${id}/teams`;
 
-    fetch("https://api.battlefy.com/tournaments/" + id)
-        .then(tournamentResponse =>{
-            return tournamentResponse.json();
+    fetch(teamsUrl)
+        .then(teamsResponse => {
+            return teamsResponse.json();
         })
-        .then((tournamentJson) => {
-            for (var i = 0; i < tournamentJson.stageIDs.length; i++){
+        .then((teamsJson) => {
 
-                const stageContainer = document.createElement("div");
-                stageContainer.setAttribute("class", "hof-stage-container");
+            fetch("https://api.battlefy.com/tournaments/" + id)
+                .then(tournamentResponse =>{
+                    return tournamentResponse.json();
+                })
+                .then((tournamentJson) => {
+                    for (var i = 0; i < tournamentJson.stageIDs.length; i++){
 
-                const stagesUrl = `https://api.battlefy.com/stages/${tournamentJson.stageIDs[i]}/`;
-                const standingsUrl = `https://api.battlefy.com/stages/${tournamentJson.stageIDs[i]}/latest-round-standings`;
+                        const stageContainer = document.createElement("div");
+                        stageContainer.setAttribute("class", "hof-stage-container");
 
-                fetch(stagesUrl)
-                    .then(stagesResponse =>{
-                        return stagesResponse.json();
-                    })
-                    .then((stagesJson) => {
-                        const stageTitle = document.createElement("h2");
-                        stageTitle.innerText = stagesJson.name;
-                        stageContainer.appendChild(stageTitle);
-                    })
-                    .then( function() {
-
-                        fetch(standingsUrl)
-                            .then(standingsResponse =>{
-                                return standingsResponse.json();
+                        const stagesUrl = `https://api.battlefy.com/stages/${tournamentJson.stageIDs[i]}/`;
+                        const standingsUrl = `https://api.battlefy.com/stages/${tournamentJson.stageIDs[i]}/latest-round-standings`;
+                        
+                        fetch(stagesUrl)
+                            .then(stagesResponse =>{
+                                return stagesResponse.json();
                             })
-                            .then((standingsJson) => {
-                                const standingsSorted = standingsJson.sort(function(a,b){
-                                    return a.place - b.place;
-                                });
+                            .then((stagesJson) => {
+                                const stageTitle = document.createElement("h2");
+                                stageTitle.innerText = stagesJson.name;
+                                stageContainer.appendChild(stageTitle);
+                            })
+                            .then( function() {
+        
+                                fetch(standingsUrl)
+                                    .then(standingsResponse =>{
+                                        return standingsResponse.json();
+                                    })
+                                    .then((standingsJson) => {
+                                        const standingsSorted = standingsJson.sort(function(a,b){
+                                            return a.place - b.place;
+                                        });
+        
+                                        var lighten = false;
+        
+                                        for (var j = 0; j < standingsSorted.length; j++){
+                                            const teamContainer = document.createElement("div");
+                                            teamContainer.setAttribute("class", "hof-modal-team-container");
+        
+                                            if(lighten){
+                                                teamContainer.style = "background-color: #FFFFFF10";
+                                            }
+                                            lighten = !lighten;
+        
+                                            const place = document.createElement("div");
+                                            place.setAttribute("class", "hof-modal-team-place");
+                                            if (standingsSorted[j].place != undefined){
+                                                place.innerText = standingsSorted[j].place + getPlaceEnding(standingsSorted[j].place);
+                                            }
+                                            else {
+                                                place.innerText = j+1 + getPlaceEnding(j+1);
+                                            }
+                                            teamContainer.appendChild(place);
 
-                                var lighten = false;
+                                            const teamNameString = standingsSorted[j].team.name;
 
-                                for (var j = 0; j < standingsSorted.length; j++){
-                                    const teamContainer = document.createElement("div");
-                                    teamContainer.setAttribute("class", "hof-modal-team-container");
-
-                                    if(lighten){
-                                        teamContainer.style = "background-color: #FFFFFF10";
-                                    }
-                                    lighten = !lighten;
-
-                                    const place = document.createElement("div");
-                                    place.setAttribute("class", "hof-modal-team-place");
-                                    if (standingsSorted[j].place != undefined){
-                                        place.innerText = standingsSorted[j].place + getPlaceEnding(standingsSorted[j].place);
-                                    }
-                                    else {
-                                        place.innerText = j+1 + getPlaceEnding(j+1);
-                                    }
-                                    teamContainer.appendChild(place);
-
-                                    const teamName =  document.createElement("div");
-                                    teamName.setAttribute("class", "hof-modal-team-name");
-                                    if (standingsSorted[j].team.name.length > 43){
-                                        teamName.innerText = standingsSorted[j].team.name.substring(0,40) + "…";
-                                    } else {
-                                        teamName.innerText = standingsSorted[j].team.name;
-                                    }
-                                    teamContainer.appendChild(teamName);
-
-                                    const numWins = standingsSorted[j].wins;
-                                    const numLosses = standingsSorted[j].losses;
-                                    if (numWins != undefined && numLosses != undefined){
-                                        const wins = document.createElement("div");
-                                        wins.setAttribute("class", "hof-modal-team-result");
-                                        wins.innerText = numWins + (numWins == 1 ? " win" : " wins");
-                                        teamContainer.appendChild(wins);
-
-                                        const losses = document.createElement("div");
-                                        losses.setAttribute("class", "hof-modal-team-result");
-                                        losses.innerText = numLosses + (numLosses == 1 ? " loss" : " losses");
-                                        teamContainer.appendChild(losses);
-                                    }   
-
-                                    stageContainer.appendChild(teamContainer);
+                                            for (var k = 0; k < teamsJson.length; k++){
+                                                if (teamsJson[k].name == teamNameString){
+                                                    if (teamsJson[k].persistentTeam.logoUrl == ""){
+                                                        break;
+                                                    }
+                                                    const teamImage = document.createElement("img");
+                                                    teamImage.setAttribute("class", "hof-modal-team-image");
+                                                    teamImage.setAttribute("src", teamsJson[k].persistentTeam.logoUrl);
+                                                    teamContainer.appendChild(teamImage);
+                                                    break;
+                                                }
+                                            }
+        
+                                            const teamName =  document.createElement("div");
+                                            teamName.setAttribute("class", "hof-modal-team-name");
+                                            if (teamNameString.length > 43){
+                                                teamName.innerText = teamNameString.substring(0,40) + "…";
+                                            } else {
+                                                teamName.innerText = teamNameString;
+                                            }
+                                            teamContainer.appendChild(teamName);
+        
+                                            const numWins = standingsSorted[j].wins;
+                                            const numLosses = standingsSorted[j].losses;
+                                            if (numWins != undefined && numLosses != undefined){
+                                                const wins = document.createElement("div");
+                                                wins.setAttribute("class", "hof-modal-team-result");
+                                                wins.innerText = numWins + (numWins == 1 ? " win" : " wins");
+                                                teamContainer.appendChild(wins);
+        
+                                                const losses = document.createElement("div");
+                                                losses.setAttribute("class", "hof-modal-team-result");
+                                                losses.innerText = numLosses + (numLosses == 1 ? " loss" : " losses");
+                                                teamContainer.appendChild(losses);
+                                            }   
+        
+                                            stageContainer.appendChild(teamContainer);
+                                        }
+        
+                                        loadingText.remove();
+                                        modalContent.style.display = "block";
+        
+                                    });
+                                    
                                 }
-
-                                loadingText.remove();
-                                modalContent.style.display = "block";
-
-                            });
-                    }
-                );
-                modalContent.appendChild(stageContainer);
-            }
+                            );
+                            modalContent.appendChild(stageContainer);
+                        }
+                });
         });
 }
 
