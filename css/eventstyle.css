@@ -22,6 +22,7 @@
     margin: 12px;
     cursor: pointer;
     position: relative;
+    transition-duration: .2s;
 }
 .register-button:hover{
     box-shadow: 0 0 20px 6px var(--lowink-orange-glow);
@@ -108,6 +109,7 @@
     margin: -10px;
     border-radius: 20px;
     border: 2px solid var(--lowink-orange);
+    transition-duration: .2s;
 }
 .team-modal-close:hover{
     text-shadow: 0 0 10px var(--lowink-orange-glow);
@@ -127,6 +129,7 @@
     align-items: center;
     user-select: none;
     flex: 1 1 300px;
+    transition-duration: .2s;
 }
 @media only screen and (max-width: 500px) {
     .team-modal-button{
@@ -184,20 +187,4 @@
 .section-box-title{
     display: flex;
     flex-direction: row;
-}
-
-.section-box-collapse-button{
-    border: 4px solid var(--lowink-orange);
-    color: var(--lowink-orange);
-    border-radius: 100%;
-    width: 1.2em;
-    height: 1.2em;
-    text-align: center;
-    margin-right: 24px;
-    cursor: pointer;
-    user-select: none;
-    position: relative;
-}
-.section-box-collapse-button:hover{
-    box-shadow: 0 0 20px 4px var(--lowink-orange-glow);
 }

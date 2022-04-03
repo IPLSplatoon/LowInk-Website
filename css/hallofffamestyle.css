@@ -24,6 +24,13 @@
     flex: 1 1 300px;
     user-select: none;
     cursor: pointer;
+    transition-duration: .2s;
+    animation-name: animateTourneyIn;
+    animation-duration: .8s;
+    animation-timing-function: cubic-bezier(0, 0, 0.25, 1);
+    visibility: hidden;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
 }
 .section-box:hover{
     box-shadow: 0 0 25px 4px var(--lowink-orange-glow);
@@ -103,6 +110,7 @@ place {
 
 .hof-modal-bg{
     display: flex;
+    flex-direction: column;
     position: fixed;
     z-index: 1;
     overflow: auto;
@@ -205,6 +213,19 @@ place {
     width: 40px;
     text-align: left;
     color: var(--lowink-darktext);    
+}
+
+@keyframes animateTourneyIn {
+    from {
+        opacity: 0%;
+        margin-top: 8vw;
+        visibility: visible;
+    }
+    to {
+        opacity: 100%;
+        margin-top: 2vw;
+        visibility: visible;
+    }
 }
 
 @keyframes openModal {
