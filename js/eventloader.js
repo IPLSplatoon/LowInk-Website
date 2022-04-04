@@ -74,6 +74,11 @@ fetch(teamsEndpoint)
             const modalContent = document.createElement("div");
             modalContent.setAttribute("class", "team-modal-content");
 
+            const modalClose = document.createElement("div");
+            modalClose.setAttribute("class", "team-modal-close");
+            modalClose.innerText = "×";
+            modalRoot.appendChild(modalClose);
+
             const modalImage = document.createElement("img");
             modalImage.setAttribute("onerror", "this.onerror=null; this.style.display = 'none';");
             modalImage.setAttribute("src", teamsData[i].persistentTeam.logoUrl);
@@ -107,6 +112,9 @@ fetch(teamsEndpoint)
                     modalRoot.style.display = "none";
                 }
             });
+            modalClose.addEventListener("click", function(){
+                modalRoot.style.display = "none";
+            })
 
         }
 

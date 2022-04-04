@@ -1,3 +1,25 @@
+.event-info-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 32px;
+    border: 2px solid var(--lowink-orange);
+    padding: 8px 50px;
+    margin: 20px;
+    text-align: center;
+    background: linear-gradient(52deg, 
+        rgba(105, 62, 26, 0.22) 0%, 
+        rgba(243,112,2,0.35) 50%, 
+        rgba(143, 84, 36, 0.22) 100%);
+    box-shadow: 0 0 20px 6px var(--lowink-orange-glow);
+}
+@media only screen and (max-width: 500px) {
+    .event-info-box{
+        padding: 8px 8px;
+        margin: 10px;
+    }
+}
+
 .tourney-title{
     font-size: 3.5em;
     padding: 32px;
@@ -7,7 +29,7 @@
 
 .tourney-date{
     font-size: 2.2em;
-    padding: 12px;
+    padding: 20px;
     text-align: center;
 }
 
@@ -19,13 +41,15 @@
     background-color: var(--lowink-orange);
     border-radius: 24px;
     padding: 24px;
-    margin: 12px;
+    margin: 24px;
     cursor: pointer;
     position: relative;
     transition-duration: .2s;
 }
 .register-button:hover{
     box-shadow: 0 0 20px 6px var(--lowink-orange-glow);
+    padding: 28px;
+    margin: 20px;
 }
 
 .register-button img {
@@ -46,7 +70,7 @@
 .teams-body{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
     align-items: stretch;
     width: 100%;
@@ -102,18 +126,12 @@
     border-radius: 100%;
 }
 
-.team-modal-close{
-    font-size: 2em;
-    font-weight: bold;
-    padding: 6px;
-    margin: -10px;
-    border-radius: 20px;
-    border: 2px solid var(--lowink-orange);
-    transition-duration: .2s;
-}
-.team-modal-close:hover{
-    text-shadow: 0 0 10px var(--lowink-orange-glow);
+.team-modal-close {
+    font-size: 64px;
     cursor: pointer;
+    position: fixed;
+    top: 32px;
+    left: 32px;
 }
 
 .team-modal-button{
