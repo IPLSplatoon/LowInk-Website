@@ -22,14 +22,14 @@
 
 .tourney-title{
     font-size: 3.5em;
-    padding: 32px;
+    padding: 16px;
     text-shadow: 0 0 6px var(--lowink-orange-glow);
     text-align: center;
 }
 
 .tourney-date{
     font-size: 2.2em;
-    padding: 20px;
+    padding: 12px;
     text-align: center;
 }
 
@@ -37,23 +37,24 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    font-size: 1.3em;
+    font-size: 1.2em;
     background-color: var(--lowink-orange);
     border-radius: 24px;
-    padding: 24px;
-    margin: 24px;
+    padding: 16px;
+    margin: 12px;
     cursor: pointer;
     position: relative;
     transition-duration: .2s;
+    font-weight: 600;
 }
 .register-button:hover{
     box-shadow: 0 0 20px 6px var(--lowink-orange-glow);
-    padding: 28px;
-    margin: 20px;
+    padding: 18px;
+    margin: 10px;
 }
 
 .register-button img {
-    height: 1.6em;
+    height: 1.3em;
     width: auto;
     padding-right: 12px;
 }
@@ -205,4 +206,44 @@
 .section-box-title{
     display: flex;
     flex-direction: row;
+    align-items: center;
+    padding-top: 0;
+}
+
+.section-box-collapse-button{
+    background-color: var(--lowink-orange);
+    border-style: none;
+    border-radius: 100%;
+    color: var(--lowink-darkgrey);
+    font-size: .9em;
+    width: 1.5em;
+    height: 1.5em;
+    padding: 0;
+    margin-left: auto;
+    cursor: pointer;
+    transition-duration: .1s;
+}
+.section-box-collapse-button:hover{
+    box-shadow: 0 0 15px 3px var(--lowink-orange-glow);
+}
+.section-box-collapse-button:active{
+    transform: rotate(10deg);
+    color: var(--lowink-orange);
+}
+
+.section-box-divider {
+    transition: max-width 0.3s ease-in-out, margin 0.3s ease-in-out;
+    max-width: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.section-box-content {
+    transition: max-height 0.3s ease-in-out;
+    max-height: 0;
+    overflow: hidden;
+}
+
+.tourney-rules li{
+    font-weight: 500;
 }

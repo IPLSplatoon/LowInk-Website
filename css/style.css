@@ -233,6 +233,7 @@ a{
     animation-name: upcomingEventGlow;
     animation-duration: 2s;
     animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
     transition-duration: .3s;
 }
 .reg-box:hover{

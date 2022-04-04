@@ -22,6 +22,8 @@ fetch(tourneyEndPoint)
 
         document.getElementById("tourney-title").innerText = tourneyData.name;
         document.getElementById("tourney-schedule").innerHTML = tourneyData.schedule;
+        document.getElementById("tourney-rules").innerHTML = tourneyData.rules.complete;
+        
 
         const dayOneDate = new Date(tourneyData.startTime);
         const dayTwoDate = new Date(dayOneDate);
@@ -122,3 +124,28 @@ fetch(teamsEndpoint)
     .catch(function(){
         window.location.href = "index.html";
     });
+
+
+//add collapsables
+const buttons = document.getElementsByClassName("section-box-collapse-button");
+for (var i = 0; i < buttons.length; i++){
+    buttons[i].addEventListener("click", function() {
+        var content = document.getElementById(this.id + "-content");
+        if (content.style.maxHeight){
+            content.style.maxHeight = null;
+            this.innerText = "▼";
+        } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+            this.innerText = "▲";
+        } 
+        var divider = document.getElementById(this.id + "-divide");
+        if (divider.style.maxWidth){
+            divider.style.maxWidth = null;
+            divider.style.margin = null;
+        } else {
+            divider.style.maxWidth = content.scrollWidth + "px";
+            divider.style.margin = "12px 0 12px 0";
+
+        }
+    });
+}
