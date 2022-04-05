@@ -232,7 +232,7 @@
 }
 
 .section-box-divider {
-    transition: max-width 0.3s ease-in-out, margin 0.3s ease-in-out;
+    transition: max-width 0.2s ease-in-out, margin 0.2s ease-in-out;
     max-width: 0;
     margin: 0;
     overflow: hidden;

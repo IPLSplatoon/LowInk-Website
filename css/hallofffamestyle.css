@@ -21,6 +21,7 @@
 }
 
 .section-box {
+    position: relative;
     flex: 1 1 300px;
     user-select: none;
     cursor: pointer;
@@ -161,6 +162,7 @@ place {
         padding: 0;
         overflow-x: hidden;
         max-height: 75vh;
+        max-width: 95vw;
     }
 }
 @media only screen and (min-width: 600px) {
@@ -194,11 +196,6 @@ place {
     text-align: left;
     overflow-wrap: break-word;
 }
-@media only screen and (max-width: 600px) {
-    .hof-modal-team-name {
-        max-width: 40%;
-    }
-}
 
 .hof-modal-team-result{
     margin: 2px 0 2px 10px;
@@ -215,15 +212,39 @@ place {
     color: var(--lowink-darktext);    
 }
 
+@media only screen and (max-width: 600px) {
+    .hof-modal-team-name {
+        max-width: 40%;
+        font-size: 1em;
+        padding: 0;
+        line-height: 1.25em;
+    }
+    
+    .hof-modal-team-result{
+        margin: 2px 0 2px 10px;
+        font-size: .7em;
+    }
+    
+    .hof-modal-team-place{
+        margin: 0 8px 0 0;
+        font-size: .8em;
+        width: 30px;
+    }
+
+    .hof-modal-team-container{
+        padding: 5px 10px;
+    }
+}
+
 @keyframes animateTourneyIn {
     from {
         opacity: 0%;
-        margin-top: 8vw;
+        top: 10vh;
         visibility: visible;
     }
     to {
         opacity: 100%;
-        margin-top: 2vw;
+        top: 0vh;
         visibility: visible;
     }
 }
