@@ -9,6 +9,7 @@ fetch("https://iplabs.ink/LowInk-Website/halloffame.json")
         for (var i = 0; i < json.hallOfFame.length; i++){
             const rootElement = document.createElement("div");
             rootElement.setAttribute("class","section-box");
+            rootElement.setAttribute("style", `animation-delay: ${i * .2}s;`);
 
             if (json.hallOfFame[i].id != undefined){
                 rootElement.setAttribute("onclick", `getStandings("${json.hallOfFame[i].id}")`);
@@ -138,6 +139,7 @@ function getStandings(id){
             return tournamentResponse.json();
         })
         .then((tournamentJson) => {
+
             for (var i = 0; i < tournamentJson.stageIDs.length; i++){
 
                 const stageContainer = document.createElement("div");
@@ -152,6 +154,7 @@ function getStandings(id){
                     })
                     .then((stagesJson) => {
                         const stageTitle = document.createElement("h2");
+                        stageTitle.id = stagesJson.name;
                         stageTitle.innerText = stagesJson.name;
                         stageContainer.appendChild(stageTitle);
                     })

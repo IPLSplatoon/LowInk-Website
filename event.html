@@ -53,33 +53,36 @@
     <div class="divider"></div>
     <div class="page-body">
         <div class="page-gradient">
-            
-            <div class="tourney-title" id="tourney-title"></div>
-            <div class="tourney-date" id="tourney-date"></div>
-            <div class="register-button">
-                <img src="svg/battlefy.svg">
-                <p>Register on Battlefy</p>
-                <a id="register-button">
-                    <span class="clickable"></span>
-                </a>
+            <div class="event-info-box">
+                <div class="tourney-title" id="tourney-title"></div>
+                <div class="tourney-date" id="tourney-date"></div>
+                <div class="register-button">
+                    <img src="svg/battlefy.svg">
+                    <p>Register on Battlefy</p>
+                    <a id="register-button">
+                        <span class="clickable"></span>
+                    </a>
+                </div>
             </div>
 
             <div class="section-box">
                 <div class="section-box-title">
                     Schedule
+                    <button class="section-box-collapse-button" id="collapse-schedule">▼</button>
                 </div>
-                <div class="section-box-divider"></div>
-                <div class="section-box-content" id="schedule-content">
+                <div class="section-box-divider" id="collapse-schedule-divide"></div>
+                <div class="section-box-content" id="collapse-schedule-content">
                     <div class="tourney-schedule" id="tourney-schedule"></div>
                 </div>
             </div>
 
             <div class="section-box">
                 <div class="section-box-title">
-                    Registered Teams
+                    <div style="display:inline;">Registered Teams</div>
+                    <button class="section-box-collapse-button" id="collapse-teams">▼</button>
                 </div>
-                <div class="section-box-divider"></div>
-                <div class="section-box-content" id="teams-content">
+                <div class="section-box-divider" id="collapse-teams-divide"></div>
+                <div class="section-box-content" id="collapse-teams-content">
                     <h2 id="teams-count"></h2>
                     <div class="teams-body" id="teams-body">
 
@@ -98,6 +101,18 @@
                     </div>
                 </div>
             </div>
+
+            <div class="section-box">
+                <div class="section-box-title">
+                    Rules
+                    <button class="section-box-collapse-button" id="collapse-rules">▼</button>
+                </div>
+                <div class="section-box-divider" id="collapse-rules-divide"></div>
+                <div class="section-box-content" id="collapse-rules-content">
+                    <div class="tourney-rules" id="tourney-rules"></div>
+                </div>
+            </div>
+
             <script src="js/eventloader.js"></script>
         </div>
     </div>
