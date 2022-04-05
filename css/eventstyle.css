@@ -216,8 +216,8 @@
     border-radius: 100%;
     color: var(--lowink-darkgrey);
     font-size: .9em;
-    width: 1.5em;
-    height: 1.5em;
+    min-width: 1.5em;
+    min-height: 1.5em;
     padding: 0;
     margin-left: auto;
     cursor: pointer;
@@ -239,11 +239,21 @@
 }
 
 .section-box-content {
-    transition: max-height 0.3s ease-in-out;
+    transition: max-height ease-in-out;
+    transition-duration: .3s;
     max-height: 0;
     overflow: hidden;
 }
 
-.tourney-rules li{
+.tourney-rules{
+    font-size: .8em;
+    line-height: 1.4em;
     font-weight: 500;
+    max-height: 70vh;
+    overflow-y: scroll;
+    border-top: 2px ridge var(--lowink-orange);
+    border-bottom: 2px ridge var(--lowink-orange);
+    padding: 8px;
+    margin: 8px;
+    word-break: break-all;
 }

@@ -52,7 +52,7 @@ fetch(teamsEndpoint)
 
         const body = document.getElementById("teams-body");
 
-        document.getElementById("teams-count").innerText = teamsData.length + " teams";
+        document.getElementById("teams-count").innerText = `${teamsData.length} teams`;
 
         for (var i = 0; i < teamsData.length; i++){
 
@@ -131,6 +131,7 @@ const buttons = document.getElementsByClassName("section-box-collapse-button");
 for (var i = 0; i < buttons.length; i++){
     buttons[i].addEventListener("click", function() {
         var content = document.getElementById(this.id + "-content");
+        content.style.transitionDuration = content.scrollHeight * .5 + "ms";
         if (content.style.maxHeight){
             content.style.maxHeight = null;
             this.innerText = "▼";
