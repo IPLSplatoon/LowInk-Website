@@ -255,5 +255,8 @@
     border-bottom: 2px ridge var(--lowink-orange);
     padding: 8px;
     margin: 8px;
+}
+
+.tourney-rules a{
     word-break: break-all;
 }
