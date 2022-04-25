@@ -1,6 +1,16 @@
 {
     "hallOfFame":[
         {
+            "name": "April 2022",
+            "teams": "72",
+            "first": "Molly Whoppers",
+            "second": "DElicious Nuggets",
+            "third": "aquatic vanguard",
+            "beta": "Freelancing Takoyaki",
+            "gamma": "Natural Moonlight",
+            "id": "6247a1b52b7fa6066d2aa144"
+        },
+        {
             "name": "March 2022",
             "teams": "68",
             "first": "Blazing Storm",
