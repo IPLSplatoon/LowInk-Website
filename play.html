@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
+        <title>Low Ink Hall of Fame</title>
+        <meta content="Low Ink Hall of Fame" property="og:title" />
+        <meta content="View the results of past Low Ink events." property="og:description" />
+        <meta content="https://lowink.iplabs.ink/halloffame" property="og:url" />
+        <meta content="https://lowink.iplabs.ink/assets/logo.png" property="og:image" />
+        <meta content="#F37002" data-react-helmet="true" name="theme-color" />
+        <script src="https://kit.fontawesome.com/66a42373e4.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/playstyle.css">
+        <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="arrows-bg">
+        <div class="page-gradient" id="real-body">
+            <div class="header-wrapper">
+                <div class="header-logo">
+                    <a href="index.html">
+                        <span class="clickable"></span>
+                    </a>
+                    <img src="assets/logo.png"/>
+                    <div>LOW INK</div>
+                </div>
+                <div class="header-nav">
+                    <div class="play selected">
+                        <i class="fa-solid fa-gamepad"></i>
+                        <br>Play Low Ink
+                        <a href="play.html">
+                            <span class="clickable"></span>
+                        </a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-circle-info"></i>
+                        <br>How To Play
+                        <a href="howtoplay.html">
+                            <span class="clickable"></span>
+                        </a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-tv"></i>
+                        <br>Watch
+                        <a href="watch.html">
+                            <span class="clickable"></span>
+                        </a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-trophy"></i>
+                        <br>Hall Of Fame
+                        <a href="halloffame.html">
+                            <span class="clickable"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="page-title" id="page-title">
+                <i class="fa-solid fa-gamepad"></i>&nbsp;Play Low Ink
+            </div>
+            
+            <div class="no-load" id="no-load" style="display: none;">
+                <div class="section-box">
+                    <div class="section-box-title">
+                        Registration Currently not Open
+                    </div>
+                    <div class="section-box-divider"></div>
+                    <div class="section-box-content">
+                        <p>Registration for Low Ink is currently not open right now. This is likely because an event has recently occurred.</p>
+                        <p>Interested in playing Low Ink? Keep an eye on our Discord where we post announcements regarding registration. Make sure you get the Low Ink role from the rules and roles channel!</p> 
+                        <p>Registration typically opens at the start of each month.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-box" id="load" style="display: none;">
+                <div class="section-box-title tabs-wrapper" id="tabs-wrapper">
+                    <button class="tab active">Register</button>
+                    <button class="tab">Teams</button>
+                    <button class="tab">Schedule</button>
+                    <button class="tab">Rules</button>
+                </div>
+                <div id="content-group">
+                    <div class="section-box-content register-content" id="register-content">
+                        <p style="font-size: 1.5em;">Low Ink will be taking place on <b id="dates"></b> this month.</p>
+                        <p>First, join the Discord to gain access to important announcements and access to the helpdesk channel.</p>
+                        <button class="register-button" onclick="window.location='https://iplabs.ink/discord'">Join Discord</button>
+                        <p>Next, register on this month's Battlefy page to officially register for this month's event.</p>
+                        <button id="register-button" class="register-button">Register on Battlefy</button>
+                        <p style="font-size: .8em;">If this is your first time playing Low Ink, please check out the guide on <a href="howtoplay.html">how to play</a> to familiarize yourself with registering and playing in Low Ink.</p>
+                    </div>
+                    <div class="section-box-content" id="teams-content" style="display: none;">
+                        <div class="team-count" id="teams-count"></div>
+                        <div class="teams-box" id="teams-box"></div>
+                    </div>
+                    <div class="section-box-content tourney-schedule" id="schedule-content" style="display: none;">
+                    </div>
+                    <div class="section-box-content tourney-rules" id="rules-content" style="display: none;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/playloader.js"></script>
+
+    <div class="footer-wrapper">
+        <a href="https://iplabs.ink/">
+            <img style="height: 50px;"src="svg/ipl-powered.svg"/>
+        </a>
+        <p>Low Ink is a part of the Inkling Performance Labs family.
+        <br>
+        Designed by the IPL team.
+        </p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,120 @@
+:root{
+    --header-size: 60vh;
+}
+
+.index-header{
+    height: var(--header-size);
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.header-video-wrapper{
+    position: absolute;
+    z-index: -10;
+    min-height: inherit;
+}
+
+.header-video-wrapper > .video-filter{
+    backdrop-filter: blur(8px) brightness(60%) grayscale(70%);
+    background: linear-gradient(52deg, rgba(198,90,0,0.1) 0%, rgba(198,90,0,0.36) 100%);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    min-height: inherit;
+}
+
+.header-video-wrapper video{
+    display: block;
+    width: 100vw;
+    max-width: 100%;
+    height: var(--header-size);
+    min-height: inherit;
+    object-fit: cover;
+}
+
+.header-arrows{
+    position: absolute;
+    z-index: -9;
+    width: 100%;
+    height: var(--header-size);
+    background-image: url(../assets/bgtileable_trans.png);
+    background-size: 300px auto;
+    background-attachment: fixed;
+    animation-name: bgScroll;
+    animation-direction: forwards;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.logo-wrapper{
+    max-width: 60em;
+    height: var(--header-size);
+    min-height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: calc(.4vw + .6em);
+    margin: 0 2em 0 2em;
+}
+
+.pre-logo{
+    font-size: 3em;
+    margin-bottom: .3em;
+    opacity: 0;
+    animation: logoSlideIn .5s forwards;
+    animation-delay: .2s;
+}
+
+.index-header-logo{
+    display: flex;
+    flex-direction: row;
+    font-size: 6em;
+    font-family: 'LEMON MILK', sans-serif;
+    white-space: nowrap;
+    opacity: 0;
+    animation: logoSlideIn .5s forwards;
+    animation-delay: .4s;
+}
+
+.index-header-logo img{
+    height: 1.3em;
+    width: auto;
+    margin-right: .24em;
+    border-radius: 100%;
+    box-shadow: 0 0 .3em .05em var(--lowink-orange-glow);
+}
+
+.post-logo{
+    font-size: 1.8em;
+    margin-top: .5em;
+    opacity: 0;
+    animation: logoSlideIn .5s forwards;
+    animation-delay: .7s;
+}
+
+@keyframes logoSlideIn {
+    from{
+        transform: translate(0, 1.5em);
+        opacity: 0%;
+    }
+    to{
+        transform: translate(0, 0);
+        opacity: 100%;
+    }
+}
+
+.index-nav {
+    font-size: 1.4em;
+    padding: .5em 0 .5em 0;
+    background: var(--lowink-grey);
+    border: .12em solid var(--lowink-orange);
+    border-left: none;
+    border-right: none;
+}
+
+.page-gradient{
+    padding: 2em .2em;
+}

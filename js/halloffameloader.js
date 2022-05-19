@@ -9,7 +9,7 @@ fetch("https://iplabs.ink/LowInk-Website/halloffame.json")
         for (var i = 0; i < json.hallOfFame.length; i++){
             const rootElement = document.createElement("div");
             rootElement.setAttribute("class","section-box");
-            rootElement.setAttribute("style", `animation-delay: ${i * .2}s;`);
+            rootElement.setAttribute("style", `animation-delay: ${Math.min(i * .1, 1) + .2}s;`);
 
             if (json.hallOfFame[i].id != undefined){
                 rootElement.setAttribute("onclick", `getStandings("${json.hallOfFame[i].id}")`);

@@ -14,46 +14,55 @@
         <meta content="https://lowink.iplabs.ink/howtoplay" property="og:url" />
         <meta content="https://lowink.iplabs.ink/assets/logo.png" property="og:image" />
         <meta content="#F37002" data-react-helmet="true" name="theme-color" />
+        <script src="https://kit.fontawesome.com/66a42373e4.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="css/style.css">
         <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <div class="header-wrapper">
-        <div class="header-logo">
-            <a href="index.html">
-                <span class="clickable"></span>
-            </a>
-            <img src="assets/logo.png"/>
-            <div>LOW INK</div>
-        </div>
-        <div class="header-nav">
-            <div style="background-color: #f36e028e;">
-                <img src="svg/info.svg">
-                <br>How To Play
-                <a href="howtoplay.html">
-                    <span class="clickable"></span>
-                </a>
-            </div>
-            <div>
-                <img src="svg/watch.svg">
-                <br>Watch
-                <a href="watch.html">
-                    <span class="clickable"></span>
-                </a>
-            </div>
-            <div>
-                <img src="svg/halloffame.svg">
-                <br>Hall Of Fame
-                <a href="halloffame.html">
-                    <span class="clickable"></span>
-                </a>
-            </div>
-        </div>
-    </div>
-    <div class="divider"></div>
-    <div class="page-body">
+    <div class="arrows-bg">
         <div class="page-gradient">
-            
+            <div class="header-wrapper">
+                <div class="header-logo">
+                    <a href="index.html">
+                        <span class="clickable"></span>
+                    </a>
+                    <img src="assets/logo.png"/>
+                    <div>LOW INK</div>
+                </div>
+                <div class="header-nav">
+                    <div class="play">
+                        <i class="fa-solid fa-gamepad"></i>
+                        <br>Play Low Ink
+                        <a href="play.html">
+                            <span class="clickable"></span>
+                        </a>
+                    </div>
+                    <div class="selected">
+                        <i class="fa-solid fa-circle-info"></i>
+                        <br>How To Play
+                        <a href="howtoplay.html">
+                            <span class="clickable"></span>
+                        </a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-tv"></i>
+                        <br>Watch
+                        <a href="watch.html">
+                            <span class="clickable"></span>
+                        </a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-trophy"></i>
+                        <br>Hall Of Fame
+                        <a href="halloffame.html">
+                            <span class="clickable"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="page-title">
+                <i class="fa-solid fa-circle-info"></i>&nbsp;How to Play in Low Ink
+            </div>
             <div class="section-box">
                 <div class="section-box-title">Getting Started</div>
                 <div class="section-box-divider"></div>
@@ -69,7 +78,7 @@
                 <div class="section-box-content">
                     <p>Low Ink registration typically opens at the start of each month. If info on the next event is shown on this website’s home page, then you’re able to register! If not, then you’ll need to wait for the staff to open it.</p>
                     <p>Low Ink is hosted using Discord and a site called Battlefy. Most communication and announcements are made on the <a href="https://discord.gg/aRtHqgqzcW">Inkling Performance Labs Discord</a>, while all the brackets and matches are handled on Battlefy.</p>
-                    <p>To register for Low Ink, you need to visit the Low Ink Battlefy. A quick way to visit the Low Ink Battlefy is to go to play.iplabs.ink/li. Once there, click the red registration button on the right, it might be on the bottom if you’re on mobile. Only one person from a team needs to register!</p>
+                    <p>To register for Low Ink, you need to visit the Low Ink Battlefy. A quick way to visit the Low Ink Battlefy is to go to <a href="https://play.iplabs.ink/li">play.iplabs.ink/li</a>. Once there, click the red registration button on the right, it might be on the bottom if you’re on mobile. Only one person from a team needs to register!</p>
                     <img src="howtoplay_img/0.png">
                     <p>Once there, you’ll be prompted with the rules. Please read through them!</p>
                     <p>Past that page, you’ll be promoted to select which team you’d like to register with; or you have the option to make a new team!</p>
@@ -101,12 +110,13 @@
     </div>
     <div class="divider"></div>
     <div class="footer-wrapper">
-        <img style="height: 50px;"src="svg/ipl-powered.svg"/>
+        <a href="https://iplabs.ink/">
+            <img style="height: 50px;"src="svg/ipl-powered.svg"/>
+        </a>
         <p>Low Ink is a part of the Inkling Performance Labs family.
             <br>
             Designed by the IPL team.
         </p>
-        <a style="color: white;" href="https://iplabs.ink/">iplabs.ink</a>
     </div>
 </body>
 </html>
