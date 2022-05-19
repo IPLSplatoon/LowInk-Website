@@ -1,4 +1,5 @@
 const tournamentEndpoint = 'https://search.battlefy.com/tournament/organization/5c6dbd2da605be0329ecf36a/upcoming?page=1&size=9';
+const buffer = document.getElementById("buffer");
 
 fetch(tournamentEndpoint)
 .then((response) => {
@@ -32,10 +33,12 @@ fetch(tournamentEndpoint)
         console.error(e);
         document.getElementById("no-load").style.display = "block";
     }
+    buffer.style.display = "none";
 })
 .catch(function(e){
     console.error(e);
-    document.getElementById("no-load").style.display = "block"
+    document.getElementById("no-load").style.display = "block";
+    buffer.style.display = "none";
 });
 
 

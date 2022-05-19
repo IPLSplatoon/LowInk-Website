@@ -2,12 +2,25 @@
     --header-size: 60vh;
 }
 
+@media only screen and (max-width: 600px) {
+    :root{
+        --header-size: 50vh;
+    }
+}
+
 .index-header{
     height: var(--header-size);
     min-height: 500px;
     display: flex;
     justify-content: center;
     box-sizing: border-box;
+}
+
+@media only screen and (max-width: 600px) {
+    .index-header{
+        min-height: 0;
+        font-size: 2.8vw;
+    }
 }
 
 .header-video-wrapper{
@@ -33,12 +46,17 @@
     min-height: inherit;
     object-fit: cover;
 }
+@media (prefers-reduced-motion) {
+    .header-video-wrapper video{
+        visibility: hidden;
+    }
+}
 
 .header-arrows{
     position: absolute;
     z-index: -9;
     width: 100%;
-    height: var(--header-size);
+    height: 100%;
     background-image: url(../assets/bgtileable_trans.png);
     background-size: 300px auto;
     background-attachment: fixed;
@@ -47,6 +65,13 @@
     animation-duration: 15s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
+}
+
+@media (prefers-reduced-motion) {
+    .header-arrows{
+        animation: none;
+        opacity: 100;
+    }
 }
 
 .logo-wrapper{
@@ -95,6 +120,20 @@
     animation-delay: .7s;
 }
 
+@media only screen and (max-width: 600px) {
+    .post-logo{
+        margin-top: 1em;
+        font-size: 2.8em;
+    }
+}
+
+@media (prefers-reduced-motion) {
+    .pre-logo, .index-header-logo, .post-logo{
+        animation: none;
+        opacity: 100;
+    }
+}
+
 @keyframes logoSlideIn {
     from{
         transform: translate(0, 1.5em);
@@ -117,4 +156,14 @@
 
 .page-gradient{
     padding: 2em .2em;
+}
+
+@media only screen and (max-width: 600px) {
+    .page-gradient{
+        padding: 1em .2em;
+    }
+
+    .header-nav{
+        margin-top: 0;
+    }
 }

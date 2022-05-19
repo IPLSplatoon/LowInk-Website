@@ -1,3 +1,9 @@
+.buffer{
+    font-size: 2em;
+    margin-top: 10vh;
+    margin-bottom: 90vh;
+}
+
 .tabs-wrapper{
     display: flex;
     flex-direction: row;
@@ -12,7 +18,8 @@
     all: unset;
     margin: 0 .5em;
     padding: .6em;
-    padding-bottom: .6em;
+    padding-bottom: .4em;
+    margin-top: .2em;
     border: .1em solid var(--lowink-orange-glow);
     border-radius: 1em 1em 0 0;
     border-bottom: none;
@@ -22,16 +29,24 @@
 }
 
 .tab:hover{
-    transform: scale(1.08);
+    border-color: var(--lowink-orange);
 }
 
-.tab:active{
-    transform: scale(1.03)
+@media only screen and (max-width: 900px) {
+    .tabs-wrapper{
+        flex-wrap: wrap;
+        padding-bottom: 1em;
+    }
+
+    .tab{
+        border: .1em solid var(--lowink-orange-glow);
+        border-radius: 1em;
+        margin: .2em;
+    }
 }
 
 .active{
     background: var(--lowink-orange);
-    font-weight: 800;
 }
 
 .register-content{
@@ -40,7 +55,7 @@
 
 .register-button{
     all: unset;
-    margin: 0 .5em 1em 0;
+    margin: 0 .5em 1em .75em;
     padding: .6em;
     border: .1em solid var(--lowink-orange);
     border-radius: .8em;
@@ -117,6 +132,11 @@
     max-height: 60vh;
     min-width: 25vw;
     overflow: auto;
+}
+@media (prefers-reduced-motion) {
+    .team-modal-content {
+        animation: none;
+    }
 }
 
 .team-modal-content h2 {
