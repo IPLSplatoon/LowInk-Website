@@ -1,6 +1,7 @@
 :root{
     --lowink-grey: #2C2C2C;
     --lowink-header: #2c2c2c70;
+    --lowink-alt-header: #2c2c2ce5;
     --lowink-darkgrey: #1C1C1C;
     --lowink-orange: #F37002;
     --lowink-orange-glow: #f36e028e;
@@ -49,6 +50,11 @@ a{
     backdrop-filter: blur(12px) grayscale(70%);
     background: var(--lowink-header);
     border-bottom: .15em solid var(--lowink-orange);
+}
+@-moz-document url-prefix() {
+    .header-wrapper{
+        background: var(--lowink-alt-header);
+    }
 }
 
 .header-logo{

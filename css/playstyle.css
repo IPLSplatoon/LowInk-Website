@@ -116,6 +116,12 @@
     animation-name: fadeIn;
 }
 
+@-moz-document url-prefix() {
+    .team-modal{
+        background: var(--lowink-alt-header);
+    }
+}
+
 .team-modal-content {
     display: flex;
     flex-direction: column;

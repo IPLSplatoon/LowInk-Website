@@ -38,6 +38,17 @@
     min-height: inherit;
 }
 
+/*FIREFOX GET IT TOGETHER!!!!*/
+@-moz-document url-prefix() {
+    .header-video-wrapper > .video-filter{
+        z-index: 1;
+    }
+
+    .header-video-wrapper video{
+        filter: blur(8px) brightness(60%) grayscale(70%);
+    }
+}
+
 .header-video-wrapper video{
     display: block;
     width: 100vw;
@@ -51,6 +62,7 @@
         visibility: hidden;
     }
 }
+
 
 .header-arrows{
     position: absolute;

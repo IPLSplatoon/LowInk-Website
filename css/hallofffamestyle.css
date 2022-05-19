@@ -133,6 +133,11 @@ place {
     animation-duration: .2s;
     animation-name: fadeIn;
 }
+@-moz-document url-prefix() {
+    .hof-modal-bg{
+        background: var(--lowink-alt-header);
+    }
+}
 
 .hof-modal-close {
     font-size: 4em;
