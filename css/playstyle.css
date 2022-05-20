@@ -40,8 +40,9 @@
 
     .tab{
         border: .1em solid var(--lowink-orange-glow);
-        border-radius: 1em;
+        border-radius: .75em;
         margin: .2em;
+        padding: .4em;
     }
 }
 
@@ -177,13 +178,14 @@
     align-items: center;
     user-select: none;
     flex: 1 1 300px;
-    transition-duration: .2s;
+    transition-duration: .1s;
 }
 @media only screen and (max-width: 500px) {
     .team-modal-button{
         flex-direction: row;
         max-width: 100%;
-        margin: 3px 0 0 0;
+        margin: .5em 0 0 0;
+        border-width: .1em;
     }
 }
 .team-modal-button:hover{

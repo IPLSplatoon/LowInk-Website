@@ -172,6 +172,13 @@ a{
     }
 }
 
+@media screen and (max-width: 600px) {
+    .arrows-bg{
+        background-size: 150px auto;
+        animation-duration: 30s;
+    }
+}
+
 
 .page-gradient{
     background: radial-gradient(circle, #00000000 0%, #00000000 40%, var(--lowink-orange-gradient) 100%);
@@ -208,6 +215,8 @@ a{
 @media only screen and (max-width: 600px) {
     .page-title{
         font-size: 2em;
+        padding-top: 1.4em;
+        padding-bottom: 1.4em;
     }
 }
 

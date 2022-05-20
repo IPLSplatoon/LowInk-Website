@@ -53,6 +53,12 @@
     }
 }
 
+@media only screen and (max-width: 1200px) {
+    .header-video-wrapper video{
+        filter: blur(8px) brightness(60%) grayscale(70%);
+    }
+}
+
 
 .header-arrows{
     position: absolute;
@@ -73,6 +79,14 @@
     .header-arrows{
         animation: none;
         opacity: 100;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .header-arrows{
+        background-size: 150px auto;
+        animation-duration: 30s;
     }
 }
 
@@ -149,7 +163,7 @@
 
 .index-nav {
     font-size: 1.4em;
-    padding: .5em 0 .5em 0;
+    padding: .5em 2em .5em 2em;
     background: var(--lowink-grey);
     border: .12em solid var(--lowink-orange);
     border-left: none;
