@@ -97,6 +97,7 @@ function fetchTeams(id){
             const modalButtonImg = document.createElement("img");
             modalButtonImg.setAttribute("onerror", "this.onerror=null; this.src='assets/logo.png';");
             modalButtonImg.setAttribute("src", teamsData[i].persistentTeam.logoUrl);
+            modalButtonImg.setAttribute("loading", "lazy");
             modalButtonRoot.appendChild(modalButtonImg);
 
             const modalButtonName = document.createElement("p");
