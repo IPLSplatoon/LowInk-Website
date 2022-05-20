@@ -35,6 +35,14 @@
 }
 .section-box:hover{
     box-shadow: 0 0 25px 4px var(--lowink-orange-glow);
+    transform: scale(1.02);
+}
+
+@media (prefers-reduced-motion) {
+    .section-box {
+        animation: none !important;
+        visibility: visible !important;
+    }
 }
 
 .section-box-content {
@@ -113,23 +121,25 @@ place {
     display: flex;
     flex-direction: column;
     position: fixed;
-    z-index: 1;
+    z-index: 200;
     overflow: auto;
-    background: radial-gradient(circle, rgba(45,20,0,0.82) 0%, rgba(0,0,0,0.82) 100%);
+    background: var(--lowink-modal-bg);
+    backdrop-filter: blur(12px) grayscale(40%);
     width: 100%;
     height: 100%;
     left: 0;
     top: 0;
     align-items: center;
     justify-content: center;
-    animation-duration: .3s;
+    animation-duration: .2s;
     animation-name: fadeIn;
 }
 
 .hof-modal-close {
-    font-size: 64px;
+    font-size: 4em;
     cursor: pointer;
     position: fixed;
+    text-shadow: 0 0 .1em var(--lowink-orange);
     top: 32px;
     left: 32px;
 }
@@ -145,23 +155,32 @@ place {
     text-align: center;
     animation-duration: .4s;
     animation-name: openModal;
-    max-height: 60vh;
+    max-height: 70vh;
     min-width: 40vw;
     overflow: auto;
 }
+@media (prefers-reduced-motion) {
+    .hof-modal-content {
+        animation: none;
+    }
+}
 @media only screen and (max-width: 600px) {
+    .hof-modal-bg{
+        justify-content: flex-end;
+    }
+
     .hof-modal-close {
-        font-size: 48px;
+        font-size: 3.5em;
         cursor: pointer;
         position: fixed;
-        top: 16px;
-        left: 16px;
+        top: .1em;
+        left: .3em;
     }
 
     .hof-modal-content {
         padding: 0;
         overflow-x: hidden;
-        max-height: 75vh;
+        max-height: calc(100vh - 5em);
         max-width: 95vw;
     }
 }

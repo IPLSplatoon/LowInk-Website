@@ -1,28 +1,61 @@
-//info https://api.battlefy.com/tournaments/
-//teams https://api.battlefy.com/tournaments//teams
+const tournamentEndpoint = 'https://search.battlefy.com/tournament/organization/5c6dbd2da605be0329ecf36a/upcoming?page=1&size=9';
+const buffer = document.getElementById("buffer");
 
-const urlParams = new URLSearchParams(window.location.search);
-const param = urlParams.get('id');
+fetch(tournamentEndpoint)
+.then((response) => {
+    return response.json();
+})
+.then((searchResponse) => {
 
-if (param == null){
-    window.location.href = "index.html";
-}
+    if (searchResponse.total == 0){
+        throw 'no tournaments found';
+    }
 
-const tourneyEndPoint = "https://api.battlefy.com/tournaments/" + param;
+    var tournament;
+    for(var i = 0; i < searchResponse.tournaments.length; i++){
+        if (searchResponse.tournaments[i].name.includes("Low Ink")){
+            tournament = searchResponse.tournaments[i];
+        }
+    }
 
-fetch(tourneyEndPoint)
+    if (tournament == null){
+        throw 'tournament was null';
+    }
+
+
+    const id = tournament._id;
+
+    try{
+        fetchTourney(id);
+        fetchTeams(id);
+        document.getElementById("load").style.display = "block";
+    } catch (e) {
+        console.error(e);
+        document.getElementById("no-load").style.display = "block";
+    }
+    buffer.style.display = "none";
+})
+.catch(function(e){
+    console.error(e);
+    document.getElementById("no-load").style.display = "block";
+    buffer.style.display = "none";
+});
+
+
+const tourneyEndPoint = "https://api.battlefy.com/tournaments/";
+
+function fetchTourney(id){
+    const endPoint = tourneyEndPoint + id;
+
+    fetch(endPoint)
     .then((tourneyResponse) => {
         return tourneyResponse.json();
     })
     .then((tourneyData) => {
-        if (!tourneyData.name.includes("Low Ink")){
-            window.location.href = "index.html";
-        }
 
-
-        document.getElementById("tourney-title").innerText = tourneyData.name;
-        document.getElementById("tourney-schedule").innerHTML = tourneyData.schedule;
-        document.getElementById("tourney-rules").innerHTML = tourneyData.rules.complete;
+        document.getElementById("page-title").innerText = tourneyData.name;
+        document.getElementById("schedule-content").innerHTML = tourneyData.schedule;
+        document.getElementById("rules-content").innerHTML = tourneyData.rules.complete;
         
 
         const dayOneDate = new Date(tourneyData.startTime);
@@ -30,27 +63,29 @@ fetch(tourneyEndPoint)
         const dateOptionsOne = {month: 'long', day: 'numeric'};
         const dateOptionsTwo = {month: 'long', day: 'numeric', year: 'numeric'};
         dayTwoDate.setHours(dayOneDate.getHours() + 24);
-        document.getElementById("tourney-date").innerText = 
+        document.getElementById("dates").innerText = 
             new Intl.DateTimeFormat('en', dateOptionsOne).format(dayOneDate) + " - " +
             new Intl.DateTimeFormat('en', dateOptionsTwo).format(dayTwoDate);
 
-        document.getElementById("register-button").setAttribute("href", 
-            "https://battlefy.com/inkling-performance-labs/" + tourneyData.slug + "/" + tourneyData._id + "/");
+        document.getElementById("register-button").setAttribute("onclick", 
+            "window.location='https://battlefy.com/inkling-performance-labs/" + tourneyData.slug + "/" + tourneyData._id + "/info?infoTab=schedule';");
     })
     .catch(function(){
-        window.location.href = "index.html";
+        throw 'request failed';
     });
+}
 
+function fetchTeams(id){
+    const teamsEndpoint = `${tourneyEndPoint}${id}/teams`;
 
-const teamsEndpoint = "https://api.battlefy.com/tournaments/" + param + "/teams";
-
-fetch(teamsEndpoint)
+    fetch(teamsEndpoint)
     .then((teamsResponse) => {
         return teamsResponse.json();
     })
     .then((teamsData) => {
 
-        const body = document.getElementById("teams-body");
+        const body = document.getElementById("teams-box");
+        const modalBody = document.getElementById("real-body");
 
         document.getElementById("teams-count").innerText = `${teamsData.length} teams`;
 
@@ -62,6 +97,7 @@ fetch(teamsEndpoint)
             const modalButtonImg = document.createElement("img");
             modalButtonImg.setAttribute("onerror", "this.onerror=null; this.src='assets/logo.png';");
             modalButtonImg.setAttribute("src", teamsData[i].persistentTeam.logoUrl);
+            modalButtonImg.setAttribute("loading", "lazy");
             modalButtonRoot.appendChild(modalButtonImg);
 
             const modalButtonName = document.createElement("p");
@@ -102,7 +138,7 @@ fetch(teamsEndpoint)
             modalContent.appendChild(modalText);
 
             modalRoot.appendChild(modalContent);
-            body.appendChild(modalRoot);
+            modalBody.appendChild(modalRoot);
 
 
             modalButtonRoot.onclick = function() {
@@ -122,31 +158,28 @@ fetch(teamsEndpoint)
 
     })
     .catch(function(){
-        window.location.href = "index.html";
+        throw 'request failed';
     });
+}
 
 
-//add collapsables
-const buttons = document.getElementsByClassName("section-box-collapse-button");
-for (var i = 0; i < buttons.length; i++){
-    buttons[i].addEventListener("click", function() {
-        var content = document.getElementById(this.id + "-content");
-        content.style.transitionDuration = content.scrollHeight * .5 + "ms";
-        if (content.style.maxHeight){
-            content.style.maxHeight = null;
-            this.innerText = "▼";
-        } else {
-            content.style.maxHeight = content.scrollHeight + "px";
-            this.innerText = "▲";
-        } 
-        var divider = document.getElementById(this.id + "-divide");
-        if (divider.style.maxWidth){
-            divider.style.maxWidth = null;
-            divider.style.margin = null;
-        } else {
-            divider.style.maxWidth = content.scrollWidth + "px";
-            divider.style.margin = "12px 0 12px 0";
 
+//make tabs worky work
+const tabs = document.getElementById("tabs-wrapper").children;
+
+for (var i = 0; i < tabs.length; i++){
+    tabs[i].addEventListener("click", function(){
+        for (var i = 0; i < tabs.length; i++){
+            tabs[i].classList.remove("active");
         }
+        this.classList.add("active");
+
+        const contentGroup = document.getElementById("content-group");
+        for (var i = 0; i < contentGroup.children.length; i++){
+            contentGroup.children[i].style.display = "none";
+        }
+
+        const tabContent = document.getElementById(this.innerText.toLowerCase() + "-content");
+        tabContent.style.display = "block";
     });
 }

@@ -13,35 +13,58 @@
     <meta content="https://lowink.iplabs.ink/" property="og:url" />
     <meta content="https://lowink.iplabs.ink/assets/logo.png" property="og:image" />
     <meta content="#F37002" data-react-helmet="true" name="theme-color" />
+    <script src="https://kit.fontawesome.com/66a42373e4.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/indexstyle.css">
     <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <div class="header-wrapper">
-        <div class="header-logo">
-            <a href="index.html">
-                <span class="clickable"></span>
-            </a>
-            <img src="assets/logo.png"/>
-            <div>LOW INK</div>
+    <header class="index-header">
+        <div class="header-video-wrapper">
+            <div class="video-filter"></div>
+            <video id="header-video" preload="none" loading="lazy" autoplay loop playsinline muted class="header-video" src="https://files.iplabs.work/file/iplabs-public/LowInk/lowink_site_header.mp4"></video>
+            <script>
+                const video = document.getElementById('header-video');
+                const times = [0, 10, 25, 37, 57, 74, 94];
+                video.currentTime = times[Math.floor(Math.random() * times.length)];
+                video.play();
+            </script>
         </div>
-        <div class="header-nav">
+        <div class="header-arrows"></div>
+        <div class="logo-wrapper">
+            <div class="pre-logo">Welcome to</div>
+            <div class="index-header-logo">
+                <img src="assets/logo.png" alt="Low Ink Logo">
+                <div>LOW INK</div>
+            </div>
+            <div class="post-logo">A Splatoon 2 tournament for newer and lower level players.</div>
+        </div>
+    </header>
+    <div class="index-nav">
+        <div class="index-header-nav header-nav">
+            <div class="play">
+                <i class="fa-solid fa-gamepad"></i>
+                <br>Play Low Ink
+                <a href="play.html">
+                    <span class="clickable"></span>
+                </a>
+            </div>
             <div>
-                <img src="svg/info.svg">
+                <i class="fa-solid fa-circle-info"></i>
                 <br>How To Play
                 <a href="howtoplay.html">
                     <span class="clickable"></span>
                 </a>
             </div>
             <div>
-                <img src="svg/watch.svg">
+                <i class="fa-solid fa-tv"></i>
                 <br>Watch
                 <a href="watch.html">
                     <span class="clickable"></span>
                 </a>
             </div>
             <div>
-                <img src="svg/halloffame.svg">
+                <i class="fa-solid fa-trophy"></i>
                 <br>Hall Of Fame
                 <a href="halloffame.html">
                     <span class="clickable"></span>
@@ -49,18 +72,8 @@
             </div>
         </div>
     </div>
-    <div class="divider"></div>
-    <div class="page-body">
+    <div class="arrows-bg">
         <div class="page-gradient">
-            <div style="display: none" class="reg-box" id="reg-box">
-                <h1>Upcoming Event:</h1>
-                <h2 id="reg-box-title">Temp</h2>
-                <h3 id="reg-box-info">Temp</h3>
-                <a id="reg-box-link">
-                    <span class="clickable"></span>
-                </a>
-                <h4>View more ►</h4>
-            </div>
             <div class="section-box">
                 <div class="section-box-title">
                     About
@@ -76,20 +89,19 @@
                         • Multiple brackets on Day 2 for the top cut of teams, with placements determined by day 1 performance.<br>
                         • Quality live stream and commentary with a focus on introducing competitive Splatoon to newcomers.
                         </p>
-                    <p>If you’re new to Low Ink and want to play, please check out our guide on how to play!</p>
+                    <p>If you’re new to Low Ink and want to play, please check out our <a href="howtoplay.html">guide on how to play!</a></p>
                 </div>
             </div>
         </div>
-        <script src="js/gettourney.js"></script>
     </div>
-    <div class="divider"></div>
     <div class="footer-wrapper">
-        <img style="height: 50px;"src="svg/ipl-powered.svg"/>
+        <a href="https://iplabs.ink/">
+            <img style="height: 50px;"src="svg/ipl-powered.svg"/>
+        </a>
         <p>Low Ink is a part of the Inkling Performance Labs family.
             <br>
             Designed by the IPL team.
         </p>
-        <a href="https://iplabs.ink/">iplabs.ink</a>
     </div>
 </body>
 </html>
