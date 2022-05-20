@@ -106,7 +106,7 @@
     z-index: 200;
     overflow: auto;
     backdrop-filter: blur(12px) brightness(60%) grayscale(40%);
-    background: var(--lowink-alt-header);
+    background: var(--lowink-modal-bg);
     width: 100%;
     height: 100%;
     left: 0;
@@ -115,12 +115,6 @@
     justify-content: center;
     animation-duration: .2s;
     animation-name: fadeIn;
-}
-
-@-moz-document url-prefix() {
-    .team-modal{
-        background: var(--lowink-alt-header);
-    }
 }
 
 .team-modal-content {

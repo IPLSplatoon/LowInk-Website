@@ -7,6 +7,7 @@
     --lowink-orange-glow: #f36e028e;
     --lowink-orange-gradient: #f36e0221;
     --lowink-text: #FFFFFF;
+    --lowink-modal-bg: #1c1c1c9d;
 
     font-family: 'Montserrat', sans-serif;
     font-size: 22px;
@@ -50,11 +51,6 @@ a{
     backdrop-filter: blur(12px) grayscale(70%);
     background: var(--lowink-header);
     border-bottom: .15em solid var(--lowink-orange);
-}
-@-moz-document url-prefix() {
-    .header-wrapper{
-        background: var(--lowink-alt-header);
-    }
 }
 
 .header-logo{
