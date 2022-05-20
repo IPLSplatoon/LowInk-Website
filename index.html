@@ -22,7 +22,12 @@
     <header class="index-header">
         <div class="header-video-wrapper">
             <div class="video-filter"></div>
-            <video id="header-video" preload="none" loading="lazy" autoplay loop playsinline muted class="header-video" src="https://files.iplabs.work/file/iplabs-public/LowInk/temp_site_header.webm"></video>
+            <video id="header-video" preload="none" loading="lazy" autoplay loop playsinline muted class="header-video" src="https://files.iplabs.work/file/iplabs-public/LowInk/lowink_site_header.mp4"></video>
+            <script>
+                const video = document.getElementById('header-video');
+                const times = [0, 10, 25, 37, 57, 74, 94];
+                video.currentTime = times[Math.floor(Math.random() * times.length)];
+            </script>
         </div>
         <div class="header-arrows"></div>
         <div class="logo-wrapper">
