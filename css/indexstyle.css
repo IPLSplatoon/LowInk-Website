@@ -44,8 +44,9 @@
     width: 100vw;
     max-width: 100%;
     height: var(--header-size);
-    min-height: inherit;
+    min-height: inherit;    
     object-fit: cover;
+    animation: videoFadeIn 1.5s forwards;
 }
 @media (prefers-reduced-motion) {
     .header-video-wrapper video{
@@ -59,6 +60,14 @@
     }
 }
 
+@keyframes videoFadeIn {
+    0% {
+        filter: blur(64px) brightness(60%) grayscale(70%);
+        opacity: 0;
+    }
+    50%{ filter: blur(12px) brightness(60%) grayscale(70%); }
+    100% { opacity: 1; }
+}
 
 .header-arrows{
     position: absolute;
