@@ -46,7 +46,7 @@
     height: var(--header-size);
     min-height: inherit;    
     object-fit: cover;
-    animation: videoFadeIn 1.5s forwards;
+    opacity: 0;
 }
 @media (prefers-reduced-motion) {
     .header-video-wrapper video{
@@ -58,6 +58,10 @@
     .header-video-wrapper video{
         filter: blur(8px) brightness(60%) grayscale(70%);
     }
+}
+
+.header-video-anim{
+    animation: videoFadeIn 1.2s forwards;
 }
 
 @keyframes videoFadeIn {

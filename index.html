@@ -27,7 +27,10 @@
                 const video = document.getElementById('header-video');
                 const times = [0, 10, 25, 37, 57, 74, 94];
                 video.currentTime = times[Math.floor(Math.random() * times.length)];
-                video.play();
+                video.addEventListener("loadeddata", function(){
+                    this.classList.add("header-video-anim");
+                    video.play();
+                });
             </script>
         </div>
         <div class="header-arrows"></div>
