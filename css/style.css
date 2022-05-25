@@ -185,6 +185,7 @@ a{
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 1em;
 }
 
 .page-title{
@@ -244,6 +245,7 @@ a{
     animation: sectionBoxSlideIn .5s forwards;
     animation-delay: .2s;
     opacity: 0;
+    scroll-margin-top: 8em;
 }
 @media only screen and (max-width: 600px) {
     .section-box{

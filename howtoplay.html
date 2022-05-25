@@ -21,7 +21,7 @@
 <body>
     <div class="arrows-bg">
         <div class="page-gradient">
-            <div class="header-wrapper">
+            <div class="header-wrapper" id="header-wrapper">
                 <div class="header-logo">
                     <a href="index.html">
                         <span class="clickable"></span>
@@ -63,46 +63,88 @@
             <div class="page-title">
                 <i class="fa-solid fa-circle-info"></i>How to Play in Low Ink
             </div>
-            <div class="section-box">
+
+            <div class="section-box" style="margin-bottom: 6em;">
+                <div class="section-box-title" style="font-size: 1.4em;">Navigation</div>
+                <div class="section-box-divider"></div>
+                <div class="section-box-content" style="text-align: center;">
+                    <script>
+                        function scrollTo(id){
+                            document.querySelector("#"+id).scrollIntoView({y: 10, block:"start", behavior: 'smooth'});
+                        }
+                    </script>
+                    <p><a href="javascript:scrollTo('getting-started');">Getting Started</a></p>
+                    <p><a href="javascript:scrollTo('intro-to-low-ink');">Introduction to Low Ink</a></p>
+                    <p><a href="javascript:scrollTo('low-ink-format');">Low Ink’s Format</a></p>
+                    <p><a href="javascript:scrollTo('registering');">Registering for Low Ink</a></p>
+                    <p><a href="javascript:scrollTo('playing');">Playing Low Ink</a></p>
+                </div> 
+            </div>
+            
+            <div class="section-box" id="getting-started">
                 <div class="section-box-title">Getting Started</div>
                 <div class="section-box-divider"></div>
                 <div class="section-box-content">
-                    <p>Before getting started, it's important to note that Low Ink is a 2 day event for Splatoon teams. Before registering, you must form a team, or join another team. Ensure you or enough of your teammates are free for both days of Low Ink.</p>
-                    <p>To form a team, most people find success on Splatoon community discord servers. We recommend getting started at <a href="https://discord.gg/aRtHqgqzcW">Inkling Performance Labs</a>, which is the discord server Low Ink is managed in. It features channels to help people form or join Splatoon teams. You should also check out the <a href="https://discord.gg/sVBkYSs4rv">Inkademy</a>, which is a server to help newer competitive Splatoon players learn. Those are not the only places to find people, but they’re great starting points!</p>
+                    <p>Welcome to Low Ink!</p>
+                    <p>Before you get started, it’s important to understand that Low Ink is a 2 day tournament for newer and lower level competitive splatoon teams. Before you register, you need to form your own team, or join an existing one. Each team in Low Ink can hold 8 members, and you may swap between players as needed throughout the tourney. Ensure you have at least 4 players available to play for both days of Low Ink!</p>
+                    <p>If you’re new to the competitive Splatoon community, it can be pretty daunting to find a team at first! Typically most people find success on community Discord servers. Some have channels dedicated to letting “Free agents”, or players looking to join a team, advertise themselves. The Discord server Low Ink is managed in, called Inkling Performance Labs, has free agent and team post channels, so whether you’re making a team or planning to join an existing one, you can start your search here! <a href="https://iplabs.ink/discord">Join the Inkling Performance Labs Discord.</a></p>
                 </div>
             </div>
 
-            <div class="section-box">
+            <div class="section-box" id="intro-to-low-ink">
+                <div class="section-box-title">Introduction to Low Ink</div>
+                <div class="section-box-divider"></div>
+                <div class="section-box-content">
+                    <p>Low Ink is a long-running Splatoon 2 and soon to be Splatoon 3 tournament with a goal of introducing competitive Splatoon to newer and lower level teams. The tournament’s format was carefully created to give all teams plenty of games with a variety of teams, so you can make connections with teams around your skill level and find quality practices both in and out of the event.</p>
+                    <p>Low Ink famously has a skill cap that bans players who are beyond the “low level” part of the community. This is achieved via a dedicated staff team that checks over all players that register for Low Ink. Tournament results are looked into and if a player is too good for Low Ink, they’ll be kicked out. The vast players who are new to the community are allowed. Keep in mind that solo rank isn’t considered for this skill cap.</p>
+                </div>
+            </div>
+
+            <div class="section-box" id="low-ink-format">
+                <div class="section-box-title">Low Ink’s Format</div>
+                <div class="section-box-divider"></div>
+                <div class="section-box-content">
+                    <p>As previously mentioned, Low Ink has a carefully created format that allows teams to get as many games as possible.</p>
+                    <p><b>For Day 1:</b><br>Day 1 features what is called a “swiss format”. There will be 6 rounds (or less depending on number of teams) total throughout the day. All teams will play all rounds regardless of how many wins or losses they have. Each round has 3 games, and you play all 3 games per round. As the event progresses, the format will start to pair teams with similar win/loss ratios. So you should start finding teams very close to your skill level by the end of day 1!</p>
+                    <p><b>For Day 2:</b><br>Day 2 features multiple brackets. Typically there are 3 brackets, called Alpha, Beta, and Gamma. There may be more or less depending on the number of teams. Each bracket is sorted by day 1 results. The top 16 best day 1 teams will move on to Alpha bracket, then the next 16 move to Beta, and the next 16 move to Gamma. Not all teams will make it to day 2.</p>
+                    <p>All brackets have identical rules, and feature what's called a “double elimination” format. This means you’ll go through a traditional tournament bracket, but if you lose a round, you move down to the “losers bracket”. Once you’re down there, you’ll be out once you lose a round again. Grand finals consist of the winner of the winners bracket and the losers bracket. The winner of the Alpha bracket is considered the winner of the entire event, while the other brackets are there to help build results and get more practice for teams.</p>
+                    <p>Here’s an example of what a bracket looks like. Taken from Low Ink May 2022 Alpha Bracket:</p>
+                    <img src="howtoplay_img/bracket.png">
+                </div>
+            </div>
+
+            <div class="section-box" id="registering">
                 <div class="section-box-title">Registering for Low Ink</div>
                 <div class="section-box-divider"></div>
                 <div class="section-box-content">
-                    <p>Low Ink registration typically opens at the start of each month. If info on the next event is shown on this website’s home page, then you’re able to register! If not, then you’ll need to wait for the staff to open it.</p>
-                    <p>Low Ink is hosted using Discord and a site called Battlefy. Most communication and announcements are made on the <a href="https://discord.gg/aRtHqgqzcW">Inkling Performance Labs Discord</a>, while all the brackets and matches are handled on Battlefy.</p>
-                    <p>To register for Low Ink, you need to visit the Low Ink Battlefy. A quick way to visit the Low Ink Battlefy is to go to <a href="https://play.iplabs.ink/li">play.iplabs.ink/li</a>. Once there, click the red registration button on the right, it might be on the bottom if you’re on mobile. Only one person from a team needs to register!</p>
+                    <p>Low Ink registration typically opens at the start of each month. You can check if it’s open by visiting the <a href="play.html">Play Low Ink</a> page of this website.</p>
+                    <p>Low Ink is hosted using Discord and a site called Battlefy. Most communication and announcements are made on the <a href="https://iplabs.ink/discord">Inkling Performance Labs Discord</a>, while all the brackets and matches are handled on Battlefy. Team captains are required to be in both the discord and registered for the event.</p>
+                    <p>To register for Low Ink, you need to visit the Low Ink Battlefy. You can find the Low Ink battlefy at the <a href="play.html">Play Low Ink</a> page. Once there, click the red registration button on the right, it might be on the bottom if you’re on mobile. Only one person from a team needs to register!</p>
                     <img src="howtoplay_img/0.png">
                     <p>Once there, you’ll be prompted with the rules. Please read through them!</p>
                     <p>Past that page, you’ll be promoted to select which team you’d like to register with; or you have the option to make a new team!</p>
                     <img src="howtoplay_img/1.png">
-                    <p>Once that has been handled, you’ll need to give us some info. All you need to do is enter your team captain’s discord tag, switch friend code, and let staff know you’ve agreed to the rules! The discord tag is used by our discord bot to assign important roles, so make sure it matches exactly!</p>
+                    <p>Once that’s been handled, you’ll need to give us some info. All you need to do is enter your team captain’s discord tag, switch friend code, and let staff know you’ve agreed to the rules! The discord tag is used by our discord bot to assign important roles, so make sure it matches exactly!</p>
                     <img src="howtoplay_img/2.png">
                     <p>If needed, you may invite your teammates to your Battlefy team via the link the site provides you.</p>
                     <img src="howtoplay_img/3.png">
-                    <p>Just to ensure you’ve got everyone in the right place, your team and registration status will now be visible on the main Low Ink battlefy page. Remember that all players you want playing must be on the roster, if they’re under “inactive team members”, they cannot play! You may not add players to your team’s roster after registration closes.</p>
+                    <p>To ensure everyone is in the right place, your team and registration status will now be visible on the main Low Ink battlefy page. Remember that all players you want playing must be on the roster, if they’re under “inactive team members”, they cannot play! You may not add players to your team’s roster after registration closes.</p>
                     <img src="howtoplay_img/4.png">
-                    <p>After registering, the team’s captain must join the  <a href="https://discord.gg/aRtHqgqzcW">Inkling Performance Labs Discord</a> to gain access to important announcements from staff! Remember to get the Low Ink role from the rules and roles channel to see the Low Ink channels.</p>
+                    <p>After registering, the team’s captain must join the <a href="https://iplabs.ink/discord">Inkling Performance Labs Discord</a> to gain access to important announcements from staff! Remember to get the Low Ink role from the rules and roles channel to see the Low Ink channels.</p>
                 </div>
             </div>
 
-            <div class="section-box">
+            <div class="section-box" id="playing">
                 <div class="section-box-title">Playing Low Ink</div>
                 <div class="section-box-divider"></div>
                 <div class="section-box-content">
-                    <p>When the day of the event arrives, it's important to follow instructions from discord announcements. They’ll remind you of important deadlines and info on the tournament’s progression. Keep an eye out for them!</p>
-                    <p>Before the event starts, all teams that are able to play must check into the tournament. Once you know enough of your team members can play, then you need to hit the check in button on the main Low Ink Battlefy page. It should be in the same spot where you handled registration.</p>
+                    <p>When the day of the event arrives, it's important to follow instructions from the Discord’s announcements channel. They’ll remind you of important deadlines and info on the tournament’s progression. Keep an eye out for them!</p>
+                    <p>Before the event starts, all teams that are able to play must check into the tournament. Once you know enough of your team members are available to play, then you need to hit the check in button on the main Low Ink Battlefy page. It should be in the same spot where you handled registration. Anyone on your team can check in.</p>
                     <img src="howtoplay_img/5.png">
                     <p>Once the tournament begins, you may find your match in Battlefy. There will be a button that says “go to match” on the main Low Ink Battlefy page. Once there, you have access to the match page. Here, you can chat with your opponents, access their friend code, and report scores. Go ahead and choose who hosts the private battle room, and start your round here!</p>
+                    <p>To know what map and mode you’re playing on, there is a maps channel in the Discord. Find which round you’re playing, and there'll be a map list for it!</p>
                     <img src="howtoplay_img/6.png">
-                    <p>If you have any issues come up during your match, please click the report match issue button and a staff member will visit to help resolve your issue! You may also ask for help in our discord in the li-helpdesk channel.</p>
+                    <p>If you have any issues come up during your match, please click the report match issue button and a staff member will visit to help resolve your issue! You may also ask for help in our discord in the #li-helpdesk channel.</p>
                 </div>
             </div>
 
