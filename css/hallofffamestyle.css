@@ -231,6 +231,13 @@ place {
     color: var(--lowink-darktext);    
 }
 
+.hof-modal-battlefy-link{
+    font-size: .7em;
+    background-color: var(--lowink-grey);
+    border-radius: .5em;
+    padding: .7em;
+}
+
 @media only screen and (max-width: 600px) {
     .hof-modal-team-name {
         max-width: 40%;

@@ -147,6 +147,7 @@ function getStandings(id){
 
                 const stagesUrl = `https://api.battlefy.com/stages/${tournamentJson.stageIDs[i]}/`;
                 const standingsUrl = `https://api.battlefy.com/stages/${tournamentJson.stageIDs[i]}/latest-round-standings`;
+                const battlefyUrl = `https://battlefy.com/inkling-performance-labs/${tournamentJson.slug}/${id}/stage/${tournamentJson.stageIDs[i]}/bracket`;
 
                 fetch(stagesUrl)
                     .then(stagesResponse =>{
@@ -157,6 +158,13 @@ function getStandings(id){
                         stageTitle.id = stagesJson.name;
                         stageTitle.innerText = stagesJson.name;
                         stageContainer.appendChild(stageTitle);
+
+                        const battlefyLink = document.createElement("a");
+                        battlefyLink.classList.add("hof-modal-battlefy-link");
+                        battlefyLink.setAttribute("href", battlefyUrl);
+                        battlefyLink.setAttribute("target", "_blank");
+                        battlefyLink.innerHTML = '<i class="fa-solid fa-link"></i> View on Battlefy';
+                        stageContainer.appendChild(battlefyLink);
                     })
                     .then( function() {
 
