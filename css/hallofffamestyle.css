@@ -255,6 +255,22 @@ place {
     }
 }
 
+.hof-modal-battlefy-link{
+    font-size: .8em;
+    padding: .7em;
+    margin: 1em;
+    border-radius: 1em;
+    background: var(--lowink-grey);
+    text-decoration: none;
+    border-color: var(--lowink-orange);
+    transition-duration: .2s;
+    user-select: none;
+}
+
+.hof-modal-battlefy-link:hover{
+    border: .05em solid var(--lowink-orange);
+}
+
 @keyframes animateTourneyIn {
     from {
         opacity: 0%;

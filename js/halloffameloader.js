@@ -157,6 +157,17 @@ function getStandings(id){
                         stageTitle.id = stagesJson.name;
                         stageTitle.innerText = stagesJson.name;
                         stageContainer.appendChild(stageTitle);
+
+                        console.log(tournamentJson);
+                        console.log(stagesJson);
+
+                        const battlefyLink = document.createElement("a");
+                        const battlefyURL = `https://battlefy.com/inkling-performance-labs/${tournamentJson.slug}/${tournamentJson._id}/stage/${stagesJson._id}/bracket/`;
+                        battlefyLink.setAttribute("href", battlefyURL); 
+                        battlefyLink.innerHTML = 'View on Battlefy&nbsp;&nbsp;<i class="fa-solid fa-arrow-up-right-from-square"></i>';
+                        battlefyLink.classList.add("hof-modal-battlefy-link");
+                        battlefyLink.setAttribute("target", "_blank");
+                        stageContainer.appendChild(battlefyLink);
                     })
                     .then( function() {
 
