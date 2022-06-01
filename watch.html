@@ -71,7 +71,7 @@
                 <div class="section-box-divider"></div>
                 <div class="section-box-content">
                     <p>You can watch Low Ink live at the Inkling Performance Labs Twitch. <a href="https://www.twitch.tv/iplsplatoon" style="color: white;">IPLSplatoon on Twitch.</a></p>
-                    <iframe src="https://player.twitch.tv/?channel=iplsplatoon&parent=lowink.iplabs.ink" frameborder="0" allowfullscreen="true" scrolling="no"></iframe>
+                    <iframe id="twitch-player" src="https://player.twitch.tv/?channel=iplsplatoon&parent=lowink.iplabs.ink" frameborder="0" allowfullscreen="true" scrolling="no"></iframe>
                 </div>
             </div>
             <div class="section-box">
@@ -79,9 +79,24 @@
                 <div class="section-box-divider"></div>
                 <div class="section-box-content">
                     <p>Past Low Ink recordings can be found on the Inkling Performance Labs Youtube channel. Below is a playlist of most of the past Low Ink events.</p>
-                    <iframe  src="https://www.youtube.com/embed/videoseries?list=PLsJtNA8co7rbmyETHtKbxFFf15xzGIyvY" title="Low Ink VODS" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe id="youtube-player" src="https://www.youtube.com/embed/videoseries?list=PLsJtNA8co7rbmyETHtKbxFFf15xzGIyvY" title="Low Ink VODS" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
+
+            <script>
+                const twitchPlayer = document.getElementById('twitch-player');
+                const youtubePlayer = document.getElementById('youtube-player');
+                function adjustSize(){
+                    const twitchWidth = twitchPlayer.parentElement.clientWidth;
+                    const twitchHeight = twitchWidth * 9 / 16;
+                    twitchPlayer.style.height = twitchHeight + 'px';
+                    const youtubeWidth = youtubePlayer.parentElement.clientWidth;
+                    const youtubeHeight = youtubeWidth * 9 / 16;
+                    youtubePlayer.style.height = youtubeHeight + 'px';
+                }
+                window.onresize = adjustSize;
+                adjustSize();
+            </script>
 
         </div>
     </div>
