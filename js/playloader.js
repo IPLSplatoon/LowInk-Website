@@ -68,7 +68,7 @@ function fetchTourney(id){
             new Intl.DateTimeFormat('en', dateOptionsTwo).format(dayTwoDate);
 
         document.getElementById("register-button").setAttribute("onclick", 
-            "window.location='https://battlefy.com/inkling-performance-labs/" + tourneyData.slug + "/" + tourneyData._id + "/info?infoTab=schedule';");
+            "window.open('https://battlefy.com/inkling-performance-labs/" + tourneyData.slug + "/" + tourneyData._id + "/info?infoTab=schedule', '_blank');");
     })
     .catch(function(){
         throw 'request failed';
