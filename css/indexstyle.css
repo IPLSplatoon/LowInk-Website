@@ -39,7 +39,7 @@
 }
 
 .header-video-wrapper video{
-    filter: blur(12px) brightness(60%) grayscale(70%);
+    filter: brightness(60%) grayscale(70%);
     display: block;
     width: 100vw;
     max-width: 100%;
@@ -54,12 +54,6 @@
     }
 }
 
-@media only screen and (max-width: 1200px) {
-    .header-video-wrapper video{
-        filter: blur(8px) brightness(60%) grayscale(70%);
-    }
-}
-
 .header-video-anim{
     animation: videoFadeIn 1.2s forwards;
 }
@@ -69,7 +63,6 @@
         filter: blur(64px) brightness(60%) grayscale(70%);
         opacity: 0;
     }
-    50%{ filter: blur(12px) brightness(60%) grayscale(70%); }
     100% { opacity: 1; }
 }
 

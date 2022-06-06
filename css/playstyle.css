@@ -129,8 +129,9 @@
     border: 2px solid var(--lowink-orange);
     line-height: 1.6em;
     text-align: center;
-    animation-duration: .4s;
+    animation-duration: .35s;
     animation-name: openModal;
+    animation-timing-function: cubic-bezier(0.22, 0.61, 0.36, 1);
     max-height: 60vh;
     min-width: 25vw;
     overflow: auto;
@@ -195,8 +196,9 @@
 .team-modal-button img{
     border-radius: 100%;
     margin: 0;
-    width: 64px;
-    height: 64px;
+    object-fit: cover;
+    width: 3.5em;
+    height: 3.5em;
 }
 @media only screen and (max-width: 500px) {
     .team-modal-button img{

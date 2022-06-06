@@ -21,10 +21,16 @@
 <body>
     <header class="index-header">
         <div class="header-video-wrapper">
-            <div class="video-filter"></div>
+            <div class="video-filter" id="video-filter"></div>
             <video id="header-video" preload="none" loading="lazy" autoplay loop playsinline muted class="header-video" src="https://files.iplabs.work/file/iplabs-public/LowInk/lowink_site_header.mp4"></video>
             <script>
                 const video = document.getElementById('header-video');
+
+                window.onresize = function(){
+                    video.style.filter = `blur(${Math.max(innerWidth/150, 7)}px) brightness(60%) grayscale(70%)`;
+                }
+                window.dispatchEvent(new Event('resize'));
+
                 const times = [0, 10, 25, 37, 57, 74, 94];
                 video.currentTime = times[Math.floor(Math.random() * times.length)];
                 video.addEventListener("loadeddata", function(){
