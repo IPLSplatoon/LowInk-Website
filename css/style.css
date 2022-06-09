@@ -1,6 +1,6 @@
 :root{
     --lowink-grey: #2C2C2C;
-    --lowink-header: #2c2c2c70;
+    --lowink-header: #2c2c2cd7;
     --lowink-alt-header: #2c2c2ce5;
     --lowink-darkgrey: #1C1C1C;
     --lowink-orange: #F37002;
@@ -41,7 +41,6 @@ a{
     position: sticky;
     z-index: 100;
     top: 0;
-    background: transparent;
     width: calc(100% - 2em);
     padding: .4em 1em .4em 1em;
     display: flex;
@@ -86,6 +85,10 @@ a{
     }
 }
 
+.header-nav-mobile-menu{
+    display: none;
+}
+
 .header-nav{
     display: flex;
     justify-content: center;
@@ -128,31 +131,58 @@ a{
 }
 
 @media only screen and (max-width: 700px) {
+    .header-nav-mobile-menu{
+        display: block;
+        font-size: 1.5em;
+        transition-duration: .1s;
+        cursor: pointer;
+    }
+    .header-nav-mobile-menu:hover{
+        transform: scale(1.1);
+    }
+    .header-nav-mobile-menu:active{
+        transform: scale(.85);
+    }
+
     .header-nav{
+        display: none;
+        margin-top: 1.5em;
         flex-wrap: wrap;
+        width: 100%;
     }
 
-    .header-nav:not(.index-header-nav){
-        justify-content: right;
-        width: 70%
-    }
-
-    .header-nav div{
-        white-space: nowrap;
-        margin: .2em;
+    .index-header-nav{
+        display: flex;
         font-size: .75em;
     }
 
-    .header-nav:not(.index-header-nav) div i{
-        display: none;
+    .index-header-nav div{
+        animation: none;
     }
 
-    .header-nav:not(.index-header-nav) div br{
-        display: none;
+    .header-nav div{
+        margin: .3em;
+        font-size: 1em;
+        animation: navButtonAppear .3s;
     }
 
     .header-nav div:not(:first-child){
-        margin-left: .2em;
+        margin: .3em;
+    }
+
+    .open{
+        display: block;
+    }
+
+    @keyframes navButtonAppear {
+        from{
+            opacity: 0;
+            transform: translateX(5em);
+        }
+        to{
+            opacity: 1;
+            transform: translateX(0);
+        }
     }
 }
 

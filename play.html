@@ -30,7 +30,8 @@
                     <img src="assets/logo.png"/>
                     <div>LOW INK</div>
                 </div>
-                <div class="header-nav">
+                <div class="header-nav-mobile-menu" id="header-nav-button"><i class="fa-solid fa-bars"></i></div>
+                <div class="header-nav" id="header-nav">
                     <div class="play selected">
                         <i class="fa-solid fa-gamepad"></i>
                         <br>Play Low Ink
@@ -60,6 +61,13 @@
                         </a>
                     </div>
                 </div>
+                <script>
+                    var headerNavButton = document.getElementById("header-nav-button");
+                    var headerNav = document.getElementById("header-nav");
+                    headerNavButton.addEventListener("click", function() {
+                        headerNav.classList.toggle("open");
+                    });
+                </script>
             </div>
             <div class="page-title" id="page-title">
                 <i class="fa-solid fa-gamepad"></i>Play Low Ink
