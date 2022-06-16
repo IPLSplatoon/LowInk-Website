@@ -292,6 +292,7 @@ a{
         border-left: none;
         border-right: none;
         width: -webkit-fill-available !important;
+        width: -moz-available !important;
     }
 }
 @media (prefers-reduced-motion) {
