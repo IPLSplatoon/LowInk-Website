@@ -17,12 +17,12 @@
     align-items: stretch;
     width: 100%;
     height: 100%;
-    max-width: 1700px;
+    max-width: 100ch;
 }
 
 .section-box {
     position: relative;
-    flex: 1 1 300px;
+    flex: 1 1 20ch;
     user-select: none;
     cursor: pointer;
     transition-duration: .2s;
@@ -34,7 +34,7 @@
     animation-iteration-count: 1;
 }
 .section-box:hover{
-    box-shadow: 0 0 25px 4px var(--lowink-orange-glow);
+    box-shadow: 0 0 1em .2em var(--lowink-orange-glow);
     transform: scale(1.02);
 }
 
@@ -52,7 +52,7 @@
 place {
     font-weight: bolder;
     font-size: 1.4em;
-    padding: 0 16px;
+    padding: 0 1ch;
 }
 .hof-beta place {
     font-size: 1.1em;
@@ -63,58 +63,41 @@ place {
 
 .section-box-content p{
     width: 100%;
-    padding: 0 16px;
+    padding: 0 1ch;
     text-align: right;
 }
 
-.hof-alpha1st{
-    border: 2px solid var(--first-gold);
-    border-radius: 20px;
-    margin: 8px 0;
-    background: linear-gradient(90deg, var(--first-gold) -100%, #00000000 100%);
-    /* box-shadow: 0 0 5px 1px var(--first-gold); */
+.hof-placeBox{
+    border: .1em solid;
+    border-radius: 1em;
+    margin: .5ch 0;
     display: flex;
     align-items: center;
+}
+
+.hof-alpha1st{
+    border-color: var(--first-gold);
+    background: linear-gradient(90deg, var(--first-gold) -100%, #00000000 100%);
 }
 
 .hof-alpha2nd{
-    border: 2px solid var(--second-silver);
-    border-radius: 20px;
-    margin: 8px 0;
+    border-color: var(--second-silver);
     background: linear-gradient(90deg, var(--second-silver) -100%, #00000000 100%);
-    /* box-shadow: 0 0 5px 1px var(--second-silver); */
-    display: flex;
-    align-items: center;
 }
 
 .hof-alpha3rd{
-    border: 2px solid var(--third-bronze);
-    border-radius: 20px;
-    margin: 8px 0;
+    border-color: var(--third-bronze);
     background: linear-gradient(90deg, var(--third-bronze) -100%, #00000000 100%);
-    /* box-shadow: 0 0 5px 1px var(--third-bronze); */
-    display: flex;
-    align-items: center;
 }
 
 .hof-beta{
-    border: 2px solid var(--beta-red);
-    border-radius: 20px;
-    margin: 8px 0;
+    border-color: var(--beta-red);
     background: linear-gradient(90deg, var(--beta-red) -100%, #00000000 100%);
-    /* box-shadow: 0 0 5px 1px var(--beta-red); */
-    display: flex;
-    align-items: center;
 }
 
 .hof-gamma{
-    border: 2px solid var(--gamma-green);
-    border-radius: 20px;
-    margin: 8px 0;
+    border-color: var(--gamma-green);
     background: linear-gradient(90deg, var(--gamma-green) -100%, #00000000 100%);
-    /* box-shadow: 0 0 5px 1px var(--gamma-green); */
-    display: flex;
-    align-items: center;
 }
 
 .hof-modal-bg{
@@ -140,17 +123,17 @@ place {
     cursor: pointer;
     position: fixed;
     text-shadow: 0 0 .1em var(--lowink-orange);
-    top: 32px;
-    left: 32px;
+    top: 1rem;
+    left: 1rem;
 }
 
 .hof-modal-content {
     align-items: center;
     background-color: var(--lowink-darkgrey);
-    border-radius: 20px;
-    box-shadow: 0 0 30px 10px var(--lowink-orange-glow);
-    padding: 40px;
-    border: 2px solid var(--lowink-orange);
+    border-radius: 2em;
+    box-shadow: 0 0 3em .25em var(--lowink-orange-glow);
+    padding: 2em;
+    border: .1em solid var(--lowink-orange);
     line-height: 1.6em;
     text-align: center;
     animation-duration: .4s;
@@ -187,12 +170,12 @@ place {
 @media only screen and (min-width: 600px) {
     .hof-modal-content::-webkit-scrollbar{
         background: #00000000;
-        width: 20px;
+        width: 1em;
     }
     .hof-modal-content::-webkit-scrollbar-thumb{
         background: var(--lowink-orange);
-        width: 20px;
-        border-radius: 10px;
+        width: 1em;
+        border-radius: .5em;
     }
     .hof-modal-content::-webkit-scrollbar-thumb:hover{
         background: var(--lowink-text);
@@ -203,30 +186,34 @@ place {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 8px;
-    border-radius: 6px;
+    padding: .5em;
+    border-radius: .25em;
     font-weight: 500;
 }
 
 .hof-modal-team-name{
     margin: 0 auto 0 0;
-    padding: 2px;
+    padding: .1em;
     font-size: 1.2em;
     text-align: left;
     overflow-wrap: break-word;
 }
 
 .hof-modal-team-result{
-    margin: 2px 0 2px 10px;
+    margin: .2em 0 .2em 0;
     font-size: .8em;
     color: var(--lowink-darktext);
 }
 
+.hof-modal-team-result:not(:first-child){
+    margin: .2em 0 .2em .5em;
+}
+
 .hof-modal-team-place{
     font-weight: 600;
-    margin: 2px 15px 2px 0;
+    margin-right: .5em;
     font-size: .9em;
-    width: 40px;
+    width: 2.5em;
     text-align: left;
     color: var(--lowink-darktext);    
 }
@@ -240,18 +227,11 @@ place {
     }
     
     .hof-modal-team-result{
-        margin: 2px 0 2px 10px;
         font-size: .7em;
     }
     
     .hof-modal-team-place{
-        margin: 0 8px 0 0;
         font-size: .8em;
-        width: 30px;
-    }
-
-    .hof-modal-team-container{
-        padding: 5px 10px;
     }
 }
 

@@ -86,7 +86,7 @@
 }
 
 .tourney-schedule p{
-    margin: 2px;
+    margin: .1em;
     text-align: center;
 }
 
@@ -123,18 +123,19 @@
     flex-direction: column;
     align-items: center;
     background-color: var(--lowink-darkgrey);
-    border-radius: 20px;
-    box-shadow: 0 0 30px 10px var(--lowink-orange-glow);
-    padding: 24px;
-    border: 2px solid var(--lowink-orange);
+    border-radius: 1em;
+    box-shadow: 0 0 3em .5em var(--lowink-orange-glow);
+    padding: 1em;
+    border: .1em solid var(--lowink-orange);
     line-height: 1.6em;
     text-align: center;
-    animation-duration: .35s;
+    animation-duration: .25s;
     animation-name: openModal;
     animation-timing-function: cubic-bezier(0.22, 0.61, 0.36, 1);
     max-height: 60vh;
     min-width: 25vw;
     overflow: auto;
+    position: relative;
 }
 @media (prefers-reduced-motion) {
     .team-modal-content {
@@ -143,17 +144,18 @@
 }
 
 .team-modal-content h2 {
-    margin: 8px;
+    margin: .3em;
 }
 
 .team-modal-content p {
-    margin: 8px;
+    margin: .3em;
 }
 
 .team-modal-content img{
-    margin: 8px;
-    width: 128px;
-    height: 128px;
+    margin: .3em;
+    object-fit: cover;
+    width: 8em;
+    height: 8em;
     border-radius: 100%;
 }
 
@@ -162,15 +164,15 @@
     cursor: pointer;
     position: fixed;
     text-shadow: 0 0 .1em var(--lowink-orange);
-    top: 32px;
-    left: 32px;
+    top: .25em;
+    left: .25em;
 }
 
 .team-modal-button{
-    border: 2px solid var(--lowink-orange);
-    border-radius: 16px;
-    padding: 8px;
-    margin: 8px;
+    border: .1em solid var(--lowink-orange-glow);
+    border-radius: 1em;
+    padding: .5em;
+    margin: .25em;
     max-width: 160px;
     cursor: pointer;
     display: flex;
@@ -178,7 +180,7 @@
     justify-content: space-evenly;
     align-items: center;
     user-select: none;
-    flex: 1 1 300px;
+    flex: 1 1 15ch;
     transition-duration: .1s;
 }
 @media only screen and (max-width: 500px) {
@@ -190,9 +192,14 @@
     }
 }
 .team-modal-button:hover{
-    box-shadow: 0 0 20px 4px var(--lowink-orange-glow);
+    box-shadow: 0 0 1em .2em var(--lowink-orange-glow);
+    border-color: var(--lowink-orange);
     transform: scale(1.03);
 }
+.team-modal-button:active{
+    transform: scale(1.01);
+}
+
 .team-modal-button img{
     border-radius: 100%;
     margin: 0;
@@ -200,17 +207,10 @@
     width: 3.5em;
     height: 3.5em;
 }
-@media only screen and (max-width: 500px) {
-    .team-modal-button img{
-        width: 48px;
-        height: 48px;
-    }
-}
 .team-modal-button p{
     text-align: center;
-    padding: 6px 0;
-    margin: 0 0 0 0;
-    max-width: 160px;
+    margin: 0;
+    max-width: 12ch;
     overflow-wrap: break-word;
 }
 @media only screen and (max-width: 500px) {
@@ -221,10 +221,10 @@
 
 @keyframes openModal {
     from {
-        margin-top: 15%;
+        top: 8%;
     }
     to{
-        margin-top: 0;
+        top: 0%;
     }
 }
 

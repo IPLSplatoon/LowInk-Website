@@ -37,7 +37,7 @@ fetch("https://iplabs.ink/LowInk-Website/halloffame.json")
             rootElement.appendChild(contentElement);
             
             const firstElement = document.createElement("div");
-            firstElement.setAttribute("class","hof-alpha1st");
+            firstElement.setAttribute("class","hof-placeBox hof-alpha1st");
             const firstNum = document.createElement("place");
             firstNum.innerHTML = "1st";
             firstElement.appendChild(firstNum)
@@ -47,7 +47,7 @@ fetch("https://iplabs.ink/LowInk-Website/halloffame.json")
             contentElement.appendChild(firstElement);
         
             const secondElement = document.createElement("div");
-            secondElement.setAttribute("class","hof-alpha2nd");
+            secondElement.setAttribute("class","hof-placeBox hof-alpha2nd");
             const secondNum = document.createElement("place");
             secondNum.innerHTML = "2nd";
             secondElement.appendChild(secondNum)
@@ -57,7 +57,7 @@ fetch("https://iplabs.ink/LowInk-Website/halloffame.json")
             contentElement.appendChild(secondElement);
         
             const thirdElement = document.createElement("div");
-            thirdElement.setAttribute("class","hof-alpha3rd");
+            thirdElement.setAttribute("class","hof-placeBox hof-alpha3rd");
             const thirdNum = document.createElement("place");
             thirdNum.innerHTML = "3rd";
             thirdElement.appendChild(thirdNum)
@@ -68,7 +68,7 @@ fetch("https://iplabs.ink/LowInk-Website/halloffame.json")
         
             if (typeof json.hallOfFame[i].beta != "undefined") {
                 const betaElement = document.createElement("div");
-                betaElement.setAttribute("class","hof-beta");
+                betaElement.setAttribute("class","hof-placeBox hof-beta");
                 const betaNum = document.createElement("place");
                 betaNum.innerHTML = "Beta";
                 betaElement.appendChild(betaNum)
@@ -80,7 +80,7 @@ fetch("https://iplabs.ink/LowInk-Website/halloffame.json")
         
             if (typeof json.hallOfFame[i].gamma != "undefined") {
                 const gammaElement = document.createElement("div");
-                gammaElement.setAttribute("class","hof-gamma");
+                gammaElement.setAttribute("class","hof-placeBox hof-gamma");
                 const gammaNum = document.createElement("place");
                 gammaNum.innerHTML = "Gamma";
                 gammaElement.appendChild(gammaNum)
@@ -157,9 +157,6 @@ function getStandings(id){
                         stageTitle.id = stagesJson.name;
                         stageTitle.innerText = stagesJson.name;
                         stageContainer.appendChild(stageTitle);
-
-                        console.log(tournamentJson);
-                        console.log(stagesJson);
 
                         const battlefyLink = document.createElement("a");
                         const battlefyURL = `https://battlefy.com/inkling-performance-labs/${tournamentJson.slug}/${tournamentJson._id}/stage/${stagesJson._id}/bracket/`;

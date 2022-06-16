@@ -169,11 +169,19 @@
 
 .index-nav {
     font-size: 1.4em;
-    padding: .5em 2em .5em 2em;
+    padding: .5em;
     background: var(--lowink-grey);
     border: .12em solid var(--lowink-orange);
     border-left: none;
     border-right: none;
+}
+
+.header-nav{
+    margin: 0;
+}
+
+.header-nav div{
+    animation: none;
 }
 
 .page-gradient{

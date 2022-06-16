@@ -10,7 +10,7 @@
     --lowink-modal-bg: #1c1c1c9d;
 
     font-family: 'Montserrat', sans-serif;
-    font-size: 22px;
+    font-size: 1.3em;
     font-weight: bold;
     color: var(--lowink-text);
     background-color: var(--lowink-grey);
@@ -18,7 +18,7 @@
 
 @media only screen and (max-width: 600px) {
     :root{
-        font-size: 18px;
+        font-size: 1.1em;
     }
 }
 
@@ -74,7 +74,7 @@ a{
 
 .header-logo img{
     width: 1.2em;
-    margin-right: 15px;
+    margin-right: .4ch;
     border-radius: 50%;
     box-shadow: 0 0 15px 3px var(--lowink-orange-glow);
 }
@@ -131,6 +131,11 @@ a{
 }
 
 @media only screen and (max-width: 700px) {
+    .header-wrapper{
+        max-height: 90vh;
+        overflow-y: auto;
+    }
+
     .header-nav-mobile-menu{
         display: block;
         font-size: 1.5em;
@@ -149,6 +154,7 @@ a{
         margin-top: 1.5em;
         flex-wrap: wrap;
         width: 100%;
+        height: 100%;
     }
 
     .index-header-nav{
@@ -268,10 +274,10 @@ a{
     background-color: var(--lowink-darkgrey);
     border: 2px solid var(--lowink-orange);
     box-shadow: 0 0 16px 1px var(--lowink-orange-glow);
-    border-radius: 20px;
-    margin: 30px 2vw;
-    padding: 30px;
-    max-width: 1000px;
+    border-radius: 1rem;
+    margin: 1.5rem 2vw;
+    padding: 1.5rem;
+    max-width: 70ch;
     animation: sectionBoxSlideIn .5s forwards;
     animation-delay: .2s;
     opacity: 0;
@@ -279,7 +285,7 @@ a{
 }
 @media only screen and (max-width: 600px) {
     .section-box{
-        padding: 30px 15px;
+        padding: 1.5rem 1rem;
     }
 }
 @media (prefers-reduced-motion) {
@@ -304,6 +310,7 @@ a{
 
 .section-box-content p{
     font-weight: 500;
+    line-height: 1.3em;
 }
 
 .section-box-content a{
@@ -317,7 +324,7 @@ a{
     max-width: 100%;
     max-height: 65vh;
     box-shadow: 0 0 16px 2px var(--lowink-orange-glow);
-    border-radius: 20px;
+    border-radius: .75em;
 }
 
 .section-box-title{
@@ -327,10 +334,10 @@ a{
 
 .section-box-divider{
     background-color: var(--lowink-orange);
-    margin-top: 12px;
-    margin-bottom: 12px;
+    margin-top: .6em;
+    margin-bottom: .6em;
     width: 100%;
-    height: 3px;
+    height: .12em;
 }
 
 .footer-wrapper{
@@ -372,17 +379,5 @@ iframe {
     }
     to {
         background-position: -300px 0;
-    }
-}
-
-@keyframes upcomingEventGlow {
-    0% {
-        box-shadow: 0 0 32px 2px var(--lowink-orange-glow);
-    }
-    50% {
-        box-shadow: 0 0 50px 5px var(--lowink-orange-glow);
-    }
-    100% {
-        box-shadow: 0 0 32px 2px var(--lowink-orange-glow);
     }
 }
