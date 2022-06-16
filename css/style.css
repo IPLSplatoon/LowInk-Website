@@ -272,8 +272,8 @@ a{
 
 .section-box{
     background-color: var(--lowink-darkgrey);
-    border: 2px solid var(--lowink-orange);
-    box-shadow: 0 0 16px 1px var(--lowink-orange-glow);
+    border: .1em solid var(--lowink-orange);
+    box-shadow: 0 0 .5em .1em var(--lowink-orange-glow);
     border-radius: 1rem;
     margin: 1.5rem 2vw;
     padding: 1.5rem;
@@ -286,6 +286,12 @@ a{
 @media only screen and (max-width: 600px) {
     .section-box{
         padding: 1.5rem 1rem;
+        border-radius: 0;
+        margin-right: 0;
+        margin-left: 0;
+        border-left: none;
+        border-right: none;
+        width: -webkit-fill-available !important;
     }
 }
 @media (prefers-reduced-motion) {

@@ -190,7 +190,7 @@
 
 @media only screen and (max-width: 600px) {
     .page-gradient{
-        padding: 1em .2em;
+        padding: 1em 0;
     }
 
     .header-nav{
