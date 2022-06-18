@@ -67,8 +67,17 @@ function fetchTourney(id){
             new Intl.DateTimeFormat('en', dateOptionsOne).format(dayOneDate) + " - " +
             new Intl.DateTimeFormat('en', dateOptionsTwo).format(dayTwoDate);
 
-        document.getElementById("register-button").setAttribute("onclick", 
-            "window.open('https://battlefy.com/inkling-performance-labs/" + tourneyData.slug + "/" + tourneyData._id + "/info?infoTab=schedule', '_blank');");
+        //set attribute onclick to all elements with the id "battlefy-link"
+        var allLinks = document.getElementsByClassName("battlefy-link");
+        console.log(allLinks);
+        for (var i = 0; i < allLinks.length; i++) {
+            allLinks[i].setAttribute("onclick", "window.open('https://battlefy.com/inkling-performance-labs/" + tourneyData.slug + "/" + tourneyData._id + "/info?infoTab=schedule', '_blank');");
+        }
+
+        if (tourneyData.registrationEnabled != "true"){
+            document.getElementById("reg-open").style.display = "none";
+            document.getElementById("reg-closed").style.display = "block";
+        }
     })
     .catch(function(){
         throw 'request failed';

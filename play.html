@@ -102,11 +102,19 @@
                 <div id="content-group">
                     <div class="section-box-content register-content" id="register-content">
                         <p style="font-size: 1.5em;">Low Ink will be taking place on <b id="dates"></b> this month.</p>
-                        <p>First, join the Discord to gain access to important announcements and access to the helpdesk channel. Make sure you get the Low Ink role from the rules and roles channel once you join.</p>
-                        <button class="register-button" onclick="window.open('https://iplabs.ink/discord', '_blank')">Join Discord</button>
-                        <p>Next, register on the Low Ink Battlefy to officially register for this month's event.</p>
-                        <button id="register-button" class="register-button">Register on Battlefy</button>
-                        <p style="font-size: .8em;">If this is your first time playing Low Ink, please check out the guide on <a href="howtoplay.html">how to play</a> to familiarize yourself with registering and playing in Low Ink.</p>
+                        <div id="reg-open">
+                            <p>First, join the Discord to gain access to important announcements and access to the helpdesk channel. Make sure you get the Low Ink role from the rules and roles channel once you join.</p>
+                            <button class="register-button" onclick="window.open('https://iplabs.ink/discord', '_blank')">Join Discord</button>
+                            <p>Next, register on the Low Ink Battlefy to officially register for this month's event.</p>
+                            <button id="register-button" class="register-button battlefy-link">Register on Battlefy</button>
+                            <p style="font-size: .8em;">If this is your first time playing Low Ink, please check out the guide on <a href="howtoplay.html">how to play</a> to familiarize yourself with registering and playing in Low Ink.</p>
+                        </div>
+                        <div id="reg-closed" style="display: none;">
+                            <p>Registration for this month's Low Ink is currently not open. This is likely because an event is currently ongoing or about to start.
+                            <p>If you're looking for brackets, you can find them on the Battlefy page</p>
+                            </p>
+                            <button class="register-button battlefy-link" id="register-button">View Battlefy</button>
+                        </div>
                     </div>
                     <div class="section-box-content" id="teams-content" style="display: none;">
                         <div class="team-count" id="teams-count"></div>
