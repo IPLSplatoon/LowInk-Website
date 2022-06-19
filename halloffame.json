@@ -1,6 +1,16 @@
 {
     "hallOfFame":[
         {
+            "name": "June 2022",
+            "teams": "75",
+            "first": "Splatalot  A",
+            "second": "Yume Star",
+            "third": "Miata",
+            "beta": "Outcast Ninjas",
+            "gamma": "puzzle & dragons",
+            "id": "628ba468ab4cf43f09d24943"
+        },
+        {
             "name": "May 2022",
             "teams": "64",
             "first": "DElicious Nuggets",
