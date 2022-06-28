@@ -1,4 +1,4 @@
-fetch("https://iplabs.ink/LowInk-Website/halloffame.json")
+fetch("https://lowink.iplabs.ink/halloffame.json")
     .then(response => {
         return response.json()
     })
