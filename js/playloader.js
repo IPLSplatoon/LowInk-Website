@@ -69,12 +69,11 @@ function fetchTourney(id){
 
         //set attribute onclick to all elements with the id "battlefy-link"
         var allLinks = document.getElementsByClassName("battlefy-link");
-        console.log(allLinks);
         for (var i = 0; i < allLinks.length; i++) {
             allLinks[i].setAttribute("onclick", "window.open('https://battlefy.com/inkling-performance-labs/" + tourneyData.slug + "/" + tourneyData._id + "/info?infoTab=schedule', '_blank');");
         }
 
-        if (tourneyData.registrationEnabled != "true"){
+        if (!tourneyData.registrationEnabled){
             document.getElementById("reg-open").style.display = "none";
             document.getElementById("reg-closed").style.display = "block";
         }
