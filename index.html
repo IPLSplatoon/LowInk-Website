@@ -31,7 +31,7 @@
                 }
                 window.dispatchEvent(new Event('resize'));
 
-                const times = [0, 10, 25, 37, 57, 74, 94];
+                const times = [0, 10, 17, 27, 38, 49, 55];
                 video.currentTime = times[Math.floor(Math.random() * times.length)];
                 video.addEventListener("loadeddata", function(){
                     this.classList.add("header-video-anim");
