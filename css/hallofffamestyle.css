@@ -10,11 +10,8 @@
 }
 
 .hof-wrapper{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    align-items: stretch;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30ch, 1fr));
     width: 100%;
     height: 100%;
     max-width: 100ch;
@@ -22,7 +19,6 @@
 
 .section-box {
     position: relative;
-    flex: 1 1 20ch;
     user-select: none;
     cursor: pointer;
     transition-duration: .2s;
@@ -32,6 +28,7 @@
     visibility: hidden;
     animation-fill-mode: forwards;
     animation-iteration-count: 1;
+    margin: 1.5rem;
 }
 .section-box:hover{
     box-shadow: 0 0 1em .2em var(--lowink-orange-glow);
@@ -42,6 +39,12 @@
     .section-box {
         animation: none !important;
         visibility: visible !important;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .section-box{
+        margin: 1.5rem 0;
     }
 }
 
@@ -107,7 +110,6 @@ place {
     z-index: 200;
     overflow: auto;
     background: var(--lowink-modal-bg);
-    backdrop-filter: blur(12px) grayscale(40%);
     width: 100%;
     height: 100%;
     left: 0;
