@@ -89,6 +89,18 @@ fetch("https://lowink.iplabs.ink/halloffame.json")
                 gammaElement.appendChild(gammaName);
                 contentElement.appendChild(gammaElement);
             }
+
+            if (typeof json.hallOfFame[i].delta != "undefined"){
+                const deltaElement = document.createElement("div");
+                deltaElement.setAttribute("class","hof-placeBox hof-delta");
+                const deltaNum = document.createElement("place");
+                deltaNum.innerHTML = "Delta";
+                deltaElement.appendChild(deltaNum)
+                const deltaName = document.createElement("p");
+                deltaName.innerHTML = json.hallOfFame[i].gamma;
+                deltaElement.appendChild(deltaName);
+                contentElement.appendChild(deltaElement);
+            }
             
         }
 

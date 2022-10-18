@@ -4,6 +4,7 @@
     --alpha-pink: #ff009e;
     --beta-red: #ff0000;
     --gamma-green: #08b672;
+    --delta-yellow: #fce586;
     --first-gold: #d4af37;
     --second-silver: #c0c0c0;
     --third-bronze: #b87333;
@@ -63,6 +64,9 @@ place {
 .hof-gamma place {
     font-size: 1.1em;
 }
+.hof-delta place {
+    font-size: 1.1em;
+}
 
 .section-box-content p{
     width: 100%;
@@ -101,6 +105,11 @@ place {
 .hof-gamma{
     border-color: var(--gamma-green);
     background: linear-gradient(90deg, var(--gamma-green) -100%, #00000000 100%);
+}
+
+.hof-delta{
+    border-color: var(--delta-yellow);
+    background: linear-gradient(90deg, var(--delta-yellow) -100%, #00000000 100%);
 }
 
 .hof-modal-bg{
