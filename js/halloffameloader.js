@@ -97,7 +97,7 @@ fetch("https://lowink.iplabs.ink/halloffame.json")
                 deltaNum.innerHTML = "Delta";
                 deltaElement.appendChild(deltaNum)
                 const deltaName = document.createElement("p");
-                deltaName.innerHTML = json.hallOfFame[i].gamma;
+                deltaName.innerHTML = json.hallOfFame[i].delta;
                 deltaElement.appendChild(deltaName);
                 contentElement.appendChild(deltaElement);
             }
