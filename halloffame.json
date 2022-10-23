@@ -1,5 +1,15 @@
 {
-    "hallOfFame":[
+    "hallOfFame":[{
+            "name": "October 2022",
+            "teams": "170",
+            "first": "Cherry-Dolphines",
+            "second": "Ink Sink",
+            "third": "Alliance of the Dam",
+            "beta": "Ok Woomer",
+            "gamma": "Mystical Ink",
+            "delta": "Epsilon",
+            "id": "6303b07f783d3622ec0b2478"
+        },
         {
             "name": "September 2022",
             "teams": "84",
