@@ -1,5 +1,27 @@
 {
-    "hallOfFame":[{
+    "hallOfFame":[
+        {
+            "name": "December 2022",
+            "teams": "99",
+            "first": "Crescent Night",
+            "second": "Myopsidus",
+            "third": "そ Sanguine Seas~",
+            "beta": "Ok Woomer",
+            "gamma": "Mystical Ink",
+            "id": "6388bdece7b3ad3c426a2f26"
+        },
+        {
+            "name": "November 2022",
+            "teams": "147",
+            "first": "Seaya",
+            "second": "Cytria",
+            "third": "RNA",
+            "beta": "Myopsidus",
+            "gamma": "Polyamorous Gamership",
+            "delta": "Infinity Rain ∞",
+            "id": "636141f93dd21d0b2088f5ec"
+        },
+        {
             "name": "October 2022",
             "teams": "170",
             "first": "Cherry-Dolphines",
