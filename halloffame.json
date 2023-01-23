@@ -1,6 +1,18 @@
 {
     "hallOfFame":[
         {
+            "name": "January 2023",
+            "teams": "169",
+            "first": "To Be Determined",
+            "second": "そ Sanguine Seas~",
+            "third": "Photic Zone",
+            "beta": "Kayo Calamari",
+            "gamma": "Aquatic Vanguard",
+            "delta": "Knight Sharks",
+            "epsilon": "Outcast Ninjas",
+            "id": "63b1f24b2395cc75cdfa7da1"
+        },
+        {
             "name": "December 2022",
             "teams": "99",
             "first": "Crescent Night",

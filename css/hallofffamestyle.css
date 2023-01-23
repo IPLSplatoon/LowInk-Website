@@ -5,6 +5,7 @@
     --beta-red: #ff0000;
     --gamma-green: #08b672;
     --delta-yellow: #fce586;
+    --epsilon-blue: #5c5cdf;
     --first-gold: #d4af37;
     --second-silver: #c0c0c0;
     --third-bronze: #b87333;
@@ -110,6 +111,11 @@ place {
 .hof-delta{
     border-color: var(--delta-yellow);
     background: linear-gradient(90deg, var(--delta-yellow) -100%, #00000000 100%);
+}
+
+.hof-epsilon{
+    border-color: var(--epsilon-blue);
+    background: linear-gradient(90deg, var(--epsilon-blue) -100%, #00000000 100%);
 }
 
 .hof-modal-bg{
