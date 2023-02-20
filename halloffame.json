@@ -1,6 +1,17 @@
 {
     "hallOfFame":[
         {
+            "name": "February 2023",
+            "teams": "161",
+            "first": "democratic republic of são tomé and príncipe",
+            "second": "Prowlers",
+            "third": "TFR Minus Risu",
+            "beta": "Splatalot Cosmic Cherries",
+            "gamma": "Sea Drive",
+            "delta": "WaveBreak",
+            "id": "63da8ab96b209747fc68bac2"
+        },
+        {
             "name": "January 2023",
             "teams": "169",
             "first": "To Be Determined",
