@@ -1,6 +1,18 @@
 {
     "hallOfFame":[
         {
+            "name": "March 2023",
+            "teams": "177",
+            "first": "Splatalot Imbeciles",
+            "second": "Secret Elixir",
+            "third": "Swedish BTS",
+            "beta": "Team Biscuits",
+            "gamma": "Ikaryoku!",
+            "delta": "Splatalot Cosmic Cherries",
+            "epsilon": "Tactifueler",
+            "id": "63ff9a22c0110b46110e3673"
+        },
+        {
             "name": "February 2023",
             "teams": "161",
             "first": "democratic republic of são tomé and príncipe",
