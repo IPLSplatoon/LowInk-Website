@@ -217,7 +217,7 @@ a{
 
 
 .page-gradient{
-    background: radial-gradient(circle, #00000000 0%, #00000000 40%, var(--lowink-orange-gradient) 100%);
+    background: radial-gradient(circle, #00000000 0%, #00000000 calc(100% - 50em), var(--lowink-orange-gradient) 100%);
     display: flex;
     flex-direction: column;
     align-items: center;

@@ -1,3 +1,5 @@
+var numLoaded = 0;
+
 fetch("https://lowink.iplabs.ink/halloffame.json")
     .then(response => {
         return response.json()
@@ -9,14 +11,20 @@ fetch("https://lowink.iplabs.ink/halloffame.json")
         for (var i = 0; i < json.hallOfFame.length; i++){
             const rootElement = document.createElement("div");
             rootElement.setAttribute("class","section-box");
-            rootElement.setAttribute("style", `animation-delay: ${Math.min(i * .1, 1) + .2}s;`);
+
+            if (i > 12){
+                rootElement.style.display = "none";
+                numLoaded = 12;
+            } else {
+                rootElement.setAttribute("style", `animation-delay: ${Math.min(i * .1, 1) + .2}s;`);
+            }
 
             if (json.hallOfFame[i].id != undefined){
                 rootElement.setAttribute("onclick", `getStandings("${json.hallOfFame[i].id}")`);
             } else {
                 rootElement.style.cursor = "not-allowed";
                 rootElement.onclick = function() {
-                    alert("Detailed results are not available for this event.")
+                    alert("Detailed results are not available for this event.");
                 };
             }
 
@@ -113,6 +121,18 @@ fetch("https://lowink.iplabs.ink/halloffame.json")
                 epsilonElement.appendChild(epsilonName);
                 contentElement.appendChild(epsilonElement);
             }
+
+            window.onscroll = function() {
+                if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+                    const numToLoad = Math.min(12, json.hallOfFame.length - numLoaded);
+                    for (var i = 0; i < numToLoad; i++){
+                        const sectionBox = document.getElementsByClassName("section-box")[i + numLoaded];
+                        sectionBox.style.display = "block";
+                        sectionBox.setAttribute("style", `animation-delay: ${Math.min(i * .1, 1) + .2}s;`);
+                    }
+                    numLoaded += numToLoad;
+                }
+            };
             
         }
 
