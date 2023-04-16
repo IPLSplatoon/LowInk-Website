@@ -1,6 +1,16 @@
 {
     "hallOfFame":[
         {
+            "name": "April 2023",
+            "teams": "145",
+            "first": "Squids Ztrikes",
+            "second": "Squids Ztrikes",
+            "third": "Octoπ",
+            "beta": "Arcadia",
+            "gamma": "Ikaryoku!",
+            "id": "6429e8ed731d0308b9a20e4f"
+        },
+        {
             "name": "March 2023",
             "teams": "177",
             "first": "Splatalot Imbeciles",
