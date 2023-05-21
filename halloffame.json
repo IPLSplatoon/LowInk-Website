@@ -1,6 +1,18 @@
 {
     "hallOfFame":[
         {
+            "name": "May 2023",
+            "teams": "175",
+            "first": "Blood Walk",
+            "second": "Secret Elixir",
+            "third": "Dog clan fanclub v2 (continued)",
+            "beta": "Conductor Cap Inkorporated (Sponsored by Octoπ)",
+            "gamma": "Scarlet Fizzy",
+            "delta": "Arcadia",
+            "epsilon": "Ink Strikers",
+            "id": "644ffc4af1170a380a3b20d3"
+        },
+        {
             "name": "April 2023",
             "teams": "145",
             "first": "Squids Ztrikes",
