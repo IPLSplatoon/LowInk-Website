@@ -1,6 +1,40 @@
 {
     "hallOfFame":[
         {
+            "name": "August 2023",
+            "teams": "168",
+            "first": "honda squidic",
+            "second": "Amoura",
+            "third": "DistInkt",
+            "beta": "Project: Blank",
+            "gamma": "Team7",
+            "delta": "Scarlet Ink",
+            "id": "64c90bfc3d21fc5f3b66a70c"
+        },
+        {
+            "name": "July 2023",
+            "teams": "212",
+            "first": "8k ping",
+            "second": "cubata2euros",
+            "third": "Project: Blank",
+            "beta": "My Lag Paradise",
+            "gamma": "Hafermilch.",
+            "delta": "Ominous",
+            "epsilon": "Fatal Parliament",
+            "id": "649f92274d040f5057934ee7"
+        },
+        {
+            "name": "June 2023",
+            "teams": "161",
+            "first": "Ikaryoku!",
+            "second": "Team7",
+            "third": "Aquatic Vanguard",
+            "beta": "Joke Raiders",
+            "gamma": "Calamity Forge Neo",
+            "delta": "Wyrmwind",
+            "id": "6478aa08cf51971de0043d6b"
+        },
+        {
             "name": "May 2023",
             "teams": "175",
             "first": "Blood Walk",
