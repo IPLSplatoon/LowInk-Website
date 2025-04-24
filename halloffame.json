@@ -1,6 +1,185 @@
 {
     "hallOfFame":[
         {
+            "name": "April 2025",
+            "teams": "64",
+            "first": "NORWEIGAN WOBBER ECONOMY",
+            "second": "Devorameta",
+            "third": "idiots in chat",
+            "beta": "Poor Judgement",
+            "gamma": "Soyjack Squidz"
+        },
+        {
+            "name": "March 2025",
+            "teams": "73",
+            "first": "Splatoon 4 (we win)",
+            "second": "idiots in chat",
+            "third": "Blitz Wave",
+            "beta": "cosmic kitties!!!",
+            "gamma": "What the Fuzz??"
+        },
+        {
+            "name": "February 2025",
+            "teams": "69",
+            "first": "21 SIBH",
+            "second": "StarZ Impact",
+            "third": "REWIND!!!",
+            "beta": "Tetris Effect",
+            "gamma": "Oracle"
+        },
+        {
+            "name": "January 2025",
+            "teams": "105",
+            "first": "Ball up top²",
+            "second": "Path of Radiance!",
+            "third": "We ballin 🗣️🔥",
+            "beta": "Twister Time",
+            "gamma": "Evolution"
+        },
+        {
+            "name": "December 2024",
+            "teams": "80",
+            "first": "FlipSide",
+            "second": "idiots in chat*",
+            "third": "Remix",
+            "beta": "Celestial",
+            "gamma": "Error 404"
+        },
+        {
+            "name": "November 2024",
+            "teams": "80",
+            "first": "Sonora Inkamita de Iztapalapa",
+            "second": "DISCLAIMER*",
+            "third": "Jet Lag!",
+            "beta": "I love latinas Sonic",
+            "gamma": "YT->MP4",
+            "id": "672690d9ca1fa2002279216f"
+        },
+        {
+            "name": "October 2024",
+            "teams": "92",
+            "first": "The Dash Before Time III: The Time of the Great Goober (Goober Dash)",
+            "second": "Royalty",
+            "third": "Roulette",
+            "beta": "The Hybrid Family",
+            "gamma": "Determination",
+            "id": "66fccaf39117a6003f13aca3"
+        },
+        {
+            "name": "September 2024",
+            "teams": "106",
+            "first": "SGMA on Earth",
+            "second": "Royalty",
+            "third": "Inkbound",
+            "beta": "Mystics | Honor Bound",
+            "gamma": "Shellfire",
+            "id": "66cc9de77b5cd7003622e701"
+        },
+        {
+            "name": "August 2024",
+            "teams": "135",
+            "first": "Manta Boat Fanclub",
+            "second": "Meows the Chance",
+            "third": "The Hybrid Family",
+            "beta": "the land is inhospitable and so are we",
+            "gamma": "Tidy Tidings",
+            "id": "66a8422746bb34048f7a5ad4"
+        },
+        {
+            "name": "June 2024",
+            "teams": "105",
+            "first": "ALL I EVER WANTED WAS A ROLLIE ROLLIE",
+            "second": "ULTRAKRILL",
+            "third": "Insomniac Central",
+            "beta": "Determination 2: Electric Boogaloo",
+            "gamma": "M@GICAL☆CURE! LOVE ♥ SHOT!",
+            "id": "6654d6f5ceb2630c9a087f03"
+        },
+        {
+            "name": "May 2024",
+            "teams": "101",
+            "first": "Lush",
+            "second": "ZESTFEST",
+            "third": "Clairvoyance",
+            "beta": "ULTRAKRILL",
+            "gamma": "seasick",
+            "id": "662fe0f77f742005e016b769"
+        },
+        {
+            "name": "April 2024",
+            "teams": "135",
+            "first": "WD4D",
+            "second": "Merequetengue",
+            "third": "ZESTFEST",
+            "beta": "Royal Bouquet",
+            "gamma": "Inkception",
+            "id": "660bf5ed6158bb0d5e8196cf"
+        },
+        {
+            "name": "March 2024",
+            "teams": "144",
+            "first": "VRCat",
+            "second": "ZESTFEST",
+            "third": "i swear we are mid level",
+            "beta": "Starlight",
+            "gamma": "Unknown",
+            "delta": "Silly Goobers United!",
+            "id": "65e1f6cbc3007808b814c19a"
+        },
+        {
+            "name": "February 2024",
+            "teams": "143",
+            "first": "JELLY IS LOW INK BANNED!!! UN BAN PLS",
+            "second": "Ominous",
+            "third": "Blaeksprutter",
+            "beta": "Solo Cue",
+            "gamma": "ASC Niji~K",
+            "delta": "Opt Out!",
+            "id": "65b9465ec1afb870b6ffa1e5"
+        },
+        {
+            "name": "January 2024",
+            "teams": "191",
+            "first": "Red Pacific",
+            "second": "Just Squidding",
+            "third": "QUEEN JELLY LEFT US",
+            "beta": "Skilli Shoes",
+            "gamma": "Not Howdy Hat Pirates",
+            "delta": "ZESTFEST",
+            "epsilon": "Inkception",
+            "id": "658d09d3485f4b72035e4f12"
+        },
+        {
+            "name": "December 2023",
+            "teams": "156",
+            "first": "Matter of Opinion",
+            "second": "Puma's cats",
+            "third": "Blaze",
+            "beta": "Hydra",
+            "gamma": "Camp juice",
+            "delta": "Crystalised Snowflakes",
+            "id": "6557f646065957130f190027"
+        },
+        {
+            "name": "Ladder Ink November 2023",
+            "teams": "168",
+            "first": "MISQ",
+            "second": "Alliance Moon",
+            "third": "Matter of Opinion",
+            "id": "65450db1f9f60f1963ac4038"
+        },
+        {
+            "name": "October 2023",
+            "teams": "168",
+            "first": "Smoking Moais",
+            "second": "SUPER TEAM 5",
+            "third": "7 Ate 9",
+            "beta": "Ominous",
+            "gamma": "OVERTIME!!",
+            "delta": "Valence",
+            "id": "651473099e30b01c895f29c4"
+        },
+        {
             "name": "August 2023",
             "teams": "168",
             "first": "honda squidic",
