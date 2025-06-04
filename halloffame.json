@@ -1,6 +1,15 @@
 {
     "hallOfFame":[
         {
+            "name": "May 2025",
+            "teams": "81",
+            "first": "FUIT GUMMY (Egoists)",
+            "second": "Singulrity",
+            "third": "Bad Guys",
+            "beta": "After School Sweets Club",
+            "gamma": "Altruist"
+        },
+        {
             "name": "April 2025",
             "teams": "64",
             "first": "NORWEGIAN WOBBER ECONOMY",
