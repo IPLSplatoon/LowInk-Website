@@ -1,6 +1,6 @@
 var numLoaded = 0;
 
-fetch(`${window.location.host}/halloffame.json`)
+fetch(`https://${window.location.host}/halloffame.json`)
     .then(response => {
         return response.json()
     })
