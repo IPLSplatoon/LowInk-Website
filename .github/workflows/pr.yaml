@@ -1,0 +1,27 @@
+name: Validate hall of fame JSON
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  json-yaml-validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+
+      - name: json-yaml-validate
+        id: json-yaml-validate
+        uses: GrantBirki/json-yaml-validate@v5
+        with:
+            schema_mappings: |
+              - type: json
+                schema: ./schemas/halloffame-schema.json
+                files:
+                  - ./halloffame.json
+                json_schema_version: draft-07
