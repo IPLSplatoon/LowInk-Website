@@ -1,6 +1,6 @@
 var numLoaded = 0;
 
-fetch("https://lowink.iplabs.ink/halloffame.json")
+fetch(`${window.location.host}/halloffame.json`)
     .then(response => {
         return response.json()
     })
