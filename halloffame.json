@@ -1,12 +1,28 @@
 {
-    "hallOfFame":[
+    "hallOfFame": [
+        {
+            "name": "May 2026",
+            "teams": "62",
+            "first": "Eternal raid",
+            "second": "Special Dreamers⭑.ᐟ",
+            "third": "Magic Beans",
+            "beta": "The Whiprays"
+        },
+        {
+            "name": "April 2026",
+            "teams": "59",
+            "first": "the goat in the room",
+            "second": "Crushing 20s",
+            "third": "Let That Sink In",
+            "beta": "Strawhats"
+        },
         {
             "name": "March 2026",
             "teams": "53",
             "first": "Altruist",
             "second": "Vantablack",
             "third": "11 ft 8 Bridge",
-            "beta": "4 slayers + pen",
+            "beta": "4 slayers + pen"
         },
         {
             "name": "February 2026",
