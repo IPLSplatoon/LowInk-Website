@@ -1,6 +1,85 @@
 {
     "hallOfFame":[
         {
+            "name": "March 2026",
+            "teams": "53",
+            "first": "Altruist",
+            "second": "Vantablack",
+            "third": "11 ft 8 Bridge",
+            "beta": "4 slayers + pen",
+        },
+        {
+            "name": "February 2026",
+            "teams": "92",
+            "first": "WetUp",
+            "second": "The Koalition",
+            "third": "daybreak",
+            "beta": "Crushing 20s",
+            "gamma": "Sashimi Shenanigans"
+        },
+        {
+            "name": "January 2026",
+            "teams": "94",
+            "first": "M.A.D",
+            "second": "The Koalition",
+            "third": "No creith no bow",
+            "beta": "Crushing 20s",
+            "gamma": "Alruist"
+        },
+        {
+            "name": "December 2025",
+            "teams": "57",
+            "first": "Anarchy Stars",
+            "second": "3 elves 1 santa",
+            "third": "PayBack",
+            "beta": "Runie Runners",
+        },
+        {
+            "name": "November 2025",
+            "teams": "91",
+            "first": "we'll come with a name later",
+            "second": "Anarchy Stars",
+            "third": "XName",
+            "beta": "THIS IS FINE",
+            "gamma": "SATURN'S RINGS"
+        },
+        {
+            "name": "October 2025",
+            "teams": "85",
+            "first": "Fun PB!!",
+            "second": "Disgusting Pickup Team!",
+            "third": "kittens 🖤🥀🐺⛓💥",
+            "beta": "Octaves",
+            "gamma": "o7 Honor Bound"
+        },
+        {
+            "name": "August 2025",
+            "teams": "100",
+            "first": "LDE forge is good",
+            "second": "Octo-Express",
+            "third": "in this tree plant",
+            "beta": "Lemon Shark",
+            "gamma": "Delicious Steak Dinner"
+        },
+        {
+            "name": "July 2025",
+            "teams": "83",
+            "first": "9 lives, all anxiety",
+            "second": "NEW META NEW TEAM NEW ALPHAS",
+            "third": "Wavelength",
+            "beta": "Star Guardians of Chaos",
+            "gamma": "Dark Blossom"
+        },
+        {
+            "name": "June 2025",
+            "teams": "91",
+            "first": "Roulette",
+            "second": "Rising Beyond the Tides",
+            "third": "THIS IS FINE",
+            "beta": "o7 Honor Bound",
+            "gamma": "Anarchy Stars"
+        },
+        {
             "name": "May 2025",
             "teams": "81",
             "first": "FUIT GUMMY (Egoists)",
