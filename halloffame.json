@@ -1,824 +1,824 @@
 {
-   "hallOfFame":[
-      {
-         "name":"May 2026",
-         "teams":"62",
-         "first":"Eternal raid",
-         "second":"Special Dreamers⭑.ᐟ",
-         "third":"Magic Beans",
-         "beta":"The Whiprays"
-      },
-      {
-         "name":"April 2026",
-         "teams":"59",
-         "first":"the goat in the room",
-         "second":"Crushing 20s",
-         "third":"Let That Sink In",
-         "beta":"Strawhats"
-      },
-      {
-          "name":"March 2026",
-          "teams":"53",
-          "first":"Altruist",
-          "second":"Vantablack",
-          "third":"11 ft 8 Bridge",
-          "beta":"4 slayers + pen"
-      },
-      {
-          "name":"February 2026",
-          "teams":"92",
-          "first":"WetUp",
-          "second":"The Koalition",
-          "third":"daybreak",
-          "beta":"Crushing 20s",
-          "gamma":"Sashimi Shenanigans"
-      },
-      {
-          "name":"January 2026",
-          "teams":"94",
-          "first":"M.A.D",
-          "second":"The Koalition",
-          "third":"No creith no bow",
-          "beta":"Crushing 20s",
-          "gamma":"Alruist"
-      },
-      {
-          "name":"December 2025",
-          "teams":"57",
-          "first":"Anarchy Stars",
-          "second":"3 elves 1 santa",
-          "third":"PayBack",
-          "beta":"Runie Runners"
-      },
-      {
-          "name":"November 2025",
-          "teams":"91",
-          "first":"we'll come with a name later",
-          "second":"Anarchy Stars",
-          "third":"XName",
-          "beta":"THIS IS FINE",
-          "gamma":"SATURN'S RINGS"
-      },
-      {
-          "name":"October 2025",
-          "teams":"85",
-          "first":"Fun PB!!",
-          "second":"Disgusting Pickup Team!",
-          "third":"kittens 🖤🥀🐺⛓💥",
-          "beta":"Octaves",
-          "gamma":"o7 Honor Bound"
-      },
-      {
-          "name":"August 2025",
-          "teams":"100",
-          "first":"LDE forge is good",
-          "second":"Octo-Express",
-          "third":"in this tree plant",
-          "beta":"Lemon Shark",
-          "gamma":"Delicious Steak Dinner"
-      },
-      {
-          "name":"July 2025",
-          "teams":"83",
-          "first":"9 lives, all anxiety",
-          "second":"NEW META NEW TEAM NEW ALPHAS",
-          "third":"Wavelength",
-          "beta":"Star Guardians of Chaos",
-          "gamma":"Dark Blossom"
-      },
-      {
-          "name":"June 2025",
-          "teams":"91",
-          "first":"Roulette",
-          "second":"Rising Beyond the Tides",
-          "third":"THIS IS FINE",
-          "beta":"o7 Honor Bound",
-          "gamma":"Anarchy Stars"
-      },
-      {
-          "name":"May 2025",
-          "teams":"81",
-          "first":"FUIT GUMMY (Egoists)",
-          "second":"Singulrity",
-          "third":"Bad Guys",
-          "beta":"After School Sweets Club",
-          "gamma":"Altruist"
-      },
-      {
-          "name":"April 2025",
-          "teams":"64",
-          "first":"NORWEGIAN WOBBER ECONOMY",
-          "second":"Devorameta",
-          "third":"idiots in chat",
-          "beta":"Poor Judgement",
-          "gamma":"Soyjack Squidz"
-      },
-      {
-          "name":"March 2025",
-          "teams":"73",
-          "first":"Splatoon 4 (we win)",
-          "second":"idiots in chat",
-          "third":"Blitz Wave",
-          "beta":"cosmic kitties!!!",
-          "gamma":"What the Fuzz??"
-      },
-      {
-          "name":"February 2025",
-          "teams":"69",
-          "first":"21 SIBH",
-          "second":"StarZ Impact",
-          "third":"REWIND!!!",
-          "beta":"Tetris Effect",
-          "gamma":"Oracle"
-      },
-      {
-          "name":"January 2025",
-          "teams":"105",
-          "first":"Ball up top²",
-          "second":"Path of Radiance!",
-          "third":"We ballin 🗣️🔥",
-          "beta":"Twister Time",
-          "gamma":"Evolution"
-      },
-      {
-          "name":"December 2024",
-          "teams":"80",
-          "first":"FlipSide",
-          "second":"idiots in chat*",
-          "third":"Remix",
-          "beta":"Celestial",
-          "gamma":"Error 404"
-      },
-      {
-          "name":"November 2024",
-          "teams":"80",
-          "first":"Sonora Inkamita de Iztapalapa",
-          "second":"DISCLAIMER*",
-          "third":"Jet Lag!",
-          "beta":"I love latinas Sonic",
-          "gamma":"YT->MP4",
-          "id":"672690d9ca1fa2002279216f"
-      },
-      {
-          "name":"October 2024",
-          "teams":"92",
-          "first":"The Dash Before Time III: The Time of the Great Goober (Goober Dash)",
-          "second":"Royalty",
-          "third":"Roulette",
-          "beta":"The Hybrid Family",
-          "gamma":"Determination",
-          "id":"66fccaf39117a6003f13aca3"
-      },
-      {
-          "name":"September 2024",
-          "teams":"106",
-          "first":"SGMA on Earth",
-          "second":"Royalty",
-          "third":"Inkbound",
-          "beta":"Mystics | Honor Bound",
-          "gamma":"Shellfire",
-          "id":"66cc9de77b5cd7003622e701"
-      },
-      {
-          "name":"August 2024",
-          "teams":"135",
-          "first":"Manta Boat Fanclub",
-          "second":"Meows the Chance",
-          "third":"The Hybrid Family",
-          "beta":"the land is inhospitable and so are we",
-          "gamma":"Tidy Tidings",
-          "id":"66a8422746bb34048f7a5ad4"
-      },
-      {
-          "name":"June 2024",
-          "teams":"105",
-          "first":"ALL I EVER WANTED WAS A ROLLIE ROLLIE",
-          "second":"ULTRAKRILL",
-          "third":"Insomniac Central",
-          "beta":"Determination 2: Electric Boogaloo",
-          "gamma":"M@GICAL☆CURE! LOVE ♥ SHOT!",
-          "id":"6654d6f5ceb2630c9a087f03"
-      },
-      {
-          "name":"May 2024",
-          "teams":"101",
-          "first":"Lush",
-          "second":"ZESTFEST",
-          "third":"Clairvoyance",
-          "beta":"ULTRAKRILL",
-          "gamma":"seasick",
-          "id":"662fe0f77f742005e016b769"
-      },
-      {
-          "name":"April 2024",
-          "teams":"135",
-          "first":"WD4D",
-          "second":"Merequetengue",
-          "third":"ZESTFEST",
-          "beta":"Royal Bouquet",
-          "gamma":"Inkception",
-          "id":"660bf5ed6158bb0d5e8196cf"
-      },
-      {
-          "name":"March 2024",
-          "teams":"144",
-          "first":"VRCat",
-          "second":"ZESTFEST",
-          "third":"i swear we are mid level",
-          "beta":"Starlight",
-          "gamma":"Unknown",
-          "delta":"Silly Goobers United!",
-          "id":"65e1f6cbc3007808b814c19a"
-      },
-      {
-          "name":"February 2024",
-          "teams":"143",
-          "first":"JELLY IS LOW INK BANNED!!! UN BAN PLS",
-          "second":"Ominous",
-          "third":"Blaeksprutter",
-          "beta":"Solo Cue",
-          "gamma":"ASC Niji~K",
-          "delta":"Opt Out!",
-          "id":"65b9465ec1afb870b6ffa1e5"
-      },
-      {
-          "name":"January 2024",
-          "teams":"191",
-          "first":"Red Pacific",
-          "second":"Just Squidding",
-          "third":"QUEEN JELLY LEFT US",
-          "beta":"Skilli Shoes",
-          "gamma":"Not Howdy Hat Pirates",
-          "delta":"ZESTFEST",
-          "epsilon":"Inkception",
-          "id":"658d09d3485f4b72035e4f12"
-      },
-      {
-          "name":"December 2023",
-          "teams":"156",
-          "first":"Matter of Opinion",
-          "second":"Puma's cats",
-          "third":"Blaze",
-          "beta":"Hydra",
-          "gamma":"Camp juice",
-          "delta":"Crystalised Snowflakes",
-          "id":"6557f646065957130f190027"
-      },
-      {
-          "name":"Ladder Ink November 2023",
-          "teams":"168",
-          "first":"MISQ",
-          "second":"Alliance Moon",
-          "third":"Matter of Opinion",
-          "id":"65450db1f9f60f1963ac4038"
-      },
-      {
-          "name":"October 2023",
-          "teams":"168",
-          "first":"Smoking Moais",
-          "second":"SUPER TEAM 5",
-          "third":"7 Ate 9",
-          "beta":"Ominous",
-          "gamma":"OVERTIME!!",
-          "delta":"Valence",
-          "id":"651473099e30b01c895f29c4"
-      },
-      {
-          "name":"August 2023",
-          "teams":"168",
-          "first":"honda squidic",
-          "second":"Amoura",
-          "third":"DistInkt",
-          "beta":"Project: Blank",
-          "gamma":"Team7",
-          "delta":"Scarlet Ink",
-          "id":"64c90bfc3d21fc5f3b66a70c"
-      },
-      {
-          "name":"July 2023",
-          "teams":"212",
-          "first":"8k ping",
-          "second":"cubata2euros",
-          "third":"Project: Blank",
-          "beta":"My Lag Paradise",
-          "gamma":"Hafermilch.",
-          "delta":"Ominous",
-          "epsilon":"Fatal Parliament",
-          "id":"649f92274d040f5057934ee7"
-      },
-      {
-          "name":"June 2023",
-          "teams":"161",
-          "first":"Ikaryoku!",
-          "second":"Team7",
-          "third":"Aquatic Vanguard",
-          "beta":"Joke Raiders",
-          "gamma":"Calamity Forge Neo",
-          "delta":"Wyrmwind",
-          "id":"6478aa08cf51971de0043d6b"
-      },
-      {
-          "name":"May 2023",
-          "teams":"175",
-          "first":"Blood Walk",
-          "second":"Secret Elixir",
-          "third":"Dog clan fanclub v2 (continued)",
-          "beta":"Conductor Cap Inkorporated (Sponsored by Octoπ)",
-          "gamma":"Scarlet Fizzy",
-          "delta":"Arcadia",
-          "epsilon":"Ink Strikers",
-          "id":"644ffc4af1170a380a3b20d3"
-      },
-      {
-          "name":"April 2023",
-          "teams":"145",
-          "first":"Squids Ztrikes",
-          "second":"0 luck found",
-          "third":"Octoπ",
-          "beta":"Arcadia",
-          "gamma":"Ikaryoku!",
-          "id":"6429e8ed731d0308b9a20e4f"
-      },
-      {
-          "name":"March 2023",
-          "teams":"177",
-          "first":"Splatalot Imbeciles",
-          "second":"Secret Elixir",
-          "third":"Swedish BTS",
-          "beta":"Team Biscuits",
-          "gamma":"Ikaryoku!",
-          "delta":"Splatalot Cosmic Cherries",
-          "epsilon":"Tactifueler",
-          "id":"63ff9a22c0110b46110e3673"
-      },
-      {
-          "name":"February 2023",
-          "teams":"161",
-          "first":"democratic republic of são tomé and príncipe",
-          "second":"Prowlers",
-          "third":"TFR Minus Risu",
-          "beta":"Splatalot Cosmic Cherries",
-          "gamma":"Sea Drive",
-          "delta":"WaveBreak",
-          "id":"63da8ab96b209747fc68bac2"
-      },
-      {
-          "name":"January 2023",
-          "teams":"169",
-          "first":"To Be Determined",
-          "second":"そ Sanguine Seas~",
-          "third":"Photic Zone",
-          "beta":"Kayo Calamari",
-          "gamma":"Aquatic Vanguard",
-          "delta":"Knight Sharks",
-          "epsilon":"Outcast Ninjas",
-          "id":"63b1f24b2395cc75cdfa7da1"
-      },
-      {
-          "name":"December 2022",
-          "teams":"99",
-          "first":"Crescent Night",
-          "second":"Myopsidus",
-          "third":"そ Sanguine Seas~",
-          "beta":"June",
-          "gamma":"DaTA",
-          "id":"6388bdece7b3ad3c426a2f26"
-      },
-      {
-          "name":"November 2022",
-          "teams":"147",
-          "first":"Seaya",
-          "second":"Cytria",
-          "third":"RNA",
-          "beta":"Myopsidus",
-          "gamma":"Polyamorous Gamership",
-          "delta":"Infinity Rain ∞",
-          "id":"636141f93dd21d0b2088f5ec"
-      },
-      {
-          "name":"October 2022",
-          "teams":"170",
-          "first":"Cherry-Dolphines",
-          "second":"Ink Sink",
-          "third":"Alliance of the Dam",
-          "beta":"Ok Woomer",
-          "gamma":"Mystical Ink",
-          "delta":"Epsilon",
-          "id":"63348d5f2fa97e2bc6635c56"
-      },
-      {
-          "name":"September 2022",
-          "teams":"84",
-          "first":"Je Croutons?",
-          "second":"Seaya",
-          "third":"Myopsidus",
-          "beta":"No Chill",
-          "gamma":"Paragon",
-          "id":"6303b07f783d3622ec0b2478"
-      },
-      {
-          "name":"August 2022",
-          "teams":"77",
-          "first":"INKD Killers",
-          "second":"Mean Girls",
-          "third":"The Elegant Crusaders",
-          "beta":"aquatic vanguard",
-          "gamma":"Inkvaders",
-          "id":"62ddc6ad132b551f11f3c285"
-      },
-      {
-          "name":"June 2022",
-          "teams":"75",
-          "first":"Splatalot  A",
-          "second":"Yume Star",
-          "third":"Miata",
-          "beta":"Outcast Ninjas",
-          "gamma":"puzzle & dragons",
-          "id":"628ba468ab4cf43f09d24943"
-      },
-      {
-          "name":"May 2022",
-          "teams":"64",
-          "first":"DElicious Nuggets",
-          "second":"INKD Killers",
-          "third":"Subs only",
-          "beta":"Daylight",
-          "gamma":"Eternal Frost",
-          "id":"626c9e15f4a14b17d11c0c01"
-      },
-      {
-          "name":"April 2022",
-          "teams":"72",
-          "first":"Molly Whoppers",
-          "second":"DElicious Nuggets",
-          "third":"aquatic vanguard",
-          "beta":"Freelancing Takoyaki",
-          "gamma":"Natural Moonlight",
-          "id":"6247a1b52b7fa6066d2aa144"
-      },
-      {
-          "name":"March 2022",
-          "teams":"68",
-          "first":"Blazing Storm",
-          "second":"Eichhörnchen",
-          "third":"Heaven's Moonlight",
-          "beta":"DElicious Nuggets",
-          "gamma":"aquatic vanguard",
-          "id":"621e76233f6dac1945388fff"
-      },
-      {
-          "name":"February 2022",
-          "teams":"73",
-          "first":"Shiverme Feeders",
-          "second":"Kraken United",
-          "third":"Pickup",
-          "beta":"Yume Star",
-          "gamma":"The Blue Glaucuses",
-          "id":"61eeec5c0636541feccf6b92"
-      },
-      {
-          "name":"January 2022",
-          "teams":"83",
-          "first":"Lois",
-          "second":"NO LOVE FOR ACCESS DENIED",
-          "third":"Shiverme Feeders",
-          "beta":"My Lag Paradise",
-          "gamma":"Yume Star",
-          "id":"61c8d1b20334365df3e89703"
-      },
-      {
-          "name":"December 2021",
-          "teams":"59",
-          "first":"Sleeping Seals",
-          "second":"Lois",
-          "third":"Snowfall",
-          "beta":"Squid Killers",
-          "id":"61a7b86e912b8c483bfef289"
-      },
-      {
-          "name":"November 2021",
-          "teams":"63",
-          "first":"Gorilla Tactics",
-          "second":"Snowfall",
-          "third":"Leg (but with SNorkEl",
-          "beta":"Cold Coral",
-          "gamma":"KingMaker",
-          "id":"618176f1f0dbcd0d30bd5906"
-      },
-      {
-          "name":"October 2021",
-          "teams":"79",
-          "first":"Unlimited Woomy United",
-          "second":"Rising Stars",
-          "third":"Myopsidus",
-          "beta":"Ink Bashers",
-          "gamma":"Rising Tide",
-          "id":"6154a11821cea533c019c03e"
-      },
-      {
-          "name":"August 2021",
-          "teams":"77",
-          "first":"Pursuit",
-          "second":"Wipeout Punks",
-          "third":"Trollphoon",
-          "beta":"The Wiggly Phantoms",
-          "gamma":"Neon Palmtree",
-          "id":"6106d438b51443459574fd5e"
-      },
-      {
-          "name":"July 2021",
-          "teams":"83",
-          "first":"hero fanclub!!",
-          "second":"Sirius",
-          "third":"Inkluminatis",
-          "beta":"Shiverme Inklings",
-          "gamma":"Snowfall",
-          "id":"60d9eabf680ff6397774b01d"
-      },
-      {
-          "name":"June 2021",
-          "teams":"90",
-          "first":"The Deep Fried Octolings",
-          "second":"Sirius",
-          "third":"Fukkatsu Angels",
-          "beta":"PowerInk!",
-          "gamma":"Unlimited Woomy United",
-          "id":"60adb77e4c35a8710cae6757"
-      },
-      {
-          "name":"May 2021",
-          "teams":"82",
-          "first":"Ink Reapers",
-          "second":"Fruit Punch",
-          "third":"Fukkatsu Angels",
-          "beta":"Dark Rain",
-          "gamma":"Yosemite!",
-          "id":"609197f9cf99e72a16a97d65"
-      },
-      {
-          "name":"April 2021",
-          "teams":"90",
-          "first":"NIGHT Surfing",
-          "second":"Citrus",
-          "third":"UCSD Esports",
-          "beta":"Mahi-Mahi Monsoon",
-          "gamma":"Broken Controller Gaming",
-          "id":"606606f10b8cf632dc84971a"
-      },
-      {
-          "name":"March 2021",
-          "teams":"115",
-          "first":"Red Sun & Twisted Time",
-          "second":"Dynasty Dragons Wave",
-          "third":"Resilience",
-          "beta":"NIGHT Surfing",
-          "gamma":"Innocence",
-          "id":"604118ca930f3b4c66eb10fe"
-      },
-      {
-          "name":"February 2021",
-          "teams":"110",
-          "first":"Xylo",
-          "second":"deco-X",
-          "third":"Blazing Storm",
-          "beta":"Tonken",
-          "gamma":"Spirit Inkorporated",
-          "id":"6019b6d0ce01411daff6bca6"
-      },
-      {
-          "name":"January 2021",
-          "teams":"137",
-          "first":"Rising Matrix",
-          "second":"Sea Boiz",
-          "third":"DECOx27",
-          "beta":"inkigo-Go's",
-          "gamma":"Naives: idk",
-          "id":"5fe16a0200630111c42b2040"
-      },
-      {
-          "name":"December 2020",
-          "teams":"107",
-          "first":"Fluency!",
-          "second":"$quid Roe",
-          "third":"Raizen",
-          "beta":"Rolling Raccoons?",
-          "gamma":"Labyrinth X",
-          "id":"5fbb02b0a2fd346547539ad9"
-      },
-      {
-          "name":"November 2020",
-          "teams":"96",
-          "first":"Blue-Ringed Kraken",
-          "second":"Valhalla",
-          "third":"Fluency!",
-          "beta":"NUTS",
-          "gamma":"Toxic Haze",
-          "id":"5f98cdae7d10b0459b2812dd"
-      },
-      {
-          "name":"October 2020",
-          "teams":"100",
-          "first":"Splat or Swim",
-          "second":"Persistence",
-          "third":"Port Rakoome",
-          "beta":"Evening Chickens",
-          "gamma":"Vento",
-          "id":"5f7beec9531ca82e23b67c3d"
-      },
-      {
-          "name":"September 2020",
-          "teams":"77",
-          "first":"Xanadu",
-          "second":"Last Chance",
-          "third":"Raizen",
-          "beta":"Inkling Technology at Purdue",
-          "gamma":"ERROR.404",
-          "id":"5f3dbfe88c26f0297b135300"
-      },
-      {
-          "name":"August 2020",
-          "teams":"104",
-          "first":"Luau",
-          "second":"Last Chance",
-          "third":"Team Raizen",
-          "beta":"Sea Boiz",
-          "gamma":"Inkling Technology at Purdue",
-          "id":"5f21e5e1f5fc96423c53d094"
-      },
-      {
-          "name":"July 2020",
-          "teams":"95",
-          "first":"West Broadway Grillers",
-          "second":"Avalanche",
-          "third":"Radiance",
-          "beta":"SquidVibes",
-          "gamma":"Evening Chickens",
-          "id":"5ef7f72a30e2163628b0d351"
-      },
-      {
-          "name":"June 2020",
-          "teams":"118",
-          "first":"Trick or Treat + new fresh dude called Cyo",
-          "second":"Persistence",
-          "third":"The Bunny-s",
-          "beta":"Splat or Swim",
-          "gamma":"Krill Streak",
-          "id":"5ed6c6f60c8581672c929a67"
-      },
-      {
-          "name":"May 2020",
-          "teams":"66",
-          "first":"Primera",
-          "second":"Stealth Matrix Assassin's",
-          "third":"West Broadway Grillers",
-          "id":"5eab0002a36e2b2dda45b0ed"
-      },
-      {
-          "name":"April 2020",
-          "teams":"77",
-          "first":"White Wolves",
-          "second":"Stargaze",
-          "third":"Persistence",
-          "id":"5e7c15cba8c5bc109aa09086"
-      },
-      {
-          "name":"March 2020",
-          "teams":"46",
-          "first":"Destiny Troops",
-          "second":"Trick or Treat + a Kek called Poke",
-          "third":"Boreal Pheonix",
-          "id":"5e5bb9a730d47a1097b0a408"
-      },
-      {
-          "name":"February 2020",
-          "teams":"48",
-          "first":"Kalopsia",
-          "second":"Ice ice baby",
-          "third":"Boreal Pheonix",
-          "id":"5e3d7c9c4174ff109642856f"
-      },
-      {
-          "name":"January 2020",
-          "teams":"52",
-          "first":"Karakuri_Spl",
-          "second":"XD",
-          "third":"Inception",
-          "id":"5e08a35cfafe5a70cf3a2535"
-      },
-      {
-          "name":"December 2019",
-          "teams":"30",
-          "first":"Shinobi Squad Galaxyum",
-          "second":"Crossed Knights",
-          "third":"Shinobi Squad Lunarium",
-          "id":"5de8517ac18a6018141969e3"
-      },
-      {
-          "name":"November 2019",
-          "teams":"30",
-          "first":"ReUnited",
-          "second":"Ice ice baby",
-          "third":"Crossed Knights",
-          "id":"5dbbbc02e685d86acd7398e8"
-      },
-      {
-          "name":"October 2019",
-          "teams":"25",
-          "first":"Deception",
-          "second":"Obvious Death",
-          "third":"Crustacean Crusaders",
-          "id":"5d953b55f2a453690d701efd"
-      },
-      {
-          "name":"September 2019",
-          "teams":"20",
-          "first":"Inkscape",
-          "second":"Deception",
-          "third":"Test Dummies",
-          "id":"5d6ae13f751f653c50ca683b"
-      },
-      {
-          "name":"August 2019",
-          "teams":"25",
-          "first":"Calamity",
-          "second":"Deception",
-          "third":"Quentiam",
-          "id":"5d488e757a3294684c77631c"
-      },
-      {
-          "name":"July 2019",
-          "teams":"32",
-          "first":"Assault and Pepper",
-          "second":"Dark Shadows",
-          "third":"Nightshade",
-          "id":"5d05848cf15da63deda0bb22"
-      },
-      {
-          "name":"June 2019",
-          "teams":"26",
-          "first":"SquidNet",
-          "second":"Hana",
-          "third":"Vendetta",
-          "id":"5cf006e2e551c1035a6435e0"
-      },
-      {
-          "name":"May 2019",
-          "teams":"33",
-          "first":"Agaru",
-          "second":"All Star Squad :tm:",
-          "third":"Dark Shadows",
-          "id":"5cce1c4dc90a8d032b962275"
-      },
-      {
-          "name":"April 2019",
-          "teams":"26",
-          "first":"Requiem",
-          "second":"OctoInkers",
-          "third":"Crustacean Crusaders",
-          "id":"5ca0082e488399034a678759"
-      },
-      {
-          "name":"March 2019",
-          "teams":"18",
-          "first":"Twilight Anglers",
-          "second":"Backlink Esports",
-          "third":"Project X",
-          "id":"5c71dc2bc61fc30322c85cb1"
-      },
-      {
-          "name":"February 2019",
-          "teams":"14",
-          "first":"REboot",
-          "second":"Backlink eSports",
-          "third":"Euro Squids"
-      },
-      {
-          "name":"December 2018",
-          "teams":"3",
-          "first":"The Duelists",
-          "second":"7 seas",
-          "third":"Cephalopods: Squids and Octopi"
-      },
-      {
-          "name":"November 2018",
-          "teams":"9",
-          "first":"7 seas",
-          "second":"Sakura",
-          "third":"Twilight Anglers"
-      },
-      {
-          "name":"October 2018",
-          "teams":"7",
-          "first":"Seishin Chitai",
-          "second":"Last Minute",
-          "third":"Crustacean Crusaders"
-      },
-      {
-          "name":"September 2018",
-          "teams":"6",
-          "first":"Team E",
-          "second":"Twilight Anglers",
-          "third":"#BlameFanzy"
-      }
-   ]
+    "hallOfFame": [
+        {
+            "name": "May 2026",
+            "teams": "62",
+            "first": "Eternal raid",
+            "second": "Special Dreamers⭑.ᐟ",
+            "third": "Magic Beans",
+            "beta": "The Whiprays"
+        },
+        {
+            "name": "April 2026",
+            "teams": "59",
+            "first": "the goat in the room",
+            "second": "Crushing 20s",
+            "third": "Let That Sink In",
+            "beta": "Strawhats"
+        },
+        {
+            "name": "March 2026",
+            "teams": "53",
+            "first": "Altruist",
+            "second": "Vantablack",
+            "third": "11 ft 8 Bridge",
+            "beta": "4 slayers + pen"
+        },
+        {
+            "name": "February 2026",
+            "teams": "92",
+            "first": "WetUp",
+            "second": "The Koalition",
+            "third": "daybreak",
+            "beta": "Crushing 20s",
+            "gamma": "Sashimi Shenanigans"
+        },
+        {
+            "name": "January 2026",
+            "teams": "94",
+            "first": "M.A.D",
+            "second": "The Koalition",
+            "third": "No creith no bow",
+            "beta": "Crushing 20s",
+            "gamma": "Alruist"
+        },
+        {
+            "name": "December 2025",
+            "teams": "57",
+            "first": "Anarchy Stars",
+            "second": "3 elves 1 santa",
+            "third": "PayBack",
+            "beta": "Runie Runners"
+        },
+        {
+            "name": "November 2025",
+            "teams": "91",
+            "first": "we'll come with a name later",
+            "second": "Anarchy Stars",
+            "third": "XName",
+            "beta": "THIS IS FINE",
+            "gamma": "SATURN'S RINGS"
+        },
+        {
+            "name": "October 2025",
+            "teams": "85",
+            "first": "Fun PB!!",
+            "second": "Disgusting Pickup Team!",
+            "third": "kittens 🖤🥀🐺⛓💥",
+            "beta": "Octaves",
+            "gamma": "o7 Honor Bound"
+        },
+        {
+            "name": "August 2025",
+            "teams": "100",
+            "first": "LDE forge is good",
+            "second": "Octo-Express",
+            "third": "in this tree plant",
+            "beta": "Lemon Shark",
+            "gamma": "Delicious Steak Dinner"
+        },
+        {
+            "name": "July 2025",
+            "teams": "83",
+            "first": "9 lives, all anxiety",
+            "second": "NEW META NEW TEAM NEW ALPHAS",
+            "third": "Wavelength",
+            "beta": "Star Guardians of Chaos",
+            "gamma": "Dark Blossom"
+        },
+        {
+            "name": "June 2025",
+            "teams": "91",
+            "first": "Roulette",
+            "second": "Rising Beyond the Tides",
+            "third": "THIS IS FINE",
+            "beta": "o7 Honor Bound",
+            "gamma": "Anarchy Stars"
+        },
+        {
+            "name": "May 2025",
+            "teams": "81",
+            "first": "FUIT GUMMY (Egoists)",
+            "second": "Singulrity",
+            "third": "Bad Guys",
+            "beta": "After School Sweets Club",
+            "gamma": "Altruist"
+        },
+        {
+            "name": "April 2025",
+            "teams": "64",
+            "first": "NORWEGIAN WOBBER ECONOMY",
+            "second": "Devorameta",
+            "third": "idiots in chat",
+            "beta": "Poor Judgement",
+            "gamma": "Soyjack Squidz"
+        },
+        {
+            "name": "March 2025",
+            "teams": "73",
+            "first": "Splatoon 4 (we win)",
+            "second": "idiots in chat",
+            "third": "Blitz Wave",
+            "beta": "cosmic kitties!!!",
+            "gamma": "What the Fuzz??"
+        },
+        {
+            "name": "February 2025",
+            "teams": "69",
+            "first": "21 SIBH",
+            "second": "StarZ Impact",
+            "third": "REWIND!!!",
+            "beta": "Tetris Effect",
+            "gamma": "Oracle"
+        },
+        {
+            "name": "January 2025",
+            "teams": "105",
+            "first": "Ball up top²",
+            "second": "Path of Radiance!",
+            "third": "We ballin 🗣️🔥",
+            "beta": "Twister Time",
+            "gamma": "Evolution"
+        },
+        {
+            "name": "December 2024",
+            "teams": "80",
+            "first": "FlipSide",
+            "second": "idiots in chat*",
+            "third": "Remix",
+            "beta": "Celestial",
+            "gamma": "Error 404"
+        },
+        {
+            "name": "November 2024",
+            "teams": "80",
+            "first": "Sonora Inkamita de Iztapalapa",
+            "second": "DISCLAIMER*",
+            "third": "Jet Lag!",
+            "beta": "I love latinas Sonic",
+            "gamma": "YT->MP4",
+            "id": "672690d9ca1fa2002279216f"
+        },
+        {
+            "name": "October 2024",
+            "teams": "92",
+            "first": "The Dash Before Time III: The Time of the Great Goober (Goober Dash)",
+            "second": "Royalty",
+            "third": "Roulette",
+            "beta": "The Hybrid Family",
+            "gamma": "Determination",
+            "id": "66fccaf39117a6003f13aca3"
+        },
+        {
+            "name": "September 2024",
+            "teams": "106",
+            "first": "SGMA on Earth",
+            "second": "Royalty",
+            "third": "Inkbound",
+            "beta": "Mystics | Honor Bound",
+            "gamma": "Shellfire",
+            "id": "66cc9de77b5cd7003622e701"
+        },
+        {
+            "name": "August 2024",
+            "teams": "135",
+            "first": "Manta Boat Fanclub",
+            "second": "Meows the Chance",
+            "third": "The Hybrid Family",
+            "beta": "the land is inhospitable and so are we",
+            "gamma": "Tidy Tidings",
+            "id": "66a8422746bb34048f7a5ad4"
+        },
+        {
+            "name": "June 2024",
+            "teams": "105",
+            "first": "ALL I EVER WANTED WAS A ROLLIE ROLLIE",
+            "second": "ULTRAKRILL",
+            "third": "Insomniac Central",
+            "beta": "Determination 2: Electric Boogaloo",
+            "gamma": "M@GICAL☆CURE! LOVE ♥ SHOT!",
+            "id": "6654d6f5ceb2630c9a087f03"
+        },
+        {
+            "name": "May 2024",
+            "teams": "101",
+            "first": "Lush",
+            "second": "ZESTFEST",
+            "third": "Clairvoyance",
+            "beta": "ULTRAKRILL",
+            "gamma": "seasick",
+            "id": "662fe0f77f742005e016b769"
+        },
+        {
+            "name": "April 2024",
+            "teams": "135",
+            "first": "WD4D",
+            "second": "Merequetengue",
+            "third": "ZESTFEST",
+            "beta": "Royal Bouquet",
+            "gamma": "Inkception",
+            "id": "660bf5ed6158bb0d5e8196cf"
+        },
+        {
+            "name": "March 2024",
+            "teams": "144",
+            "first": "VRCat",
+            "second": "ZESTFEST",
+            "third": "i swear we are mid level",
+            "beta": "Starlight",
+            "gamma": "Unknown",
+            "delta": "Silly Goobers United!",
+            "id": "65e1f6cbc3007808b814c19a"
+        },
+        {
+            "name": "February 2024",
+            "teams": "143",
+            "first": "JELLY IS LOW INK BANNED!!! UN BAN PLS",
+            "second": "Ominous",
+            "third": "Blaeksprutter",
+            "beta": "Solo Cue",
+            "gamma": "ASC Niji~K",
+            "delta": "Opt Out!",
+            "id": "65b9465ec1afb870b6ffa1e5"
+        },
+        {
+            "name": "January 2024",
+            "teams": "191",
+            "first": "Red Pacific",
+            "second": "Just Squidding",
+            "third": "QUEEN JELLY LEFT US",
+            "beta": "Skilli Shoes",
+            "gamma": "Not Howdy Hat Pirates",
+            "delta": "ZESTFEST",
+            "epsilon": "Inkception",
+            "id": "658d09d3485f4b72035e4f12"
+        },
+        {
+            "name": "December 2023",
+            "teams": "156",
+            "first": "Matter of Opinion",
+            "second": "Puma's cats",
+            "third": "Blaze",
+            "beta": "Hydra",
+            "gamma": "Camp juice",
+            "delta": "Crystalised Snowflakes",
+            "id": "6557f646065957130f190027"
+        },
+        {
+            "name": "Ladder Ink November 2023",
+            "teams": "168",
+            "first": "MISQ",
+            "second": "Alliance Moon",
+            "third": "Matter of Opinion",
+            "id": "65450db1f9f60f1963ac4038"
+        },
+        {
+            "name": "October 2023",
+            "teams": "168",
+            "first": "Smoking Moais",
+            "second": "SUPER TEAM 5",
+            "third": "7 Ate 9",
+            "beta": "Ominous",
+            "gamma": "OVERTIME!!",
+            "delta": "Valence",
+            "id": "651473099e30b01c895f29c4"
+        },
+        {
+            "name": "August 2023",
+            "teams": "168",
+            "first": "honda squidic",
+            "second": "Amoura",
+            "third": "DistInkt",
+            "beta": "Project: Blank",
+            "gamma": "Team7",
+            "delta": "Scarlet Ink",
+            "id": "64c90bfc3d21fc5f3b66a70c"
+        },
+        {
+            "name": "July 2023",
+            "teams": "212",
+            "first": "8k ping",
+            "second": "cubata2euros",
+            "third": "Project: Blank",
+            "beta": "My Lag Paradise",
+            "gamma": "Hafermilch.",
+            "delta": "Ominous",
+            "epsilon": "Fatal Parliament",
+            "id": "649f92274d040f5057934ee7"
+        },
+        {
+            "name": "June 2023",
+            "teams": "161",
+            "first": "Ikaryoku!",
+            "second": "Team7",
+            "third": "Aquatic Vanguard",
+            "beta": "Joke Raiders",
+            "gamma": "Calamity Forge Neo",
+            "delta": "Wyrmwind",
+            "id": "6478aa08cf51971de0043d6b"
+        },
+        {
+            "name": "May 2023",
+            "teams": "175",
+            "first": "Blood Walk",
+            "second": "Secret Elixir",
+            "third": "Dog clan fanclub v2 (continued)",
+            "beta": "Conductor Cap Inkorporated (Sponsored by Octoπ)",
+            "gamma": "Scarlet Fizzy",
+            "delta": "Arcadia",
+            "epsilon": "Ink Strikers",
+            "id": "644ffc4af1170a380a3b20d3"
+        },
+        {
+            "name": "April 2023",
+            "teams": "145",
+            "first": "Squids Ztrikes",
+            "second": "0 luck found",
+            "third": "Octoπ",
+            "beta": "Arcadia",
+            "gamma": "Ikaryoku!",
+            "id": "6429e8ed731d0308b9a20e4f"
+        },
+        {
+            "name": "March 2023",
+            "teams": "177",
+            "first": "Splatalot Imbeciles",
+            "second": "Secret Elixir",
+            "third": "Swedish BTS",
+            "beta": "Team Biscuits",
+            "gamma": "Ikaryoku!",
+            "delta": "Splatalot Cosmic Cherries",
+            "epsilon": "Tactifueler",
+            "id": "63ff9a22c0110b46110e3673"
+        },
+        {
+            "name": "February 2023",
+            "teams": "161",
+            "first": "democratic republic of são tomé and príncipe",
+            "second": "Prowlers",
+            "third": "TFR Minus Risu",
+            "beta": "Splatalot Cosmic Cherries",
+            "gamma": "Sea Drive",
+            "delta": "WaveBreak",
+            "id": "63da8ab96b209747fc68bac2"
+        },
+        {
+            "name": "January 2023",
+            "teams": "169",
+            "first": "To Be Determined",
+            "second": "そ Sanguine Seas~",
+            "third": "Photic Zone",
+            "beta": "Kayo Calamari",
+            "gamma": "Aquatic Vanguard",
+            "delta": "Knight Sharks",
+            "epsilon": "Outcast Ninjas",
+            "id": "63b1f24b2395cc75cdfa7da1"
+        },
+        {
+            "name": "December 2022",
+            "teams": "99",
+            "first": "Crescent Night",
+            "second": "Myopsidus",
+            "third": "そ Sanguine Seas~",
+            "beta": "June",
+            "gamma": "DaTA",
+            "id": "6388bdece7b3ad3c426a2f26"
+        },
+        {
+            "name": "November 2022",
+            "teams": "147",
+            "first": "Seaya",
+            "second": "Cytria",
+            "third": "RNA",
+            "beta": "Myopsidus",
+            "gamma": "Polyamorous Gamership",
+            "delta": "Infinity Rain ∞",
+            "id": "636141f93dd21d0b2088f5ec"
+        },
+        {
+            "name": "October 2022",
+            "teams": "170",
+            "first": "Cherry-Dolphines",
+            "second": "Ink Sink",
+            "third": "Alliance of the Dam",
+            "beta": "Ok Woomer",
+            "gamma": "Mystical Ink",
+            "delta": "Epsilon",
+            "id": "63348d5f2fa97e2bc6635c56"
+        },
+        {
+            "name": "September 2022",
+            "teams": "84",
+            "first": "Je Croutons?",
+            "second": "Seaya",
+            "third": "Myopsidus",
+            "beta": "No Chill",
+            "gamma": "Paragon",
+            "id": "6303b07f783d3622ec0b2478"
+        },
+        {
+            "name": "August 2022",
+            "teams": "77",
+            "first": "INKD Killers",
+            "second": "Mean Girls",
+            "third": "The Elegant Crusaders",
+            "beta": "aquatic vanguard",
+            "gamma": "Inkvaders",
+            "id": "62ddc6ad132b551f11f3c285"
+        },
+        {
+            "name": "June 2022",
+            "teams": "75",
+            "first": "Splatalot  A",
+            "second": "Yume Star",
+            "third": "Miata",
+            "beta": "Outcast Ninjas",
+            "gamma": "puzzle & dragons",
+            "id": "628ba468ab4cf43f09d24943"
+        },
+        {
+            "name": "May 2022",
+            "teams": "64",
+            "first": "DElicious Nuggets",
+            "second": "INKD Killers",
+            "third": "Subs only",
+            "beta": "Daylight",
+            "gamma": "Eternal Frost",
+            "id": "626c9e15f4a14b17d11c0c01"
+        },
+        {
+            "name": "April 2022",
+            "teams": "72",
+            "first": "Molly Whoppers",
+            "second": "DElicious Nuggets",
+            "third": "aquatic vanguard",
+            "beta": "Freelancing Takoyaki",
+            "gamma": "Natural Moonlight",
+            "id": "6247a1b52b7fa6066d2aa144"
+        },
+        {
+            "name": "March 2022",
+            "teams": "68",
+            "first": "Blazing Storm",
+            "second": "Eichhörnchen",
+            "third": "Heaven's Moonlight",
+            "beta": "DElicious Nuggets",
+            "gamma": "aquatic vanguard",
+            "id": "621e76233f6dac1945388fff"
+        },
+        {
+            "name": "February 2022",
+            "teams": "73",
+            "first": "Shiverme Feeders",
+            "second": "Kraken United",
+            "third": "Pickup",
+            "beta": "Yume Star",
+            "gamma": "The Blue Glaucuses",
+            "id": "61eeec5c0636541feccf6b92"
+        },
+        {
+            "name": "January 2022",
+            "teams": "83",
+            "first": "Lois",
+            "second": "NO LOVE FOR ACCESS DENIED",
+            "third": "Shiverme Feeders",
+            "beta": "My Lag Paradise",
+            "gamma": "Yume Star",
+            "id": "61c8d1b20334365df3e89703"
+        },
+        {
+            "name": "December 2021",
+            "teams": "59",
+            "first": "Sleeping Seals",
+            "second": "Lois",
+            "third": "Snowfall",
+            "beta": "Squid Killers",
+            "id": "61a7b86e912b8c483bfef289"
+        },
+        {
+            "name": "November 2021",
+            "teams": "63",
+            "first": "Gorilla Tactics",
+            "second": "Snowfall",
+            "third": "Leg (but with SNorkEl",
+            "beta": "Cold Coral",
+            "gamma": "KingMaker",
+            "id": "618176f1f0dbcd0d30bd5906"
+        },
+        {
+            "name": "October 2021",
+            "teams": "79",
+            "first": "Unlimited Woomy United",
+            "second": "Rising Stars",
+            "third": "Myopsidus",
+            "beta": "Ink Bashers",
+            "gamma": "Rising Tide",
+            "id": "6154a11821cea533c019c03e"
+        },
+        {
+            "name": "August 2021",
+            "teams": "77",
+            "first": "Pursuit",
+            "second": "Wipeout Punks",
+            "third": "Trollphoon",
+            "beta": "The Wiggly Phantoms",
+            "gamma": "Neon Palmtree",
+            "id": "6106d438b51443459574fd5e"
+        },
+        {
+            "name": "July 2021",
+            "teams": "83",
+            "first": "hero fanclub!!",
+            "second": "Sirius",
+            "third": "Inkluminatis",
+            "beta": "Shiverme Inklings",
+            "gamma": "Snowfall",
+            "id": "60d9eabf680ff6397774b01d"
+        },
+        {
+            "name": "June 2021",
+            "teams": "90",
+            "first": "The Deep Fried Octolings",
+            "second": "Sirius",
+            "third": "Fukkatsu Angels",
+            "beta": "PowerInk!",
+            "gamma": "Unlimited Woomy United",
+            "id": "60adb77e4c35a8710cae6757"
+        },
+        {
+            "name": "May 2021",
+            "teams": "82",
+            "first": "Ink Reapers",
+            "second": "Fruit Punch",
+            "third": "Fukkatsu Angels",
+            "beta": "Dark Rain",
+            "gamma": "Yosemite!",
+            "id": "609197f9cf99e72a16a97d65"
+        },
+        {
+            "name": "April 2021",
+            "teams": "90",
+            "first": "NIGHT Surfing",
+            "second": "Citrus",
+            "third": "UCSD Esports",
+            "beta": "Mahi-Mahi Monsoon",
+            "gamma": "Broken Controller Gaming",
+            "id": "606606f10b8cf632dc84971a"
+        },
+        {
+            "name": "March 2021",
+            "teams": "115",
+            "first": "Red Sun & Twisted Time",
+            "second": "Dynasty Dragons Wave",
+            "third": "Resilience",
+            "beta": "NIGHT Surfing",
+            "gamma": "Innocence",
+            "id": "604118ca930f3b4c66eb10fe"
+        },
+        {
+            "name": "February 2021",
+            "teams": "110",
+            "first": "Xylo",
+            "second": "deco-X",
+            "third": "Blazing Storm",
+            "beta": "Tonken",
+            "gamma": "Spirit Inkorporated",
+            "id": "6019b6d0ce01411daff6bca6"
+        },
+        {
+            "name": "January 2021",
+            "teams": "137",
+            "first": "Rising Matrix",
+            "second": "Sea Boiz",
+            "third": "DECOx27",
+            "beta": "inkigo-Go's",
+            "gamma": "Naives: idk",
+            "id": "5fe16a0200630111c42b2040"
+        },
+        {
+            "name": "December 2020",
+            "teams": "107",
+            "first": "Fluency!",
+            "second": "$quid Roe",
+            "third": "Raizen",
+            "beta": "Rolling Raccoons?",
+            "gamma": "Labyrinth X",
+            "id": "5fbb02b0a2fd346547539ad9"
+        },
+        {
+            "name": "November 2020",
+            "teams": "96",
+            "first": "Blue-Ringed Kraken",
+            "second": "Valhalla",
+            "third": "Fluency!",
+            "beta": "NUTS",
+            "gamma": "Toxic Haze",
+            "id": "5f98cdae7d10b0459b2812dd"
+        },
+        {
+            "name": "October 2020",
+            "teams": "100",
+            "first": "Splat or Swim",
+            "second": "Persistence",
+            "third": "Port Rakoome",
+            "beta": "Evening Chickens",
+            "gamma": "Vento",
+            "id": "5f7beec9531ca82e23b67c3d"
+        },
+        {
+            "name": "September 2020",
+            "teams": "77",
+            "first": "Xanadu",
+            "second": "Last Chance",
+            "third": "Raizen",
+            "beta": "Inkling Technology at Purdue",
+            "gamma": "ERROR.404",
+            "id": "5f3dbfe88c26f0297b135300"
+        },
+        {
+            "name": "August 2020",
+            "teams": "104",
+            "first": "Luau",
+            "second": "Last Chance",
+            "third": "Team Raizen",
+            "beta": "Sea Boiz",
+            "gamma": "Inkling Technology at Purdue",
+            "id": "5f21e5e1f5fc96423c53d094"
+        },
+        {
+            "name": "July 2020",
+            "teams": "95",
+            "first": "West Broadway Grillers",
+            "second": "Avalanche",
+            "third": "Radiance",
+            "beta": "SquidVibes",
+            "gamma": "Evening Chickens",
+            "id": "5ef7f72a30e2163628b0d351"
+        },
+        {
+            "name": "June 2020",
+            "teams": "118",
+            "first": "Trick or Treat + new fresh dude called Cyo",
+            "second": "Persistence",
+            "third": "The Bunny-s",
+            "beta": "Splat or Swim",
+            "gamma": "Krill Streak",
+            "id": "5ed6c6f60c8581672c929a67"
+        },
+        {
+            "name": "May 2020",
+            "teams": "66",
+            "first": "Primera",
+            "second": "Stealth Matrix Assassin's",
+            "third": "West Broadway Grillers",
+            "id": "5eab0002a36e2b2dda45b0ed"
+        },
+        {
+            "name": "April 2020",
+            "teams": "77",
+            "first": "White Wolves",
+            "second": "Stargaze",
+            "third": "Persistence",
+            "id": "5e7c15cba8c5bc109aa09086"
+        },
+        {
+            "name": "March 2020",
+            "teams": "46",
+            "first": "Destiny Troops",
+            "second": "Trick or Treat + a Kek called Poke",
+            "third": "Boreal Pheonix",
+            "id": "5e5bb9a730d47a1097b0a408"
+        },
+        {
+            "name": "February 2020",
+            "teams": "48",
+            "first": "Kalopsia",
+            "second": "Ice ice baby",
+            "third": "Boreal Pheonix",
+            "id": "5e3d7c9c4174ff109642856f"
+        },
+        {
+            "name": "January 2020",
+            "teams": "52",
+            "first": "Karakuri_Spl",
+            "second": "XD",
+            "third": "Inception",
+            "id": "5e08a35cfafe5a70cf3a2535"
+        },
+        {
+            "name": "December 2019",
+            "teams": "30",
+            "first": "Shinobi Squad Galaxyum",
+            "second": "Crossed Knights",
+            "third": "Shinobi Squad Lunarium",
+            "id": "5de8517ac18a6018141969e3"
+        },
+        {
+            "name": "November 2019",
+            "teams": "30",
+            "first": "ReUnited",
+            "second": "Ice ice baby",
+            "third": "Crossed Knights",
+            "id": "5dbbbc02e685d86acd7398e8"
+        },
+        {
+            "name": "October 2019",
+            "teams": "25",
+            "first": "Deception",
+            "second": "Obvious Death",
+            "third": "Crustacean Crusaders",
+            "id": "5d953b55f2a453690d701efd"
+        },
+        {
+            "name": "September 2019",
+            "teams": "20",
+            "first": "Inkscape",
+            "second": "Deception",
+            "third": "Test Dummies",
+            "id": "5d6ae13f751f653c50ca683b"
+        },
+        {
+            "name": "August 2019",
+            "teams": "25",
+            "first": "Calamity",
+            "second": "Deception",
+            "third": "Quentiam",
+            "id": "5d488e757a3294684c77631c"
+        },
+        {
+            "name": "July 2019",
+            "teams": "32",
+            "first": "Assault and Pepper",
+            "second": "Dark Shadows",
+            "third": "Nightshade",
+            "id": "5d05848cf15da63deda0bb22"
+        },
+        {
+            "name": "June 2019",
+            "teams": "26",
+            "first": "SquidNet",
+            "second": "Hana",
+            "third": "Vendetta",
+            "id": "5cf006e2e551c1035a6435e0"
+        },
+        {
+            "name": "May 2019",
+            "teams": "33",
+            "first": "Agaru",
+            "second": "All Star Squad :tm:",
+            "third": "Dark Shadows",
+            "id": "5cce1c4dc90a8d032b962275"
+        },
+        {
+            "name": "April 2019",
+            "teams": "26",
+            "first": "Requiem",
+            "second": "OctoInkers",
+            "third": "Crustacean Crusaders",
+            "id": "5ca0082e488399034a678759"
+        },
+        {
+            "name": "March 2019",
+            "teams": "18",
+            "first": "Twilight Anglers",
+            "second": "Backlink Esports",
+            "third": "Project X",
+            "id": "5c71dc2bc61fc30322c85cb1"
+        },
+        {
+            "name": "February 2019",
+            "teams": "14",
+            "first": "REboot",
+            "second": "Backlink eSports",
+            "third": "Euro Squids"
+        },
+        {
+            "name": "December 2018",
+            "teams": "3",
+            "first": "The Duelists",
+            "second": "7 seas",
+            "third": "Cephalopods: Squids and Octopi"
+        },
+        {
+            "name": "November 2018",
+            "teams": "9",
+            "first": "7 seas",
+            "second": "Sakura",
+            "third": "Twilight Anglers"
+        },
+        {
+            "name": "October 2018",
+            "teams": "7",
+            "first": "Seishin Chitai",
+            "second": "Last Minute",
+            "third": "Crustacean Crusaders"
+        },
+        {
+            "name": "September 2018",
+            "teams": "6",
+            "first": "Team E",
+            "second": "Twilight Anglers",
+            "third": "#BlameFanzy"
+        }
+    ]
 }
