@@ -1,6 +1,14 @@
 {
     "hallOfFame": [
         {
+            "name": "June 2026",
+            "teams": "60",
+            "first": "Cherry Deepsync",
+            "second": "Fishy soloq warriors",
+            "third": "Well-Done Filet Mignon",
+            "beta": "Grace Field House"
+        },
+        {
             "name": "May 2026",
             "teams": "62",
             "first": "Eternal raid",
